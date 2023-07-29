@@ -28,10 +28,10 @@ export default defineConfig({
   // base: '/Repository 的名稱/'
   base: '/beauty-hub/',
   plugins: [
-    inject({   // => that should be first under plugins array
-      $: 'jquery',
-      jQuery: 'jquery',
-    }),
+    //inject({   // => that should be first under plugins array
+      //$: 'jquery',
+      //jQuery: 'jquery',
+    //}),
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
     ViteEjsPlugin(),
     moveOutputPlugin(),
