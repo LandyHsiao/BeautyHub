@@ -1,0 +1,11 @@
+@import "../../node_modules/bootstrap/scss/functions"; // Bootstrap, MUST BE FIRST LINE 
+
+@import "utils/variables"; // variables like colors
+
+@import "base/reset"; // not meyer's reset, it's our custom reset
+
+// import layout stylesheet from here
+
+// import pages stylesheet from here
+
+@import "../../node_modules/bootstrap"; // Bootstrap, MUST BE LAST LINE 
