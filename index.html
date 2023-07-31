@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- ↓ Must add this when line using jquery ↓ -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-  <script type="module" crossorigin src="/beauty-hub/assets/index-c381e910.js"></script>
-  <link rel="stylesheet" href="/beauty-hub/assets/index-671f65eb.css">
-</head>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"></script>
+    <script type="module" crossorigin src="/beauty-hub/assets/index-4153935a.js"></script>
+    <link rel="stylesheet" href="/beauty-hub/assets/index-671f65eb.css">
+  </head>
 
-<body>
+  <body>
     <h1>Just Test Bootstrap 5.3 + Jquery</h1>
 
     <!-- Test Jquery -->
-    <button id="click">Click me to hide/show the span →</button> <span id="result">this is a span.</span>
+    <button id="click">Click me to hide/show the span →</button>
+    <span id="result">this is a span.</span>
     <span id="remove">I won't appear</span>
 
     <!-- Test Bootstrap 5.3 -->
     <div class="container text-center">
-        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-        <div class="row">
-            <div class="col-md-8">.col-md-8</div>
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
 
-        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-        <div class="row">
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
+      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+      <div class="row">
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
 
-        <!-- Columns are always 50% wide, on mobile and desktop -->
-        <div class="row">
-            <div class="col-6">.col-6</div>
-            <div class="col-6">.col-6</div>
-        </div>
+      <!-- Columns are always 50% wide, on mobile and desktop -->
+      <div class="row">
+        <div class="col-6">.col-6</div>
+        <div class="col-6">.col-6</div>
+      </div>
     </div>
+
+    <p>Firebase測試data：</p>
+    <pre>{
+      "users": [
+        {"name": "plum", "gender": "female"}
+      ]
+    }</pre>
+    <p>firebase get first data from users and output name field</p>
+    <p id="fb">Firebase測試</p>
     
 
     <!-- Test Jquery -->
     <script>
-        $('#remove').remove();
-        $("#click").click(function(){
-            $("#result").slideToggle();
-        });
+      $("#remove").remove();
+      $("#click").click(function () {
+        $("#result").slideToggle();
+      });
     </script>
-
-    <!-- ↓ If use this solution we dont't need to link jquery's cdn every page but teacher said NO ↓ -->
-    <!-- <script src="../scripts/home.js"></script> -->
-</body>
-
+    <!-- Test firebase -->
+    
+  </body>
 </html>
