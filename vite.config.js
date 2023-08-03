@@ -32,7 +32,7 @@ export default defineConfig({
       //$: 'jquery',
       //jQuery: 'jquery',
     //}),
-    liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
+    liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html', './local-test/**/*.html', './local-test/**/*.ejs']),
     ViteEjsPlugin(),
     moveOutputPlugin(),
   ],
