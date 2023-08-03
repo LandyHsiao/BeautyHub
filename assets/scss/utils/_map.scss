@@ -1,0 +1,30 @@
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+);
+
+$custom-colors: (
+  "Primary-main": $Primary-main,
+  "Primary-light": $Primary-light,
+  "Secondary-main": $Secondary-main,
+  "Secondary-light": $Secondary-light,
+  "Secondary-dark": $Secondary-dark
+);
+
+$custom-colors-table: (
+  "Primary-main": shift-color($Primary-main, $table-bg-scale),
+  "Primary-light": shift-color($Primary-light, $table-bg-scale),
+  "Secondary-main": shift-color($Secondary-main, $table-bg-scale),
+  "Secondary-light": shift-color($Secondary-light, $table-bg-scale),
+  "Secondary-dark": shift-color($Secondary-dark, $table-bg-scale)
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$table-variants: map-merge($table-variants, $custom-colors-table);
