@@ -15,7 +15,17 @@ $custom-colors: (
   "Primary-light": $Primary-light,
   "Secondary-main": $Secondary-main,
   "Secondary-light": $Secondary-light,
-  "Secondary-dark": $Secondary-dark
+  "Secondary-dark": $Secondary-dark,
+  "Background-main": $Background-main,
+  "Background-S1": $Background-S1,
+  "Background-S2": $Background-S2,
+  "Gray-01": $Gray-01,
+  "Gray-02": $Gray-02,
+  "Gray-03": $Gray-03,
+  "Gray-04": $Gray-04,
+  "Gray-05": $Gray-05,
+  "Gray-06": $Gray-06,
+  "Gray-07": $Gray-07
 );
 
 $custom-colors-table: (
@@ -23,7 +33,26 @@ $custom-colors-table: (
   "Primary-light": shift-color($Primary-light, $table-bg-scale),
   "Secondary-main": shift-color($Secondary-main, $table-bg-scale),
   "Secondary-light": shift-color($Secondary-light, $table-bg-scale),
-  "Secondary-dark": shift-color($Secondary-dark, $table-bg-scale)
+  "Secondary-dark": shift-color($Secondary-dark, $table-bg-scale),
+  "Background-main": shift-color($Background-main, $table-bg-scale),
+  "Background-S1": shift-color($Background-S1, $table-bg-scale),
+  "Background-S2": shift-color($Background-S2, $table-bg-scale),
+  "Gray-01": shift-color($Gray-01, $table-bg-scale),
+  "Gray-02": shift-color($Gray-02, $table-bg-scale),
+  "Gray-03": shift-color($Gray-03, $table-bg-scale),
+  "Gray-04": shift-color($Gray-04, $table-bg-scale),
+  "Gray-05": shift-color($Gray-05, $table-bg-scale),
+  "Gray-06": shift-color($Gray-06, $table-bg-scale),
+  "Gray-07": shift-color($Gray-07, $table-bg-scale)
+);
+
+$display-font-sizes: (
+  1: $font-size-base * 2.5,
+  2: $font-size-base * 2,
+  3: $font-size-base * 1.75,
+  4: $font-size-base * 1.5,
+  5: $font-size-base * 1.25,
+  6: $font-size-base
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

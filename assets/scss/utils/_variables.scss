@@ -6,8 +6,8 @@ $Secondary-light: #EDD7D5;
 $Secondary-dark: #7F5351;
 
 $Background-main: #FBF8F7;
-$Background-section-1: #F1F0ED;
-$Background-section-2: #F7EEEA;
+$Background-S1: #F1F0ED;
+$Background-S2: #F7EEEA;
 
 $Gray-01: #2C2C2C;
 $Gray-02: #727171;
@@ -17,6 +17,11 @@ $Gray-05: #EFEEEA;
 $Gray-06: #FBF8F7;
 $Gray-07: #FBFBFB;
 
+$gradient-01: #B94D2E;
+$gradient-02: #EBC8A2;
+$gradient-03: #AD8D57;
+
+// Overrides BS5 default colors
 $gray-100: $Gray-07;
 $gray-200: $Gray-06;
 $gray-300: $Gray-05;
@@ -27,8 +32,6 @@ $gray-700: $Gray-02;
 $gray-800: $Gray-01;
 $gray-900: $Gray-01;
 
-
-// Overrides BS5 default colors
 $primary:       $Primary-main;
 $secondary:     $Secondary-main;
 // $success:       $green;
@@ -38,8 +41,40 @@ $secondary:     $Secondary-main;
 // $light:         $gray-100;
 // $dark:          $gray-900;
 
+// Font
+$font-family-base: "Noto Sans TC", sans-serif;
+$headings-font-family:  "Noto Sans TC", sans-serif;
+$display-font-family: "Cormorant Garamond", sans; // use display heading for Cormorant Garamond
+$line-height-base: 1.2;
 
-
-
-
-
+// Spacer
+// $spacer: 0.25rem;
+// $spacers: (
+//   0: 0,
+//   1: $spacer,         // 4
+//   2: $spacer * 2,     // 8
+//   3: $spacer * 3,     // 12
+//   4: $spacer * 4,     // 16
+//   5: $spacer * 5,     // 20
+//   6: $spacer * 6,     // 24
+//   7: $spacer * 7,     // 28
+//   8: $spacer * 8,     // 32
+//   9: $spacer * 9,     // 36
+//   10: $spacer * 10,    // 40
+//   12: $spacer * 12,     // 48
+// );
+// $spacer: 1rem;
+// $spacers: (
+//   0: 0,
+//   1: $spacer,         // 4
+//   2: $spacer * 2,     // 8
+//   3: $spacer * 3,     // 12
+//   4: $spacer * 4,     // 16
+//   5: $spacer * 5,     // 20
+//   6: $spacer * 6,     // 24
+//   7: $spacer * 7,     // 28
+//   8: $spacer * 8,     // 32
+//   9: $spacer * 9,     // 36
+//   10: $spacer * 10,    // 40
+//   12: $spacer * 12,     // 48
+// );
