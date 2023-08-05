@@ -45,9 +45,9 @@
 .btn-primary {
   color: $Gray-05;
   &:hover {
-    background-color: $Secondary-main;
+    background-color: $Secondary-dark;
     color: $Gray-05;
-  }
+  } 
 }
 .btn-outline-primary {
   @include button-outline-variant-custom($primary, $Secondary-main);
