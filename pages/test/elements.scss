@@ -1,0 +1,17 @@
+@import "../assets/scss/all.scss";
+
+.colors-area .row > * {
+  background-clip: content-box;
+}
+
+.bg-gray-blue {
+  background-color: #4b5e73;
+  background-clip: content-box ;
+}
+
+.push {
+  background-color: $Primary-light;
+}
+.be-push {
+  background-color: $Secondary-light;
+}
