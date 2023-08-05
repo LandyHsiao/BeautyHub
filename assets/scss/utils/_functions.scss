@@ -1,0 +1,39 @@
+@function color-contrast-custom($background, $color-contrast-dark: $color-contrast-dark, $color-contrast-light: $color-contrast-light, $min-contrast-ratio: $min-contrast-ratio) {
+  $foregrounds: $Gray-07, $Gray-06, $Gray-05, $Gray-04, $Gray-03, $Gray-02, $Gray-01, $color-contrast-light, $color-contrast-dark, $white, $black;
+  $max-ratio: 0;
+  $max-ratio-color: null;
+
+  @each $color in $foregrounds {
+    $contrast-ratio: contrast-ratio($background, $color);
+    @if $contrast-ratio > $min-contrast-ratio {
+      @return $color;
+    } @else if $contrast-ratio > $max-ratio {
+      $max-ratio: $contrast-ratio;
+      $max-ratio-color: $color;
+    }
+  }
+  @warn "Found no color leading to #{$min-contrast-ratio}:1 contrast ratio against #{$background}...";
+
+  @return $max-ratio-color;
+  //@return red;
+}
+
+@function mix-by-contrast ($background, $min-contrast-ratio: $min-contrast-ratio) {
+  $percentages: 10%, 30%, 50%, 70%, 90%;
+  $foregrounds: $background;
+  $max-ratio: 0;
+  $max-ratio-color: null;
+
+  $lighter-color: mix($white, $background, 30%);
+  $darker-color: mix($black, $background, 20%);
+  $contrast-ratio-l: contrast-ratio($lighter-color, $white);
+  $contrast-ratio-d: contrast-ratio($darker-color, $white);
+
+  @if $contrast-ratio-l > $min-contrast-ratio {
+    @return $lighter-color;
+  }
+
+  //@warn "Found no color leading to #{$min-contrast-ratio}:1 contrast ratio against #{$background}...";
+
+  @return $darker-color;
+}

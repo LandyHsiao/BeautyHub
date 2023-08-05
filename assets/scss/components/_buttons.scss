@@ -1,0 +1,56 @@
+// btn-### overrides
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @if $color == "light" {
+      @include button-variant-custom(
+        $value,
+        $value,
+        $hover-background: shade-color($value, $btn-hover-bg-shade-amount),
+        $hover-border: shade-color($value, $btn-hover-border-shade-amount),
+        $active-background: shade-color($value, $btn-active-bg-shade-amount),
+        $active-border: shade-color($value, $btn-active-border-shade-amount)
+      );
+    } @else if $color == "dark" {
+      @include button-variant-custom(
+        $value,
+        $value,
+        $hover-background: tint-color($value, $btn-hover-bg-tint-amount),
+        $hover-border: tint-color($value, $btn-hover-border-tint-amount),
+        $active-background: tint-color($value, $btn-active-bg-tint-amount),
+        $active-border: tint-color($value, $btn-active-border-tint-amount)
+      );
+    } @else {
+      @include button-variant-custom($value, $value);
+    }
+  }
+}
+
+// btn-outline-### overrides
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant-custom($value);
+  }
+}
+
+// custom btn styles
+.btn-icon {
+  @include button-size-icon(true, 1rem, 1rem,  $btn-font-size, $btn-border-radius);
+}
+
+.btn-short {
+  @include button-size(1rem, 2.25rem,  $btn-font-size, $btn-border-radius);
+}
+
+// btn-primary override
+.btn-primary {
+  color: $Gray-05;
+  &:hover {
+    background-color: $Secondary-main;
+    color: $Gray-05;
+  }
+}
+.btn-outline-primary {
+  @include button-outline-variant-custom($primary, $Secondary-main);
+}
+
+

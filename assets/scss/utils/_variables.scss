@@ -33,7 +33,7 @@ $gray-800: $Gray-01;
 $gray-900: $Gray-01;
 
 $primary:       $Primary-main;
-$secondary:     $Secondary-main;
+// $secondary:     $Secondary-main; 
 // $success:       $green;
 // $info:          $cyan;
 // $warning:       $yellow;
@@ -43,38 +43,16 @@ $secondary:     $Secondary-main;
 
 // Font
 $font-family-base: "Noto Sans TC", sans-serif;
-$headings-font-family:  "Noto Sans TC", sans-serif;
+$headings-font-family:  "Cormorant Garamond", "Noto Sans TC", sans-serif;
 $display-font-family: "Cormorant Garamond", sans; // use display heading for Cormorant Garamond
 $line-height-base: 1.2;
 
-// Spacer
-// $spacer: 0.25rem;
-// $spacers: (
-//   0: 0,
-//   1: $spacer,         // 4
-//   2: $spacer * 2,     // 8
-//   3: $spacer * 3,     // 12
-//   4: $spacer * 4,     // 16
-//   5: $spacer * 5,     // 20
-//   6: $spacer * 6,     // 24
-//   7: $spacer * 7,     // 28
-//   8: $spacer * 8,     // 32
-//   9: $spacer * 9,     // 36
-//   10: $spacer * 10,    // 40
-//   12: $spacer * 12,     // 48
-// );
-// $spacer: 1rem;
-// $spacers: (
-//   0: 0,
-//   1: $spacer,         // 4
-//   2: $spacer * 2,     // 8
-//   3: $spacer * 3,     // 12
-//   4: $spacer * 4,     // 16
-//   5: $spacer * 5,     // 20
-//   6: $spacer * 6,     // 24
-//   7: $spacer * 7,     // 28
-//   8: $spacer * 8,     // 32
-//   9: $spacer * 9,     // 36
-//   10: $spacer * 10,    // 40
-//   12: $spacer * 12,     // 48
-// );
+// border radius
+$border-radius: 0;
+$btn-border-radius: 0;
+$btn-border-radius-sm: 0;
+$btn-border-radius-lg: 0;
+
+// paddings
+$input-btn-padding-y: 1rem;
+$input-btn-padding-x: 4.5rem;
