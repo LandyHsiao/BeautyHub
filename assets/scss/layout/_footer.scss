@@ -4,12 +4,12 @@ footer {
 
 .footer__logo {
   background-size: contain;
-  background-image: url("../assets/image/Logo-sm.png");
+  background-image: url("../image/Logo-sm.png");
   width: 85px;
   height: 36px;
 
   @include media-breakpoint-up(md) {
-    background-image: url("../assets/image/Logo.png");
+    background-image: url("../image/Logo.png");
     width: 134px;
     height: 56px;
   }
