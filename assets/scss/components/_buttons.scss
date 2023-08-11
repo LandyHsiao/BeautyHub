@@ -42,15 +42,20 @@
 }
 
 // btn-primary override
-.btn-primary {
-  color: $Gray-05;
-  &:hover {
-    background-color: $Secondary-dark;
-    color: $Gray-05;
-  } 
-}
 .btn-outline-primary {
-  @include button-outline-variant-custom($primary, $Secondary-main);
+  @include button-outline-variant-custom($primary, $Secondary-dark, $Secondary-main, $Secondary-main, $Gray-05);
 }
 
-
+.btn-primary {
+  @include button-variant(
+    $primary,
+    $primary,
+    $Gray-05,
+    $Secondary-dark,
+    $Secondary-dark,
+    $Gray-05,
+    $Secondary-main,
+    $Secondary-main,
+    $Gray-05
+  )
+}
