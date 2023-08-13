@@ -94,6 +94,13 @@ $spacers: (
   30: $spacer * 7.5   // 120
 );
 
+// letter spacing
+$letter-spacings: (
+    h: 0.05em,
+    p: 0.03em,
+    1: normal
+);
+
 // utitlity map pre defined
 // this will be auto merged with BS's default $utitlities in _utilities.scss
 $utilities: (
