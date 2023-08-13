@@ -6,13 +6,13 @@
   <title>Local元件測試</title>
   <!-- <link rel="stylesheet" href="../assets/scss/all.scss"> -->
   
-  <script type="module" crossorigin src="/beauty-hub/assets/index-17e7584b.js"></script>
-  <link rel="stylesheet" href="/beauty-hub/assets/index-d1fe93a1.css">
-  <link rel="stylesheet" href="/beauty-hub/assets/elements-b26f8bf2.css">
+  <script type="module" crossorigin src="/beauty-hub/assets/index-897637fd.js"></script>
+  <link rel="stylesheet" href="/beauty-hub/assets/index-c1cf4325.css">
+  <link rel="stylesheet" href="/beauty-hub/assets/elements-29d8aeaa.css">
 </head>
 <body>
-  <section class="colors-area container">
-    <h2 class="h1">Colors</h2>
+  <section class="colors-area container lh-lg">
+    <h2 class="h1 fw-bolder text-primary">Colors</h2>
     <h3 class="h2">Theme Colors</h3>
     <div class="theme-colors row row-cols-sm-4 text-center">
       <div class="col bg-primary py-1">text-bg-primary</div>
@@ -46,10 +46,11 @@
       <div class="col text-bg-Gray-07 py-1">text-bg-Gray-07</div>
     </div>
   </section>
-  <section class="typo-area container">
-    <h2 class="h1">Typography</h2>
-    <div class="headings row gy-3">
-      <div class="font-sizes col-4">
+  <section class="font-area container">
+    <h2 class="h1 fw-bolder text-primary">Font relative</h2>
+    <h3 class="h2">Font sizes & RWD</h3>
+    <div class="row">
+      <div class="font-sizes col-6">
         <p class="fs-1">fs-1: 40px</p>
         <p class="fs-2">fs-2: 32px</p>
         <p class="fs-3">fs-3: 28px</p>
@@ -57,8 +58,9 @@
         <p class="fs-5">fs-5: 20px</p>
         <p class="fs-6">fs-6: 16px</p>
         <p class="fs-7">fs-7: 14px</p>
+        <p class="fs-8">fs-8: 12px</p>
       </div>
-      <div class="font-sizes-rwd col-4">
+      <div class="font-sizes-rwd col-6">
         <p class="fs-1 fs-md-2 fs-lg-3">fs-1 fs-md-2 fs-lg-3</p>
         <p class="fs-2 fs-md-3 fs-lg-4">fs-2 fs-md-3 fs-lg-4</p>
         <p class="fs-3 fs-md-4 fs-lg-5">fs-3 fs-md-4 fs-lg-5</p>
@@ -67,15 +69,33 @@
         <p class="fs-6 fs-md-7 fs-lg-1">fs-6 fs-md-7 fs-lg-1</p>
         <p class="fs-7 fs-md-1 fs-lg-2">fs-7 fs-md-1 fs-lg-2</p>
       </div>
-      <!-- <div class="display-heading col-6">
+    </div>
+    <h3 class="h2">Letter spacings & RWD</h3>
+    <div class="row">
+      <div class="letter-spacing col-6">
+        <p class="ls-h fs-3">ls-h is 5%</p>
+        <p class="ls-p fs-3">ls-p is 3%</p>
+        <p class="ls-1 fs-3">ls-1 is normal</p>
+      </div>
+      <div class="letter-spacing col-6">
+        <p class="ls-h ls-md-p fs-3">ls-h ls-md-p</p>
+        <p class="ls-p ls-md-1 fs-3">ls-p ls-md-1</p>
+        <p class="ls-1 ls-md-h fs-3">ls-1 ls-md-h</p>
+      </div>
+    </div>
+  </section>
+  <section class="heading-area container">
+    <h2 class="h1 fw-bolder text-primary">Headings</h2>
+    <div class="row">
+      <div class="display-heading col-6">
         <h1 class="display-1">display-1. Bootstrap heading 中文</h1>
         <h2 class="display-2">display-2. Bootstrap heading 中文</h2>
         <h6 class="display-3">display-3. Bootstrap heading 中文</h6>
         <h5 class="display-4">display-4. Bootstrap heading 中文</h5>
         <h4 class="display-5">display-5. Bootstrap heading 中文</h4>
         <span class="display-6">display-6. Bootstrap heading 中文</span>
-      </div> -->
-      <div class="default-heading col-4">
+      </div>
+      <div class="default-heading col-6">
         <h1 class="h1">h1. Bootstrap heading 中文</h1>
         <h2 class="h2">h2. Bootstrap heading 中文</h2>
         <p class="h3">h3. Bootstrap heading 中文</p>
@@ -85,17 +105,43 @@
       </div>
     </div>
   </section>
-  <section class="button-area container">
-    <h2 class="h1">Buttons</h2>
-    <h3 class="h2">Custom Buttons</h3>
-    <div class="default-buttons row row-cols-sm-4 text-center gy-2">
-      <div class="col btn-wrap"><button class="btn btn-primary">看更多</button></div>
-      <div class="col btn-wrap"><button class="btn btn-primary btn-icon">立即註冊</button></div>
-      <div class="col btn-wrap"><button class="btn btn-primary btn-short">看更多</button></div>
-      <div class="col btn-wrap"><button class="btn btn-outline-primary">看更多</button></div>
+  <section class="para-area container">
+    <h2 class="h1 fw-bolder text-primary">Custom Class - para</h2>
+    <div class="row">
+      <div class="col-6">
+        <p class="para-1">para-1</p>
+        <p class="para-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In temporibus libero quis asperiores maiores itaque, repudiandae ducimus molestiae suscipit quo!</p>
+      </div>
+      <div class="col-6">
+        <p class="para-2">para-2</p>
+        <p class="para-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur vel quidem aut aspernatur vero necessitatibus perspiciatis quasi nobis laboriosam.</p>
+      </div>
     </div>
-    <h3 class="h2">Custom Oulined Buttons</h3>
-    <div class="toutlined-buttons row row-cols-sm-4  text-center gy-2 bg-gray-blue">
+  </section>
+  <section class="button-area container">
+    <h2 class="h1 fw-bolder text-primary">Buttons</h2>
+    <figcaption class="mb-5">btn有做RWD，sm以下時padding會調整至short的size</figcaption>
+    <!-- <h3 class="h2">Custom Buttons</h3> -->
+    <div class="default-buttons row row-cols-sm-2 text-center gy-2">
+      <div class="col-6 btn-wrap">
+        <p>.btn.btn-primary</p>
+        <button class="btn btn-primary">看更多</button>
+      </div>
+      <div class="col-6 btn-wrap">
+        <p>.btn.btn-primary.btn-icon</p>
+        <button class="btn btn-primary btn-icon">立即註冊</button>
+      </div>
+      <div class="col-6 btn-wrap">
+        <p>.btn.btn-primary.btn-short</p>
+        <button class="btn btn-primary btn-short">看更多</button>
+      </div>
+      <div class="col-6 btn-wrap bg-Gray-05">
+        <p>.btn.btn-outline-primary</p>
+        <button class="btn btn-outline-primary">看更多</button>
+      </div>
+    </div>
+    <!-- <h3 class="h2">Custom Oulined Buttons</h3> -->
+    <!-- <div class="toutlined-buttons row row-cols-sm-4  text-center gy-2 bg-gray-blue">
       <div class="col btn-wrap"><button class="btn btn-outline-primary">primary</button></div>
       <div class="col btn-wrap"><button class="btn btn-outline-secondary">secondary</button></div>
       <div class="col btn-wrap"><button class="btn btn-outline-success">success</button></div>
@@ -119,10 +165,10 @@
       <div class="col btn-wrap"><button class="btn btn-outline-Gray-05">Gray-05</button></div>
       <div class="col btn-wrap"><button class="btn btn-outline-Gray-06">Gray-06</button></div>
       <div class="col btn-wrap"><button class="btn btn-outline-Gray-07">Gray-07</button></div>
-    </div>
+    </div> -->
   </section>
   <section class="spacing-area container">
-    <h2 class="h1">Spacing Example</h2>
+    <h2 class="h1 fw-bolder text-primary">Spacing Example</h2>
     <div class="mb-example row row-cols-sm-4 text-center">
       <div class="col-wrap col">
         <p class="push mb-1">mb-1</p>
