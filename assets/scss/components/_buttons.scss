@@ -1,5 +1,5 @@
 // btn RWD setting
-.btn {
+.btn:not(.btn-icon) {
   @include media-breakpoint-up(sm) {
     padding-right: 4.5rem;
     padding-left: 4.5rem;
