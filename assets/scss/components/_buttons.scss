@@ -1,11 +1,3 @@
-// btn RWD setting
-.btn:not(.btn-icon) {
-  @include media-breakpoint-up(sm) {
-    padding-right: 4.5rem;
-    padding-left: 4.5rem;
-  }
-}
-
 // btn-### overrides
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
@@ -46,8 +38,8 @@
 }
 
 .btn-short {
-  padding-right: 2.25rem !important;
-  padding-left: 2.25rem !important;
+  padding-right: 2.25rem;
+  padding-left: 2.25rem;
 }
 
 // btn-primary override
