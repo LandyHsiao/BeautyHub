@@ -1,0 +1,24 @@
+.home-award-area {
+  background-image: url("../image/award-banner-bg-01-sm.png");
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 375 / 380;
+  @include media-breakpoint-up(sm) {
+    background-image: url("../image/award-banner-bg-01.png");
+    aspect-ratio: initial;
+  }
+}
+
+.home-award-area__content {
+  height: 50%;
+  @include media-breakpoint-up(sm) {
+    height: initial;
+  }
+}
+.home-award-area__title {
+  font-family: $display-font-family;
+  @include media-breakpoint-up(sm) {
+    line-height: 48px;
+    font-size: 54px;
+  }
+}
