@@ -15,8 +15,8 @@
     height: initial;
   }
 }
+
 .home-award-area__title {
-  font-family: $display-font-family;
   @include media-breakpoint-up(sm) {
     line-height: 48px;
     font-size: 54px;
