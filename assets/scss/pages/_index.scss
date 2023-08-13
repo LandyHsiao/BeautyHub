@@ -1,3 +1,18 @@
+.home-invite-area {
+  background-image: url("../image/invite-banner-bg-blur-sm.png");
+  background-size: cover;
+  background-position: center;
+  @include media-breakpoint-up(md) {
+    background-image: url("../image/invite-banner-bg-blur.png");
+  }
+}
+
+.home-invite-area__content {
+  @include media-breakpoint-up(md) {
+    background-color: $Gray-07;
+  }
+}
+
 .home-award-area {
   background-image: url("../image/award-banner-bg-01-sm.png");
   background-size: cover;
