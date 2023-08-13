@@ -1,11 +1,11 @@
 // generate letter-spacing utility classes with RWD
 // EX: lp-h, lp-md-p
 @each $name, $value in $letter-spacings {
-  .lp-#{$name} {
+  .ls-#{$name} {
       letter-spacing: $value;
   }
   @each $bp, $bp-value in $container-max-widths {
-      .lp-#{$bp}-#{$name} {
+      .ls-#{$bp}-#{$name} {
         @include media-breakpoint-up($bp) {
               letter-spacing: $value  !important;
           }
