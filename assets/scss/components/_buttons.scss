@@ -1,3 +1,11 @@
+// btn RWD setting
+.btn {
+  @include media-breakpoint-up(sm) {
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+  }
+}
+
 // btn-### overrides
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
@@ -34,11 +42,12 @@
 
 // custom btn styles
 .btn-icon {
-  @include button-size-icon(true, 1rem, 1rem,  $btn-font-size, $btn-border-radius);
+  @include button-size-icon();
 }
 
 .btn-short {
-  @include button-size(1rem, 2.25rem,  $btn-font-size, $btn-border-radius);
+  padding-right: 2.25rem !important;
+  padding-left: 2.25rem !important;
 }
 
 // btn-primary override

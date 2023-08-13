@@ -51,14 +51,14 @@ $table-variants: map-merge($table-variants, $custom-colors-table);
 
 
 // fonts
-// $display-font-sizes: (
-//   1: $font-size-base * 2.5,
-//   2: $font-size-base * 2,
-//   3: $font-size-base * 1.75,
-//   4: $font-size-base * 1.5,
-//   5: $font-size-base * 1.25,
-//   6: $font-size-base
-// );
+$display-font-sizes: (
+  1: $font-size-base * 2.5,
+  2: $font-size-base * 2,
+  3: $font-size-base * 1.75,
+  4: $font-size-base * 1.5,
+  5: $font-size-base * 1.25,
+  6: $font-size-base
+);
 
 $custom-font-sizes: (
   7: $font-size-base * 0.875 ,// 14px
@@ -92,6 +92,13 @@ $spacers: (
   20: $spacer * 5,    // 80
   25: $spacer * 6.25, // 100
   30: $spacer * 7.5   // 120
+);
+
+// letter spacing
+$letter-spacings: (
+    h: 0.05em,
+    p: 0.03em,
+    1: normal
 );
 
 // utitlity map pre defined
