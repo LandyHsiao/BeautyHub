@@ -2,7 +2,7 @@
   <div class="container-md py-2">
     <div class="row">
       <div class="d-flex justify-content-between">
-        <a href="#" class="header__logo"> </a>
+        <a href="./index.html" class="header__logo"> </a>
         <div class="d-flex align-items-center">
           <div class="d-md-block d-none">
             <a href="#" class="d-flex align-items-center">
@@ -49,15 +49,15 @@
       </div>
       <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav me-auto vh-100">
-          <li class="nav-item border-botton">
+          <li class="nav-item border-bottom border-Gray-04">
             <a
               class="nav-link py-5 px-3 text-center nav__list_sm"
               aria-current="page"
-              href="#"
+              href="./index.html"
               >首頁</a
             >
           </li>
-          <li class="nav-item border-botton">
+          <li class="nav-item border-bottom border-Gray-04">
             <a
               class="nav-link py-5 px-3 text-center nav__list_sm"
               aria-current="page"
@@ -65,7 +65,7 @@
               >熱門排行</a
             >
           </li>
-          <li class="nav-item border-botton">
+          <li class="nav-item border-bottom border-Gray-04">
             <a
               class="nav-link py-5 px-3 text-center nav__list_sm"
               aria-current="page"
@@ -73,7 +73,7 @@
               >關於我們</a
             >
           </li>
-          <li class="nav-item border-botton">
+          <li class="nav-item border-bottom border-Gray-04">
             <a
               class="nav-link py-5 px-3 text-center nav__list_sm"
               aria-current="page"
@@ -81,7 +81,7 @@
               >登入/註冊</a
             >
           </li>
-          <li class="nav-item border-botton">
+          <li class="nav-item border-bottom border-Gray-04">
             <a
               class="nav-link py-5 px-3 text-center nav__list_sm"
               aria-current="page"
@@ -95,13 +95,15 @@
         class="d-md-flex justify-content-md-center list-unstyled d-none d-md-block mb-0"
       >
         <li class="me-3">
-          <a href="#" class="text-Gray-01 nav__list py-3 px-6">首頁</a>
+          <!-- 我還在研究怎麼判斷 -->
+          <!-- <%= page === 'index' ? 'text-Gray-01 border-bottom border-Primary-main' : 'text-Primary-main' %> -->
+          <a class="nav__list py-3 px-6" href="./index.html"> 首頁 </a>
         </li>
         <li class="me-3">
-          <a href="#" class="text-Gray-01 nav__list py-3 px-6">熱門排行</a>
+          <a href="#" class="nav__list py-3 px-6">熱門排行</a>
         </li>
         <li>
-          <a href="#" class="text-Gray-01 nav__list py-3 px-6">關於我們</a>
+          <a href="#" class="nav__list py-3 px-6">關於我們</a>
         </li>
       </ul>
     </div>
