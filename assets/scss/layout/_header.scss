@@ -1,0 +1,46 @@
+.header__logo {
+  background-size: contain;
+  background-image: url("../image/Logo-sm.png");
+  width: 85px;
+  height: 36px;
+  @include media-breakpoint-up(md) {
+    background-image: url("../image/Logo.png");
+    width: 134px;
+    height: 56px;
+  }
+}
+.nav__link {
+  background-size: contain;
+  background-image: url("../image/sm-nav-icon.png");
+  width: 20px;
+  height: 20px;
+}
+.icon__group {
+  width: 24px;
+  height: 24px;
+}
+.icon__search {
+  width: 20px;
+  height: 20px;
+}
+.nav__list {
+  /* border-top: 2.5px solid $Background-main; */
+  /* border-bottom: 2.5px solid $Background-main; */
+  &:hover {
+    border-bottom: 2.5px solid $Primary-main;
+    color: $Primary-main;
+  }
+}
+.nav__list_sm {
+  &:hover {
+    background-color: $Primary-light;
+    color: $Primary-main;
+  }
+}
+.search__input {
+  border-radius: 0;
+  border-bottom: 1px solid $gradient-01;
+}
+// .show {
+//   display: block;
+// }
