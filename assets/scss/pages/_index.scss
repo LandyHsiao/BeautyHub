@@ -37,3 +37,58 @@
     font-size: 54px;
   }
 }
+
+.home-best-ranking {
+  .swiper-slide {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  .swiper-button-prev {
+    left: -84px;
+  }
+
+  .swiper-button-next {
+    right: -84px;
+  }
+
+  .product-card__name {
+    margin-bottom: 16px;
+  }
+
+  .product-card__brand {
+    background: #F7EEEA;
+    padding: 8px 24px;
+    font-size: 13px;
+  }
+}
+
+.home-best-ranking__card-area {
+  position: relative;
+}
+
+.btn-swiper-navigate {
+  background-color: $secondary;
+  width: 56px;
+  height: 56px;
+  &::after {
+    font-family: "Bootstrap-icons";
+    content: '';
+    color: $Gray-07;
+    background-size: contain;
+    background-position: center;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.btn-swiper-navigate-prev:after {
+  content: '\F12C';
+}
+
+.btn-swiper-navigate-next:after {
+  content: '\F135';
+}
+

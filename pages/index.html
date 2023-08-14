@@ -4,8 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BeautyHub</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   </head>
   <body>
+    <section class="home-banner">
+
+    </section>
+    <section class="home-best-ranking">
+      <div class="container-md">
+        <h2 class="h6 fs-sm-4 fs-md-3 mb-6 mb-md-12 text-md-center ls-p">熱門排行</h2>
+        <div class="home-best-ranking__card-area ">
+          <div class="swiper-button-prev d-none d-xxl-flex btn-swiper-navigate btn-swiper-navigate-prev" id="home-ranking-swiper-prev"></div>
+          <div class="swiper-button-next d-none d-xxl-flex btn-swiper-navigate btn-swiper-navigate-next" id="home-ranking-swiper-next"></div>
+          <div class="swiper mx-0" id="home-ranking-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="card text-center product-card__card rounded-0" href="#">
+                  <img src="https://fakeimg.pl/250x250/" class="card-img-top product-card__img rounded-0" alt="...">
+                  <div class="card-body product-card__body">
+                    <h5 class="card-title product-card__name">奢華緞面漆光唇釉 1</h5>
+                    <span class="card-text product-card__brand rounded-pill">YSL</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="card text-center product-card__card rounded-0" href="#">
+                  <img src="https://fakeimg.pl/250x250/" class="card-img-top product-card__img rounded-0" alt="...">
+                  <div class="card-body product-card__body">
+                    <h5 class="card-title product-card__name">奢華緞面漆光唇釉 2</h5>
+                    <span class="card-text product-card__brand rounded-pill">YSL</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="card text-center product-card__card rounded-0" href="#">
+                  <img src="https://fakeimg.pl/250x250/" class="card-img-top product-card__img rounded-0" alt="...">
+                  <div class="card-body product-card__body">
+                    <h5 class="card-title product-card__name">奢華緞面漆光唇釉 3</h5>
+                    <span class="card-text product-card__brand rounded-pill">YSL</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="card text-center product-card__card rounded-0" href="#">
+                  <img src="https://fakeimg.pl/250x250/" class="card-img-top product-card__img rounded-0" alt="...">
+                  <div class="card-body product-card__body">
+                    <h5 class="card-title product-card__name">奢華緞面漆光唇釉 4</h5>
+                    <span class="card-text product-card__brand rounded-pill">YSL</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="card text-center product-card__card rounded-0" href="#">
+                  <img src="https://fakeimg.pl/250x250/" class="card-img-top product-card__img rounded-0" alt="...">
+                  <div class="card-body product-card__body">
+                    <h5 class="card-title product-card__name">奢華緞面漆光唇釉 5</h5>
+                    <span class="card-text product-card__brand rounded-pill">YSL</span>
+                  </div>
+                </a>
+              </div>
+          </div>  
+        </div>
+      </div>
+      <div class="text-center"><a href="" class="btn btn-outline-primary">看更多</a></div>
+      </div>
+    </section>
     <section class="home-invite-area py-10 py-md-25">
       <div class="container-md">
         <div class="row">
@@ -78,5 +141,23 @@
     </section>
     <%- include('./layout/footer.ejs'); -%>
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const homeRankingSwiper = new Swiper('#home-ranking-swiper', {
+      slidesPerView: 1.5,
+      spaceBetween: "24px",
+      // rewind: true,
+      navigation: {
+        nextEl: '#home-ranking-swiper-next',
+        prevEl: '#home-ranking-swiper-prev',
+      },
+      breakpoints: {
+        767: {
+          slidesPerView: 3,
+          centeredSlides: false
+        }
+      }
+    })
+    </script>
   </body>
 </html>
