@@ -51,13 +51,13 @@
   --#{$prefix}gradient: none;
 }
 
-@mixin button-size-icon($icon-side, $padding-y, $padding-x, $font-size, $border-radius) {
-  --#{$prefix}btn-padding-y: #{$padding-y};
-  --#{$prefix}btn-padding-x: #{$padding-x};
-  @include rfs($font-size, --#{$prefix}btn-font-size);
-  --#{$prefix}btn-border-radius: #{$border-radius};
+@mixin button-size-icon() {
+  --#{$prefix}btn-padding-y: 1rem !important;
+  --#{$prefix}btn-padding-x: 1rem !important;
+  // @include rfs($font-size, --#{$prefix}btn-font-size);
+  // --#{$prefix}btn-border-radius: #{$border-radius};
   position: relative;
-  @if $icon-side {
+  // @if $icon-side {
     &::after {
       content: "\F285";
       height: $line-height-base * $font-size-base;
@@ -65,5 +65,5 @@
       vertical-align: middle;
       margin-left: 0.5rem;
     }
-  }
+  // }
 }
