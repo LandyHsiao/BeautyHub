@@ -3,94 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- ↓ Must add this when line using jquery ↓ -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"></script>
+    <title>BeautyHub</title>
   </head>
-
   <body>
-    <div class="container">
-      <h1>Just Test Bootstrap 5.3 + Jquery</h1>
-
-      <!-- Test Jquery -->
-      <button id="click">Click me to hide/show the span →</button>
-      <span id="result">this is a span.</span>
-      <span id="remove">I won't appear</span>
-
-      <!-- Test Bootstrap 5.3 -->
-      <div class="text-center text-bg-Primary-light my-4">
-        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <section class="home-invite-area py-10 py-md-25">
+      <div class="container-md">
         <div class="row">
-          <div class="col-md-8">.col-md-8</div>
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
-
-        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-        <div class="row">
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
-
-        <!-- Columns are always 50% wide, on mobile and desktop -->
-        <div class="row">
-          <div class="col-6">.col-6</div>
-          <div class="col-6">.col-6</div>
+          <div class="col-12 col-md-6 ms-md-auto">
+            <div class="home-invite-area__content text-end text-md-center py-md-12">
+              <div class="home-invite-area__text-wrap mb-9 mb-md-15 ls-p">
+                <p class="h5 mb-0 px-4 py-3 mb-md-2 fs-md-4 fs-lg-3">詳細分類好搜索</p>
+                <p class="h5 mb-0 px-4 py-3 mb-md-2 fs-md-4 fs-lg-3">豐富資訊一次瀏覽</p>
+                <p class="h5 mb-0 px-4 py-3 fs-md-4 fs-lg-3">與大家分享你的使用心得</p>
+              </div>
+              <a href="" class="btn btn-primary btn-icon">現在註冊，享受完整功能</a>
+            </div>
+          </div>
         </div>
       </div>
-
-      <button class="btn btn-Primary-main">Test</button>
-      <button class="btn btn-Primary-light">Test</button>
-      <button class="btn btn-Secondary-main">Test</button>
-      <button class="btn btn-Secondary-light">Test</button>
-      <button class="btn btn-Secondary-dark">Test</button>
-      <button class="btn btn-primary">Test</button>
-      <button class="btn btn-secondary">Test</button>
-      <button class="btn btn-light">Test</button>
-      <button class="btn btn-dark">Test</button>
-
-      <table class="table table-Primary-light my-4">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+    </section>
+    <section class="home-recommend py-15 py-md-30">
+    <div class="container-md">
+      <h2 class="h6 fs-sm-4 fs-md-3 mb-6 mb-md-12 text-md-center ls-p">好評推推</h2>
+      <div class="text-center"><a href="" class="btn btn-outline-primary">看更多</a></div>
     </div>
-    
+    </section>
+    <section class="home-award-area">
+      <div class="container-md h-100">
+        <div class="row h-100">
+          <div class="home-award-area__content d-flex text-center pb-10 py-0 py-sm-13 col col-sm-6 flex-sm-column mt-auto mt-sm-0 ms-sm-auto justify-content-around justify-content-sm-start align-items-end align-items-sm-center">
+            <div class="home-award-area__text-wrap text-Secondary-dark mb-sm-9 pt-sm-4 pb-sm-7">
+                <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-12">BEAUTY</div>
+                <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-12">AWARDS</div>
+                <div class="home-award-area__title h3 fw-bold">2023</div>
+            </div>
+            <a href="" class="btn btn-primary align-self-center mt-auto mt-sm-0 btn-short px-md-18">查看全部</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-hot-issue py-15 py-md-30">
+      <div class="container-sm">
+        <h2 class="h6 fs-sm-4 fs-md-3 mb-6 mb-md-12 text-md-center ls-p">HOT ISSUE</h2>
+        <div class="row gy-5 gy-md-0 mb-9 mb-md-10">
+          <div class="col-12 col-md-4">
+            <a class="card d-flex flex-column h-100" href="">
+              <img src="../assets/image/hot-issue-3.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5">
+              <div class="card-body py-2 px-1 d-flex flex-column justify-content-center">
+                <p class="mb-0">清透感光澤底妝技巧！8招打造「無粉感媽生好皮」，底妝無粉感卻光滑通透、還膨潤減齡</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="card d-flex flex-column h-100" href="">
+              <img src="../assets/image/hot-issue-2.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5">
+              <div class="card-body py-2 px-1 d-flex flex-column justify-content-center">
+                <p class="mb-0">2023春夏彩妝趨勢｜光透感底妝、水光暈染唇、清冷淡顏妝容正夯！</p>
+              </div>
+            </a>
+          </div> 
+          <div class="col-12 col-md-4">
+            <a class="card d-flex flex-column h-100" href="">
+              <img src="../assets/image/hot-issue-1.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5">
+              <div class="card-body py-2 px-1 d-flex flex-column justify-content-center">
+                <p class="mb-0">韓星都在畫！韓系微笑唇畫法教學，嘴角微笑線超自然，唇妝絕美乾淨、更減齡顯嫩</p>
+              </div>
+            </a>
+          </div> 
+        </div>
+        <div class="text-center">
+          <a href="" class="btn btn-outline-primary">看更多</a>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer.ejs'); -%>
     <script type="module" src="../main.js"></script>
-
-    <!-- Test Jquery -->
-    <script>
-      $("#remove").remove();
-      $("#click").click(function () {
-        $("#result").slideToggle();
-      });
-    </script>
   </body>
 </html>

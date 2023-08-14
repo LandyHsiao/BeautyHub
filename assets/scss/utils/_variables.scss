@@ -47,17 +47,19 @@ $body-tertiary-bg:          $Background-S2;
 
 // Font
 $font-family-sans-serif: "Noto Sans TC", sans-serif;
-$headings-font-family:  "Cormorant Garamond", "Noto Sans TC", sans-serif;
+$headings-font-family: "Noto Sans TC", sans-serif;
 $display-font-family: "Cormorant Garamond", "Noto Sans TC", sans;
-$line-height-base: 1.2;
-$line-height-lg: 1.5;
-$line-height-sm: 1;
+// $line-height-base: 1.2;
+// $line-height-lg: 1.5;
+$line-height-sm: 1.2;
+$input-btn-line-height: $line-height-sm;
 
 // border radius
 $border-radius: 0;
 $btn-border-radius: 0;
 $btn-border-radius-sm: 0;
 $btn-border-radius-lg: 0;
+$card-border-width: 0;
 
 // paddings
 $input-btn-padding-y: 1rem;

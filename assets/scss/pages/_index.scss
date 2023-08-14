@@ -1,0 +1,39 @@
+.home-invite-area {
+  background-image: url("../image/invite-banner-bg-blur-sm.png");
+  background-size: cover;
+  background-position: center;
+  @include media-breakpoint-up(md) {
+    background-image: url("../image/invite-banner-bg-blur.png");
+  }
+}
+
+.home-invite-area__content {
+  @include media-breakpoint-up(md) {
+    background-color: $Gray-07;
+  }
+}
+
+.home-award-area {
+  background-image: url("../image/award-banner-bg-01-sm.png");
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 375 / 380;
+  @include media-breakpoint-up(sm) {
+    background-image: url("../image/award-banner-bg-01.png");
+    aspect-ratio: initial;
+  }
+}
+
+.home-award-area__content {
+  height: 50%;
+  @include media-breakpoint-up(sm) {
+    height: initial;
+  }
+}
+
+.home-award-area__title {
+  @include media-breakpoint-up(sm) {
+    line-height: 48px;
+    font-size: 54px;
+  }
+}
