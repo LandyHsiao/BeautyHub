@@ -44,7 +44,7 @@ export default defineConfig({
   ],
   server: {
     // 啟動 server 時預設開啟的頁面
-    open: "pages/footer-test.html",
+    open: "pages/member_login.html",
   },
   build: {
     rollupOptions: {
