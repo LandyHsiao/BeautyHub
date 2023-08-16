@@ -95,15 +95,13 @@
         class="d-md-flex justify-content-md-center list-unstyled d-none d-md-block mb-0"
       >
         <li class="me-3">
-          <!-- 我還在研究怎麼判斷 -->
-          <!-- 原來判斷不能先放在這邊註解 -->
-          <a class="nav__list py-3 px-6 d-md-block" href="./index.html"> 首頁 </a>
+          <a class="py-3 px-6 d-md-block <%= page === 'index' ? 'text-primary border-bottom border-2 border-primary nav__list--bottom' : 'text-Gray-01' %>" href="./index.html"> 首頁 </a>
         </li>
         <li class="me-3">
-          <a href="category_top_ranking.html" class="nav__list py-3 px-6 d-md-block">熱門排行</a>
+          <a class="py-3 px-6 d-md-block <%= page === 'category_top_ranking' ? 'text-primary border-bottom border-2 border-primary nav__list--bottom' : 'text-Gray-01' %>" href="category_top_ranking.html">熱門排行</a>
         </li>
         <li>
-          <a href="#" class="nav__list py-3 px-6 d-md-block">關於我們</a>
+          <a class="py-3 px-6 d-md-block <%= page === 'ooo' ? 'text-primary border-bottom border-2 border-primary nav__list--bottom' : 'text-Gray-01' %>" href="#">關於我們</a>
         </li>
       </ul>
     </div>
