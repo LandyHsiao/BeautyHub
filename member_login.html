@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BeautyHub</title>
+    <title>BeautyHub 會員登入</title>
     <script type="module" crossorigin src="/beauty-hub/assets/member_login-67efef35.js"></script>
     <link rel="stylesheet" href="/beauty-hub/assets/member_login-0834d186.css">
   </head>
@@ -127,76 +127,50 @@
   // $(".icon__search").click(function () {
   //   $(".search__input").toggleclass(".show");
   // });
-</script>    <section class="home-invite-area py-10 py-md-25">
-      <div class="container-md">
-        <div class="row">
-          <div class="col-12 col-md-6 ms-md-auto">
-            <div class="home-invite-area__content text-end text-md-center py-md-12">
-              <div class="home-invite-area__text-wrap mb-9 mb-md-15 ls-p">
-                <p class="h5 mb-0 px-4 py-3 mb-md-2 fs-md-4 fs-lg-3">詳細分類好搜索</p>
-                <p class="h5 mb-0 px-4 py-3 mb-md-2 fs-md-4 fs-lg-3">豐富資訊一次瀏覽</p>
-                <p class="h5 mb-0 px-4 py-3 fs-md-4 fs-lg-3">與大家分享你的使用心得</p>
-              </div>
-              <a href="" class="btn btn-primary btn-icon">現在註冊，享受完整功能</a>
+</script>
+        <div class="container-md py-md-4 py-6">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item fs-md-6 fs-8"><a href="index.html" >首頁</a></li>
+                  <li class="breadcrumb-item text-Gray-02 fs-md-6 fs-8" aria-current="page" class="text-Gray-02">會員登入</li>
+                </ol>
+            </nav>
+            <h1 class=" text-md-center text-start py-md-12 py-6 fs-md-3 fs-5 m-0">
+                登入會員
+            </h1>
+            <div class="member__login row flex-md-row-reverse flex-column justify-content-center align-items-center py-md-12 py-105">
+                <div class="member__login--account col-md-6 col-12 mb-md-0 mb-8">
+                    <!-- 這裡的flex-grow-1 為啥沒有用？ -->
+                    <form action="" method="post" class="flex-grow-1">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="電子信箱">
+                            <label for="floatingInput">電子信箱</label>
+                          </div>
+                          <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="密碼">
+                            <label for="floatingPassword">密碼</label>
+                          </div>
+                          <div class="d-flex flex-lg-row flex-column  justify-content-around mt-md-6 mt-5">
+                              <bottom class="btn btn-outline-Primary-main mb-lg-0 mb-3 py-md-4 px-md-18 py-2 px-8 ">登入會員</bottom>
+                              <bottom class="btn btn-Primary-main py-md-4 px-md-18 py-2 px-8 ">註冊會員</bottom>
+                          </div>
+                    </form>
+                </div>
+                <hr class="d-md-none d-block">
+                <div class="member__login--method col-md-6 col-12 list-unstyled text-center">
+                        <a href="#" class="mb-md-8 mb-5 w-50 btn btn-outline-Primary-main text-center px-0">
+                            FaceBook
+                        </a>
+                        <a href="#" class="mb-md-8 mb-5 w-50 btn btn-outline-Primary-main text-center px-0">
+                            Google
+                        </a>
+                        <a href="#"  class="w-50 btn btn-outline-Primary-main text-center px-0">
+                            Apple
+                        </a>
+                </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="home-recommend py-15 py-md-30">
-    <div class="container-md">
-      <h2 class="h6 fs-sm-4 fs-md-3 mb-6 mb-md-12 text-md-center ls-p">好評推推</h2>
-      <div class="text-center"><a href="" class="btn btn-outline-primary">看更多</a></div>
-    </div>
-    </section>
-    <section class="home-award-area">
-      <div class="container-md h-100">
-        <div class="row h-100">
-          <div class="home-award-area__content d-flex text-center pb-10 py-0 py-sm-13 col col-sm-6 flex-sm-column mt-auto mt-sm-0 ms-sm-auto justify-content-around justify-content-sm-start align-items-end align-items-sm-center">
-            <div class="home-award-area__text-wrap text-Secondary-dark mb-sm-9 pt-sm-4 pb-sm-7">
-                <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-12">BEAUTY</div>
-                <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-12">AWARDS</div>
-                <div class="home-award-area__title h3 fw-bold">2023</div>
-            </div>
-            <a href="" class="btn btn-primary align-self-center mt-auto mt-sm-0 btn-short px-md-18">查看全部</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="home-hot-issue py-15 py-md-30">
-      <div class="container-sm">
-        <h2 class="h6 fs-sm-4 fs-md-3 mb-6 mb-md-12 text-md-center ls-p">HOT ISSUE</h2>
-        <div class="row gy-5 gy-md-0 mb-9 mb-md-10">
-          <div class="col-12 col-md-4">
-            <a class="card d-flex flex-column h-100" href="">
-              <img src="/beauty-hub/assets/hot-issue-3-385f6e0e.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5">
-              <div class="card-body py-2 px-1 d-flex flex-column justify-content-center">
-                <p class="mb-0">清透感光澤底妝技巧！8招打造「無粉感媽生好皮」，底妝無粉感卻光滑通透、還膨潤減齡</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-md-4">
-            <a class="card d-flex flex-column h-100" href="">
-              <img src="/beauty-hub/assets/hot-issue-2-c8ce1dc0.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5">
-              <div class="card-body py-2 px-1 d-flex flex-column justify-content-center">
-                <p class="mb-0">2023春夏彩妝趨勢｜光透感底妝、水光暈染唇、清冷淡顏妝容正夯！</p>
-              </div>
-            </a>
-          </div> 
-          <div class="col-12 col-md-4">
-            <a class="card d-flex flex-column h-100" href="">
-              <img src="/beauty-hub/assets/hot-issue-1-ee9cf9d2.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5">
-              <div class="card-body py-2 px-1 d-flex flex-column justify-content-center">
-                <p class="mb-0">韓星都在畫！韓系微笑唇畫法教學，嘴角微笑線超自然，唇妝絕美乾淨、更減齡顯嫩</p>
-              </div>
-            </a>
-          </div> 
-        </div>
-        <div class="text-center">
-          <a href="" class="btn btn-outline-primary">看更多</a>
-        </div>
-      </div>
-    </section>
+
     <footer class="footer pb-9 pb-md-10 pt-7 pt-md-12 bg-Secondary-light rounded-tr-30">
   <div class="footer__logo-area mb-9 mb-md-4">
     <div class="footer__logo m-auto ms-md-auto me-md-30"></div>
