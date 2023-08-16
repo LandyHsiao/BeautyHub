@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeautyHub 熱門排行</title>
+  </head>
+  <body>
+    <%- include('./layout/header.ejs'); -%>
+    <div class="container-md">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item fs-md-6 fs-8"><a href="index.html" >首頁</a></li>
+              <li class="breadcrumb-item text-Gray-02 fs-md-6 fs-8" aria-current="page">熱門排行</li>
+            </ol>
+            <h1 class=" text-md-center text-start py-md-12 py-6 fs-md-3 fs-5 m-0">
+                熱門排行
+            </h1>
+            <!-- 先跳過 -->
+            <div class="row flex-column ">
+                <ul class="list-unstyled">
+                    <li class="border border-1 border-Secondary-main mb-4 text-Gray-01">
+                        <div class="card position-relative p-md-5 p-3 col-12 ">
+                            <div class="card-header bg-Gray-05 p-3 position-absolute top-0 start-0">01</div>
+                            <div class="card-body d-flex flex-md-row flex-column text-center text-md-start">
+                                <img src="https://fakeimg.pl/250x250/eee/" class="img-fuild me-md-4 mb-4">
+                              <div class="card-title">
+                                  <h2 class="m-0 fs-md-4 fs-6">美術課三色修容粉餅</h2>
+                                  <p class="card-text m-0 fs-md-6 fs-8">too cool for school</p>
+                              </div>
+                            </div>
+                          </div>
+                    </li>
+                    <li class="border border-1 border-Secondary-main mb-4 text-Gray-01">
+                        <div class="card position-relative p-md-5 p-3 col-12 ">
+                            <div class="card-header bg-Gray-05 p-3 position-absolute top-0 end-0">02</div>
+                            <div class="card-body d-flex flex-md-row-reverse flex-column text-center text-md-start">
+                                <img src="https://fakeimg.pl/250x250/eee/" class="img-fuild ms-md-4 mb-4">
+                              <div class="card-title">
+                                  <h2 class="m-0 fs-md-4 fs-6">美術課三色修容粉餅</h2>
+                                  <p class="card-text m-0 fs-md-6 fs-8">too cool for school</p>
+                              </div>
+                            </div>
+                          </div>
+                    </li>
+                    <li class="border border-1 border-Secondary-main mb-4 text-Gray-01">
+                        <div class="card position-relative p-md-5 p-3 col-12 ">
+                            <div class="card-header bg-Gray-05 p-3 position-absolute top-0 start-0">03</div>
+                            <div class="card-body d-flex flex-md-row flex-column text-center text-md-start">
+                                <img src="https://fakeimg.pl/250x250/eee/" class="img-fuild me-md-4 mb-4">
+                              <div class="card-title">
+                                  <h2 class="m-0 fs-md-4 fs-6">美術課三色修容粉餅</h2>
+                                  <p class="card-text m-0 fs-md-6 fs-8">too cool for school</p>
+                              </div>
+                            </div>
+                          </div>
+                    </li>
+                    <li class="border border-1 border-Secondary-main ">
+                        <div class="card position-relative p-md-5 p-3 col-12 ">
+                            <div class="card-header bg-Gray-05 p-3 position-absolute top-0 end-0">04</div>
+                            <div class="card-body d-flex flex-md-row-reverse flex-column text-center text-md-start">
+                                <img src="https://fakeimg.pl/250x250/eee/" class="img-fuild ms-md-4 mb-4">
+                              <div class="card-title">
+                                  <h2 class="m-0 fs-md-4 fs-6">美術課三色修容粉餅</h2>
+                                  <p class="card-text m-0 fs-md-6 fs-8">too cool for school</p>
+                              </div>
+                            </div>
+                          </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <%- include('./layout/footer.ejs'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
