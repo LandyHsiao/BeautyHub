@@ -1,0 +1,72 @@
+// * {
+//     outline: 1px solid red;
+// }
+
+.w-152 {
+    width: 152px;
+}
+
+.ff-cg {
+    font-family: $display-font-family;
+}
+
+.ff-nst {
+    font-family: $font-family-sans-serif;
+}
+
+.ov-h {
+    overflow: hidden;
+}
+
+.topRanking-item--block {
+    max-width: 217px;
+    min-height: 174px;
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+        max-width: 376px;
+        max-height: 341px;
+    }
+}
+
+.topRanking-item--img {
+    max-width: 217px;
+    min-height: 174px;
+    object-fit: cover;
+    transition: all 1.2s;
+
+    @include media-breakpoint-up(md) {
+        max-width: 376px;
+        max-height: 341px;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}
+
+.topRanking-item--bg-01 {
+    background-image: url(../image/hot-bg-01.png);
+    background-position: center;
+    background-size: cover;
+    @include media-breakpoint-up(md)
+}
+
+.topRanking-item--bg-02 {
+    background-image: url(../image/hot-bg-02.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.topRanking-item--bg-03 {
+    background-image: url(../image/hot-bg-03.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.topRanking-item--bg-04 {
+    background-image: url(../image/hot-bg-04.png);
+    background-position: center;
+    background-size: cover;
+}
