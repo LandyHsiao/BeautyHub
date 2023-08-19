@@ -1,5 +1,5 @@
 // generate letter-spacing utility classes with RWD
-// EX: lp-h, lp-md-p
+// EX: ls-h, ls-md-p
 @each $name, $value in $letter-spacings {
   .ls-#{$name} {
       letter-spacing: $value;
