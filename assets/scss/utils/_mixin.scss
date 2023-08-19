@@ -67,3 +67,14 @@
     }
   // }
 }
+
+@mixin home-ranking-navigation-offset($offset) {
+  display: flex;
+  width: $offset;
+  height: $offset;
+  &:after {
+    width: $offset;
+    height: $offset;
+    line-height: $offset;
+  }
+}
