@@ -23,14 +23,15 @@
   width: 20px;
   height: 20px;
 }
-.nav__list {
-  border-top: 2.5px solid $Background-main;
-  border-bottom: 2.5px solid $Background-main;
-  &:hover {
-    border-bottom: 2.5px solid $Primary-main;
-    color: $Primary-main;
-  }
-}
+// .nav__list {
+//   border-top: 2.5px solid $Background-main;
+//   border-bottom: 2.5px solid $Background-main;
+//   &:hover {
+//     border-bottom: 2.5px solid $Primary-main;
+//     color: $Primary-main;
+//   }
+// }
+
 .nav__list_sm {
   &:hover {
     background-color: $Primary-light;
