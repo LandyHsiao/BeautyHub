@@ -9,49 +9,57 @@
   }
 }
 
+.product-card__card {
+  height: 100%;
+}
+
 .product-card__img-wrap {
   overflow: hidden;
   width: 100%;
-  min-height: 174px;
-  @include media-breakpoint-up(md) {
-    max-height: 341px;
-  }
-  
+  aspect-ratio: 1.2;
+  height: auto;
 }
 
 .product-card__img {
   max-width: 100%;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   object-position: center;
+  aspect-ratio: 1.2;
   transition: all 1.2s;
   &:hover, &:focus {
     transform: scale(1.1);
   }
 }
 
-.card-shadow- {
-  &1 {
-    @include ranking-card-shadow(#B94D2E);
-  }
-  &2 {
-    @include ranking-card-shadow(#EBC8A2);
-  }
-  &3 {
-    @include ranking-card-shadow(#AD8D57);
-  }
+.product-card__label {
+  width: 50px;
+  height: 50px;
 }
 
-.test-shadow {
-  box-shadow: 0px 60px 60px 20px;
-  color: #B94D2E;
+.card-shadow- {
+  &1 {
+    @include ranking-card-shadow(rgba(#B94D2E, .2));
+  }
+  &2 {
+    @include ranking-card-shadow(rgba(#EBC8A2, .7));
+  }
+  &3 {
+    @include ranking-card-shadow(rgba(#AD8D57, .5));
+  }
 }
 
 .home-best-ranking {
+  .swiper-wrapper {
+    align-items: stretch;
+  }
   .swiper-slide {
     text-align: center;
     color: #fff;
-    font-weight: 700;
+    // font-weight: 700;
     font-size: 36px;
+    height: auto;
   }
 
   .swiper-button-prev {
