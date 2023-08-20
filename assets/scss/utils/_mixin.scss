@@ -78,3 +78,20 @@
     line-height: $offset;
   }
 }
+
+@mixin ranking-card-shadow($color) {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+    box-shadow: 0px 0px 50px 20px;
+    width: 40%;
+    height: auto;
+    bottom: 5%;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 0;
+    color: $color;
+  }
+}
