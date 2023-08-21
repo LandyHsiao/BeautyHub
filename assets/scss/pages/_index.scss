@@ -54,28 +54,15 @@
   }
 }
 
-.home-banner__search-form, .home-banner__search-group {
+.home-banner__search-form, .home-banner__search-group, .home-banner__sm-search-form, .home-banner__sm-search-group {
   border-radius: 4px;
 }
 
-.home-banner__search-icon {
+.home-banner__search-icon, .home-banner__sm-search-icon {
   vertical-align: middle;
   width: 18px;
   height: 18px;
 }
-
-// .home-banner__search-input {
-//   &:after {
-//     position: absolute;
-//     top: 16px;
-//     left: 12px;
-//     width: 18px;
-//     height: 18px;
-//     background-image: url("../image/search-icon.png");
-//     background-size: cover;
-//     background-position: center;
-//   }
-// }
 
 /* Section .home-best-ranking */
 .home-ranking-tab {
