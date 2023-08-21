@@ -57,6 +57,7 @@ $input-btn-line-height: $line-height-sm;
 // border radius
 $border-radius: 0;
 $card-border-width: 0;
+$input-border-radius: 4px;
 
 // paddings
 $input-btn-padding-y: 1rem;
@@ -73,3 +74,12 @@ $btn-active-bg-shade-amount:      0%;
 $btn-active-bg-tint-amount:       0%;
 $btn-active-border-shade-amount:  0%;
 $btn-active-border-tint-amount:   0%;
+
+// form control
+$input-focus-box-shadow: none;
+$input-placeholder-color: $Gray-02;
+$input-bg: $Gray-06;
+
+// input-group
+$input-group-addon-bg: $Gray-06;
+$input-group-addon-border-color: $Gray-04;
