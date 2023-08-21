@@ -1,3 +1,82 @@
+/* Section .home-banner */
+.home-banner {
+  .carousel-indicators [data-bs-target] {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-clip: initial;
+    border-width: 0;
+    background-color: $Gray-07;
+    &.active {
+      background-color: $Gray-02;
+      opacity: 1;
+    }
+    @include media-breakpoint-up(md) {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+    }
+  }
+  .carousel-item {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.home-banner__carousel- {
+  &1 {
+    background-image: url("../image/home-banner-1-sm.png");
+    @include media-breakpoint-up(md) {
+      background-image: url("../image/home-banner-1.png");
+    }
+  }
+  &2 {
+    background-image: url("../image/home-banner-2-sm.png");
+    @include media-breakpoint-up(md) {
+      background-image: url("../image/home-banner-2.png");
+    }
+  }
+  &3 {
+    background-image: url("../image/home-banner-3-sm.png");
+    @include media-breakpoint-up(md) {
+      background-image: url("../image/home-banner-3.png");
+    }
+  }
+}
+
+.home-banner__subtitle  {
+  @include media-breakpoint-up(md) {
+    font-size: 44px;
+  }
+}
+
+.home-banner__search-form, .home-banner__search-group {
+  border-radius: 4px;
+}
+
+.home-banner__search-icon {
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+}
+
+// .home-banner__search-input {
+//   &:after {
+//     position: absolute;
+//     top: 16px;
+//     left: 12px;
+//     width: 18px;
+//     height: 18px;
+//     background-image: url("../image/search-icon.png");
+//     background-size: cover;
+//     background-position: center;
+//   }
+// }
+
 /* Section .home-best-ranking */
 .home-ranking-tab {
   max-width: 999px;
@@ -46,7 +125,7 @@
     @include ranking-card-shadow(rgba(#EBC8A2, .7));
   }
   &3 {
-    @include ranking-card-shadow(rgba(#AD8D57, .5));
+    @include ranking-card-shadow(rgba(#AD8D57, .3));
   }
 }
 
