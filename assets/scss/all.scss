@@ -25,8 +25,8 @@
 
 
 // 8. Add additional custom code here
-@import "base/base";  // common setting for whole site
-@import "base/font";  // common web font import
+@import "base/base"; // common setting for whole site
+@import "base/font"; // common web font import
 @import "/node_modules/bootstrap-icons/font/bootstrap-icons.css"; // bootstrap icon fonts
 
 @import "utils/mixin";
@@ -42,3 +42,4 @@
 // import pages stylesheet from here
 @import "pages/index";
 @import "pages/category_top_ranking";
+@import "pages/brand";
