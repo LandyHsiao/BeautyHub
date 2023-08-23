@@ -42,3 +42,22 @@
     color: $Primary-main;
   }
 }
+
+.w__select {
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+
+    >.form-control,
+    >.form-select,
+    >.form-floating {
+      position: relative;
+      flex: 1 1 auto;
+      width: 65px; //ann 1%;
+      min-width: 0;
+    }
+  }
+}
