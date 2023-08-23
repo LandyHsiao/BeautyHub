@@ -1,23 +1,23 @@
 // Custom colors
-$Primary-main: #BD5A42;
-$Primary-light: #ECD5B6;
-$Secondary-main: #C57E7B;
-$Secondary-light: #EDD7D5;
-$Secondary-dark: #7F5351;
-$Background-main: #FBF8F7;
-$Background-S1: #F1F0ED;
-$Background-S2: #F7EEEA;
-$Gray-01: #2C2C2C;
+$Primary-main: #bd5a42;
+$Primary-light: #ecd5b6;
+$Secondary-main: #c57e7b;
+$Secondary-light: #edd7d5;
+$Secondary-dark: #7f5351;
+$Background-main: #fbf8f7;
+$Background-S1: #f1f0ed;
+$Background-S2: #f7eeea;
+$Gray-01: #2c2c2c;
 $Gray-02: #727171;
 $Gray-03: #979797;
-$Gray-04: #D0D0D0;
-$Gray-05: #EFEEEA;
-$Gray-06: #FBF8F7;
-$Gray-07: #FBFBFB;
+$Gray-04: #d0d0d0;
+$Gray-05: #efeeea;
+$Gray-06: #fbf8f7;
+$Gray-07: #fbfbfb;
 
-$gradient-01: #B94D2E;
-$gradient-02: #EBC8A2;
-$gradient-03: #AD8D57;
+$gradient-01: #b94d2e;
+$gradient-02: #ebc8a2;
+$gradient-03: #ad8d57;
 
 // Overrides BS5 default colors
 $gray-100: $Gray-07;
@@ -30,20 +30,20 @@ $gray-700: $Gray-02;
 $gray-800: $Gray-01;
 $gray-900: $Gray-01;
 
-$primary:       $Primary-main;
-$secondary:     $Secondary-main; 
+$primary: $Primary-main;
+$secondary: $Secondary-main;
 // $success:       $green;
 // $info:          $cyan;
 // $warning:       $yellow;
-// $danger:        $red; 
+// $danger:        $red;
 // $light:         $gray-100;
 // $dark:          $gray-900;
-$body-color: #3D3D3D;
+$body-color: #3d3d3d;
 $body-bg: $Background-main;
-$body-secondary-color:      #3D3D3D;
-$body-secondary-bg:         $Background-S1;
-$body-tertiary-color:       #3D3D3D;
-$body-tertiary-bg:          $Background-S2;
+$body-secondary-color: #3d3d3d;
+$body-secondary-bg: $Background-S1;
+$body-tertiary-color: #3d3d3d;
+$body-tertiary-bg: $Background-S2;
 
 // Font
 $font-family-sans-serif: "Noto Sans TC", sans-serif;
@@ -62,9 +62,11 @@ $input-border-radius: 4px;
 // paddings
 $input-btn-padding-y: 1rem;
 $input-btn-padding-x: 4.5rem;
+$input-padding-y: 1rem;
+$input-padding-x: 0.75rem;
 
 // others
-$enable-rfs:  false;
+$enable-rfs: false;
 
 // button
 $btn-border-radius: 0;
@@ -83,3 +85,7 @@ $input-bg: $Gray-06;
 // input-group
 $input-group-addon-bg: $Gray-06;
 $input-group-addon-border-color: $Gray-04;
+
+//select
+$form-select-font-family: $font-family-sans-serif;
+$form-select-border-radius-sm: 0;

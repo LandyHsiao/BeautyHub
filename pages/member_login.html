@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeautyHub 會員登入</title>
+</head>
+
+<body>
+  <%- include('./layout/header.ejs',{page: "member_login" }); -%>
+
+    <div class="container-md py-md-4 py-6">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item fs-md-6 fs-8"><a href="index.html">首頁</a></li>
+          <li class="breadcrumb-item text-Gray-02 fs-md-6 fs-8" aria-current="page" class="text-Gray-02">會員登入</li>
+        </ol>
+      </nav>
+      <h1 class=" text-md-center text-start py-md-12 py-6 fs-md-3 fs-5 m-0">
+        登入會員
+      </h1>
+      <div
+        class="member__login row flex-md-row-reverse flex-column justify-content-center align-items-center py-md-12 py-105">
+        <div class="member__login--account col-md-6 col-12 mb-md-0 mb-8">
+          <!-- 這裡的flex-grow-1 為啥沒有用？ -->
+          <form action="" method="post" class="flex-grow-1">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control border border-1 border-Gray-04" id="floatingInput"
+                placeholder="電子信箱">
+              <label for="floatingInput">電子信箱</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control border border-1 border-Gray-04" id="floatingPassword"
+                placeholder="密碼">
+              <label for="floatingPassword">密碼</label>
+            </div>
+            <div class="d-flex flex-lg-row flex-column  justify-content-around mt-md-6 mt-5">
+              <bottom class="btn btn-primary  mb-lg-0 mb-3 py-md-4 px-md-18 py-2 px-8 ">登入會員</bottom>
+              <bottom class="btn btn-outline-primary py-md-4 px-md-18 py-2 px-8 ">註冊會員</bottom>
+            </div>
+          </form>
+        </div>
+        <hr class="d-md-none d-block">
+        <div class="member__login--method col-md-6 col-12 list-unstyled text-center">
+          <a href="#" class="mb-md-8 mb-5 w-50 btn btn-outline-primary text-center px-0">
+            FaceBook
+          </a>
+          <a href="#" class="mb-md-8 mb-5 w-50 btn btn-outline-primary text-center px-0">
+            Google
+          </a>
+          <a href="#" class="w-50 btn btn-outline-primary text-center px-0">
+            Apple
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer.ejs'); -%>
+      <%- include('./layout/header_search_jq.ejs'); -%>
+        <script type="module" src="../main.js"></script>
+
+</body>
+
+</html>

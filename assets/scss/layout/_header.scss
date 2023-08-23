@@ -1,0 +1,82 @@
+.header__logo {
+  background-size: contain;
+  background-image: url("../image/Logo-sm.png");
+  width: 85px;
+  height: 36px;
+
+  @include media-breakpoint-up(md) {
+    background-image: url("../image/Logo.png");
+    width: 134px;
+    height: 56px;
+  }
+}
+
+
+.nav__link {
+  background-size: contain;
+  background-image: url("../image/sm-nav-icon.png");
+  width: 20px;
+  height: 20px;
+}
+
+.icon__group {
+  width: 24px;
+  height: 24px;
+}
+
+.icon__search {
+  width: 20px;
+  height: 20px;
+}
+
+.nav__list {
+  &:hover {
+    border-bottom: 2px solid $Primary-main;
+    color: $primary !important;
+  }
+}
+
+.nav__list_sm {
+  &:hover {
+    background-color: $Primary-light;
+    color: $Primary-main;
+  }
+}
+
+.w__select {
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+
+    >.form-control,
+    >.form-select,
+    >.form-floating {
+      position: relative;
+      flex: 1 1 auto;
+      width: 65px; //ann 1%;
+      min-width: 0;
+    }
+  }
+}
+
+.w__select-md {
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+
+    >.form-control,
+    >.form-select,
+    >.form-floating {
+      position: relative;
+      flex: 1 1 auto;
+      width: 1px; //ann 1%;
+      min-width: 0;
+    }
+  }
+}

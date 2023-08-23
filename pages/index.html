@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   </head>
   <body>
+    <%- include('./layout/header.ejs',{page: "index" }); -%>
     <section class="home-banner">
       <div id="home-banner-carousel" class="home-banner__carousel carousel slide mb-6 mb-md-0" data-bs-ride="carousel" data-bs-touch="true" data-bs-pause="hover">
         <div class="carousel-indicators mb-2 mb-md-9">
@@ -576,11 +577,12 @@
     <section class="home-award-area">
       <div class="container-sm h-100">
         <div class="row h-100">
-          <div class="home-award-area__content d-flex text-center pb-10 py-0 py-sm-13 col col-sm-6 flex-sm-column mt-auto mt-sm-0 ms-sm-auto justify-content-around justify-content-sm-start align-items-end align-items-sm-center">
+          <div
+            class="home-award-area__content d-flex text-center pb-10 py-0 py-sm-13 col col-sm-6 flex-sm-column mt-auto mt-sm-0 ms-sm-auto justify-content-around justify-content-sm-start align-items-end align-items-sm-center">
             <div class="home-award-area__text-wrap text-Secondary-dark mb-sm-9 pt-sm-4 pb-sm-7">
-                <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-12">BEAUTY</div>
-                <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-12">AWARDS</div>
-                <div class="home-award-area__title h3 fw-bold">2023</div>
+              <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-12">BEAUTY</div>
+              <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-12">AWARDS</div>
+              <div class="home-award-area__title h3 fw-bold">2023</div>
             </div>
             <a href="" class="btn btn-primary align-self-center mt-auto mt-sm-0 btn-short px-md-18">查看全部</a>
           </div>
@@ -606,7 +608,7 @@
                 <p class="mb-0">2023春夏彩妝趨勢｜光透感底妝、水光暈染唇、清冷淡顏妝容正夯！</p>
               </div>
             </a>
-          </div> 
+          </div>
           <div class="col-12 col-md-4">
             <a class="card d-flex flex-column h-100" href="">
               <img src="../assets/image/hot-issue-1.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5">
@@ -614,7 +616,7 @@
                 <p class="mb-0">韓星都在畫！韓系微笑唇畫法教學，嘴角微笑線超自然，唇妝絕美乾淨、更減齡顯嫩</p>
               </div>
             </a>
-          </div> 
+          </div>
         </div>
         <div class="text-center">
           <a href="" class="btn btn-outline-primary">看更多</a>
@@ -623,8 +625,9 @@
     </section>
     <%- include('./layout/footer.ejs'); -%>
     <script type="module" src="../main.js"></script>
+    <%- include('./layout/header_search_jq.ejs'); -%>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
     <script>
       const homeRankingSwiper_1 = new Swiper('#home-ranking-swiper-1', {
         slidesPerView: 1.5,
