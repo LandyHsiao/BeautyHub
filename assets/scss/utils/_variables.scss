@@ -79,3 +79,9 @@ $btn-active-border-tint-amount: 0%;
 //select
 $form-select-font-family: $font-family-sans-serif;
 $form-select-border-radius-sm: 0;
+
+.input-group {
+    >.form-select {
+        width: 65px !important;
+    }
+}
