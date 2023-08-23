@@ -11,6 +11,20 @@
 <body>
     <%- include('./layout/header.ejs',{page: "search" }); -%>
         <div class="container ">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item test-Gray-01 fs-md-6 fs-8"><a href="index.html">首頁</a></li>
+                    <li class="breadcrumb-item text-Gray-02 fs-md-6 fs-8 ff-cg" aria-current="page">熱門排行</li>
+                </ol>
+                <h1
+                    class=" text-md-center text-start test-Gray-01 py-md-12 py-6 ff-cg fs-md-3 fs-5 m-0 fw-md-bolder fw-bold lh-sm">
+                    熱門排行
+                </h1>
+                <div class="d-flex justify-content-center mb-3">
+                    <span
+                        class="text-center text-Gray-02 py-4 px-6 d-line-block border-bottom border-2 border-primary ff-nst fw-medium lh-sm w-152">保養品</span>
+                </div>
+            </nav>
             <div class="row">
                 <div class="col-md-4">
                     <div class="border border-1 border-primary py-md-9 px-md-6">
@@ -18,7 +32,7 @@
                             <h1 class="test-Gray-01 py-md-12 py-6 ff-cg fs-md-3 fs-5 m-0 fw-md-bolder fw-bold lh-sm">
                                 搜尋
                             </h1>
-                            <div class="input-group">
+                            <div class="input-group mb-3">
                                 <select class="form-select form-select-sm p-0 py-1 border-0">
                                     <option selected>品牌</option>
                                     <option value="1">產品</option>
@@ -27,6 +41,9 @@
                                 <input type="text" class="form-control py-1 border-0 border-bottom border-primary w-25"
                                     aria-label="Text input dropdown button">
                             </div>
+                            <hr class="text-primary mb-3">
+                            <h2 class="test-Gray-01 py-md-12 py-6 ff-cg fs-md-3 fs-5 m-0 fw-md-bolder fw-bold lh-sm">篩選
+                            </h2>
                         </form>
                     </div>
                 </div>
