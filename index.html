@@ -5,11 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BeautyHub</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <script type="module" crossorigin src="/beauty-hub/assets/index-fb978855.js"></script>
-    <link rel="stylesheet" href="/beauty-hub/assets/index-64d084d4.css">
+    <script type="module" crossorigin src="/beauty-hub/assets/member_login-aef29918.js"></script>
+    <link rel="stylesheet" href="/beauty-hub/assets/member_login-e207413e.css">
   </head>
   <body>
-    <section class="home-banner">
+    <header>
+  <div class="container-md py-2">
+    <div class="row">
+      <div class="d-flex justify-content-between">
+        <a href="./index.html" class="header__logo"> </a>
+        <div class="d-flex align-items-center">
+          <div class="d-md-block d-none">
+            <a href="member_login.html" class="d-flex align-items-center">
+              <p class="text-Gray-01 m-0 me-1">註冊/登入</p>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIuSURBVHgB7VY5TsNAFP3OIlEkkpukdrooi2Q6Opwj5ARASQU3AI7ACQgdJZwAcwKMsnZMncpISZWN96NxZEVO8ifQJU8aeTb/efO3+URHHDos2gOVSuUylUpdoOvpKX8+nz/3er0WGcKYQL1ef1osFpdJa5hvdbvdKzJA2mRzrVa7w+c2NuWjKTSHB5ZlucVi0RoOh75QpFwDruva0+n0G10bN1Wz2awxGAwUr5XLZSeTyXzyGlqIfikIglAiN0VC4HBXH8B4jA5n6P6jHtp6rwhiAlCvE/WhgTBhXUV9aMem/yYAoUHssPP1dUTBai6dTovUv5RFBqhWq98xTdyPRqOl2vP5/B20snRO9g9EQkkq04gAosDD533bHmiq2e/3X0kIozBEeKlCofADLZxheLK2HMIM1zj8hQywVybksEMm9GK+8DUej1tKKbHtj4hgbALHcWx4vafDLor3ECb5aLfbYuczJsAH53K5G9j9FqGWmGg4GfGD1Ol0HoRiZQTY6bLZ7DuEO5L9TGQymTTi6XoTdmbChMPZ0x+Q70u4qcUN5jjlOU5CvIH38j/87y75OzWA5MOvXPS4+Mh+zU3hpl/FJ4oVKiDYoH0J6MqHBfKtAqTYUxIgThraudpWKW01gS67luAUS0LAPM0kGUYEuAAhrUrc/k3iUBH0Xl8PPS3LjMBaUeGTIZj0BlkyAvECBHZUZAiofuWo2wqUjQRQVLxyWOkWkCH++v8Rh4NfoYEVDupJGRYAAAAASUVORK5CYII=" alt="icon-group" class="icon__group" />
+            </a>
+          </div>
+          <div class="d-flex align-items-center d-md-none">
+            <div class="d-flex align-items-center">
+              <form action="" class="d-md-block me-2 result__nav-icon w__select">
+                <div class="input-group search__input d-none">
+                  <select class=" form-select form-select-sm p-0 border-0">
+                    <option selected>品牌</option>
+                    <option value="1">產品</option>
+                    <option value="2">分類</option>
+                  </select>
+                  <input type="text" class="form-control py-1 border-0 border-bottom border-primary p-0"
+                    aria-label="Text input dropdown button">
+                </div>
+              </form>
+              <a href="#" class="me-3 p-2 click__search-icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKMSURBVHgB7Va9ctpAEF4RmEnpDDMwQ2OVwMBEbxAeAZ4gSpfOcZcOeAI7XVIFP4FJl1TBVdrL8KdS6RigkLsU/ORbWzdzEfo5yXZlvhnN7Z1Ot9/urXaX6IjnDkN3Y71et3K5XBviG8MwrP1+f+K/EpgLzK8mk8mIUiKRgGVZ5na7vYCCduJhhuFi37s0RF5QvHILyn/hUEtZ9vA4WPsOhR5GViy9waNdKpWM5XI5Ig0YCcp/SldjFLiCD+Px+Ca4l68HJM7w2MpyH57oURYCvttZuXm3yTAuoficEgAiNkhe0L0nmPT5dDq9jPsmF7YI5V2pHOjpKGfMZrMBho6cg3gXxpzEfXMQA2z9brcbsAwSLizoUArg7l3EAIstPC9x1l+s3UTtP/AArD9Tpj3KgHw+/4nug5WNsOP2HhBQIt6D9VeUAUIID+4fsozRrNVqp6RLAJAEBD0A/NdIGR4xKQUBGTQePQCw/FbKiAOTUhB4dODXdCPfBRc4nfIYyH5Z8FoKCOxb0iUAjHwiZqPRaFF2yNrhIT8IbQJc1aQMEm8pA5rNpi0TGcZh3N6DROQnkhZEE49VLpd/Y80hTXAig9Kv5Acz3N9Zr9eRAR0VhH0p8GFcbEhT+WazuVZriOM4btw3oeU4mE5x0HsusZVKxV0sFqHWcLxA8TXEqrL8I6ksxzYkOLRLSjrm+o9h6HdAMrI52ttK8QoitiwndkRcYrmq8V9BGmC3g4xH/9eRSBKxHRFjtVqJYrH4jZMJDq4q3Y8K7ow+Y89HlO4vXP2UK7wbo7ok7aZUolqtmoVC4ZQ9wpYi6MR8Pv8Ttjd4hWENSmoCaREg4eEqXqnvn7wWQGFfEoDXBnTEEQH8Aw0NPYt4CwEyAAAAAElFTkSuQmCC" alt="icon-search" class="icon__search result__nav-icon" />
+              </a>
+            </div>
+            <nav class="navbar d-md-none d-md-block">
+              <a href="#nav" class="navbar-toggler justify-content-end p-2 border-0 click__nav-icon" type="button"
+                data-bs-toggle="collapse" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="nav__link"></div>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav me-auto   vh-100">
+          <li class="nav-item border-bottom border-Gray-04">
+            <a class="nav-link py-5 px-3 text-center nav__list_sm " aria-current="page" href="./index.html">首頁</a>
+          </li>
+          <li class="nav-item border-bottom border-Gray-04">
+            <a class="nav-link py-5 px-3 text-center nav__list_sm " aria-current="page"
+              href="category_top_ranking.html">熱門排行</a>
+          </li>
+          <li class="nav-item border-bottom border-Gray-04">
+            <a class="nav-link py-5 px-3 text-center nav__list_sm " aria-current="page" href="#">關於我們</a>
+          </li>
+          <li class="nav-item border-bottom border-Gray-04">
+            <a class="nav-link py-5 px-3 text-center nav__list_sm" aria-current="page"
+              href="member_login.html">登入/註冊</a>
+          </li>
+          <li class="nav-item border-bottom border-Gray-04">
+            <a class="nav-link py-5 px-3 text-center nav__list_sm" aria-current="page" href="#">通知</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="d-md-flex justify-content-md-center list-unstyled d-none d-md-block mb-0">
+        <li class="me-3">
+          <a class="py-3 px-6 d-md-block nav__list text-primary border-bottom border-2 border-primary nav__list--bottom"
+            href="./index.html"> 首頁 </a>
+        </li>
+        <li class="me-3">
+          <a class="py-3 px-6 d-md-block nav__list text-Gray-01"
+            href="category_top_ranking.html">熱門排行</a>
+        </li>
+        <li>
+          <a class="py-3 px-6 d-md-block nav__list text-Gray-01"
+            href="#">關於我們</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>    <section class="home-banner">
       <div id="home-banner-carousel" class="home-banner__carousel carousel slide mb-6 mb-md-0" data-bs-ride="carousel" data-bs-touch="true" data-bs-pause="hover">
         <div class="carousel-indicators mb-2 mb-md-9">
           <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -578,11 +653,12 @@
     <section class="home-award-area">
       <div class="container-sm h-100">
         <div class="row h-100">
-          <div class="home-award-area__content d-flex text-center pb-10 py-0 py-sm-13 col col-sm-6 flex-sm-column mt-auto mt-sm-0 ms-sm-auto justify-content-around justify-content-sm-start align-items-end align-items-sm-center">
+          <div
+            class="home-award-area__content d-flex text-center pb-10 py-0 py-sm-13 col col-sm-6 flex-sm-column mt-auto mt-sm-0 ms-sm-auto justify-content-around justify-content-sm-start align-items-end align-items-sm-center">
             <div class="home-award-area__text-wrap text-Secondary-dark mb-sm-9 pt-sm-4 pb-sm-7">
-                <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-12">BEAUTY</div>
-                <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-12">AWARDS</div>
-                <div class="home-award-area__title h3 fw-bold">2023</div>
+              <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-12">BEAUTY</div>
+              <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-12">AWARDS</div>
+              <div class="home-award-area__title h3 fw-bold">2023</div>
             </div>
             <a href="" class="btn btn-primary align-self-center mt-auto mt-sm-0 btn-short px-md-18">查看全部</a>
           </div>
@@ -608,7 +684,7 @@
                 <p class="mb-0">2023春夏彩妝趨勢｜光透感底妝、水光暈染唇、清冷淡顏妝容正夯！</p>
               </div>
             </a>
-          </div> 
+          </div>
           <div class="col-12 col-md-4">
             <a class="card d-flex flex-column h-100" href="">
               <img src="/beauty-hub/assets/hot-issue-1-ee9cf9d2.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5">
@@ -616,7 +692,7 @@
                 <p class="mb-0">韓星都在畫！韓系微笑唇畫法教學，嘴角微笑線超自然，唇妝絕美乾淨、更減齡顯嫩</p>
               </div>
             </a>
-          </div> 
+          </div>
         </div>
         <div class="text-center">
           <a href="" class="btn btn-outline-primary">看更多</a>
@@ -661,8 +737,17 @@
     <p class="mb-0">本網站僅供學習使用不作為商業用途</p>
   </div>
 </footer>    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+<script>
+    $(".click__nav-icon").click(function () {
+        $(".result__nav-icon").slideToggle();
+    });
+    $(".icon__search").click(function () {
+        $(".search__input").removeClass('d-none');
+    });
+</script>    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
     <script>
       const homeRankingSwiper_1 = new Swiper('#home-ranking-swiper-1', {
         slidesPerView: 1.5,
@@ -757,7 +842,7 @@
 
       /* deal with review card text-overflow*/
       // store full text
-      $(".review-card__content-inner").each(function(i) {
+      $(".review-card__content-inner").each(function() {
         $(this).attr("data-full-text", $(this).text());
       });
       // cut at page first load
@@ -766,7 +851,7 @@
       let w_md = window.matchMedia("(max-width: 991px)");
       let w_lg = window.matchMedia("(max-width: 1199px)");
       let w_xl = window.matchMedia("(max-width: 1399px)");
-      $(".review-card__content-inner").each(function(i) {
+      $(".review-card__content-inner").each(function() {
         if(w_xs.matches) {
           let text = $(this).attr("data-full-text").substring(0, 20) + "...";
           $(this).text(text);
@@ -800,7 +885,6 @@
         let w_lg = window.matchMedia("(max-width: 1199px)");
         let w_xl = window.matchMedia("(max-width: 1399px)");
         let x = window.matchMedia("(min-width: 992px)");
-        console.log("resize");
         $(".review-card__content-inner").each(function(i) {
           if(w_xs.matches) {
             let text = $(this).attr("data-full-text").substring(0, 20) + "...";

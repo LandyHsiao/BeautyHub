@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"
-    ></script>
-    <title>footer test</title>
-    <script type="module" crossorigin src="/beauty-hub/assets/member_login-aef29918.js"></script>
-    <link rel="stylesheet" href="/beauty-hub/assets/member_login-e207413e.css">
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeautyHub 會員登入</title>
+  <script type="module" crossorigin src="/beauty-hub/assets/member_login-aef29918.js"></script>
+  <link rel="stylesheet" href="/beauty-hub/assets/member_login-e207413e.css">
+</head>
+
+<body>
+  <header>
   <div class="container-md py-2">
     <div class="row">
       <div class="d-flex justify-content-between">
@@ -74,7 +71,7 @@
       </div>
       <ul class="d-md-flex justify-content-md-center list-unstyled d-none d-md-block mb-0">
         <li class="me-3">
-          <a class="py-3 px-6 d-md-block nav__list text-primary border-bottom border-2 border-primary nav__list--bottom"
+          <a class="py-3 px-6 d-md-block nav__list text-Gray-01"
             href="./index.html"> 首頁 </a>
         </li>
         <li class="me-3">
@@ -88,7 +85,53 @@
       </ul>
     </div>
   </div>
-</header>    <hr class="py-5" />
+</header>
+    <div class="container-md py-md-4 py-6">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item fs-md-6 fs-8"><a href="index.html">首頁</a></li>
+          <li class="breadcrumb-item text-Gray-02 fs-md-6 fs-8" aria-current="page" class="text-Gray-02">會員登入</li>
+        </ol>
+      </nav>
+      <h1 class=" text-md-center text-start py-md-12 py-6 fs-md-3 fs-5 m-0">
+        登入會員
+      </h1>
+      <div
+        class="member__login row flex-md-row-reverse flex-column justify-content-center align-items-center py-md-12 py-105">
+        <div class="member__login--account col-md-6 col-12 mb-md-0 mb-8">
+          <!-- 這裡的flex-grow-1 為啥沒有用？ -->
+          <form action="" method="post" class="flex-grow-1">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control border border-1 border-Gray-04" id="floatingInput"
+                placeholder="電子信箱">
+              <label for="floatingInput">電子信箱</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control border border-1 border-Gray-04" id="floatingPassword"
+                placeholder="密碼">
+              <label for="floatingPassword">密碼</label>
+            </div>
+            <div class="d-flex flex-lg-row flex-column  justify-content-around mt-md-6 mt-5">
+              <bottom class="btn btn-primary  mb-lg-0 mb-3 py-md-4 px-md-18 py-2 px-8 ">登入會員</bottom>
+              <bottom class="btn btn-outline-primary py-md-4 px-md-18 py-2 px-8 ">註冊會員</bottom>
+            </div>
+          </form>
+        </div>
+        <hr class="d-md-none d-block">
+        <div class="member__login--method col-md-6 col-12 list-unstyled text-center">
+          <a href="#" class="mb-md-8 mb-5 w-50 btn btn-outline-primary text-center px-0">
+            FaceBook
+          </a>
+          <a href="#" class="mb-md-8 mb-5 w-50 btn btn-outline-primary text-center px-0">
+            Google
+          </a>
+          <a href="#" class="w-50 btn btn-outline-primary text-center px-0">
+            Apple
+          </a>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer pb-9 pb-md-10 pt-7 pt-md-12 bg-Secondary-light rounded-tr-30">
   <div class="footer__logo-area mb-9 mb-md-4">
     <div class="footer__logo m-auto ms-md-auto me-md-30"></div>
@@ -126,6 +169,17 @@
     <p class="mb-1 mb-md-3">Copyright © 2023 BeautyHub LTD. All Rights Reserved.</p>
     <p class="mb-0">本網站僅供學習使用不作為商業用途</p>
   </div>
-</footer>    
-  </body>
+</footer>      <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+<script>
+    $(".click__nav-icon").click(function () {
+        $(".result__nav-icon").slideToggle();
+    });
+    $(".icon__search").click(function () {
+        $(".search__input").removeClass('d-none');
+    });
+</script>        
+
+</body>
+
 </html>
