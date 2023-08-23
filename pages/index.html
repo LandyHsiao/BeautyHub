@@ -719,7 +719,7 @@
 
       /* deal with review card text-overflow*/
       // store full text
-      $(".review-card__content-inner").each(function(i) {
+      $(".review-card__content-inner").each(function() {
         $(this).attr("data-full-text", $(this).text());
       });
       // cut at page first load
@@ -728,7 +728,7 @@
       let w_md = window.matchMedia("(max-width: 991px)");
       let w_lg = window.matchMedia("(max-width: 1199px)");
       let w_xl = window.matchMedia("(max-width: 1399px)");
-      $(".review-card__content-inner").each(function(i) {
+      $(".review-card__content-inner").each(function() {
         if(w_xs.matches) {
           let text = $(this).attr("data-full-text").substring(0, 20) + "...";
           $(this).text(text);
@@ -762,7 +762,6 @@
         let w_lg = window.matchMedia("(max-width: 1199px)");
         let w_xl = window.matchMedia("(max-width: 1399px)");
         let x = window.matchMedia("(min-width: 992px)");
-        console.log("resize");
         $(".review-card__content-inner").each(function(i) {
           if(w_xs.matches) {
             let text = $(this).attr("data-full-text").substring(0, 20) + "...";
