@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BeautyHub</title>
+</head>
+
+<body>
+    <%- include('./layout/header.ejs',{page: "search" }); -%>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="border border-1 border-primary py-md-9 px-md-6">
+                        <form action="" class="">
+                            <h1 class="test-Gray-01 py-md-12 py-6 ff-cg fs-md-3 fs-5 m-0 fw-md-bolder fw-bold lh-sm">
+                                搜尋
+                            </h1>
+                            <div class="input-group">
+                                <select class="form-select form-select-sm p-0 py-1 border-0">
+                                    <option selected>品牌</option>
+                                    <option value="1">產品</option>
+                                    <option value="2">分類</option>
+                                </select>
+                                <input type="text" class="form-control py-1 border-0 border-bottom border-primary w-25"
+                                    aria-label="Text input dropdown button">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-8"></div>
+            </div>
+        </div>
+        <%- include('./layout/footer.ejs'); -%>
+            <%- include('./layout/header_search_jq.ejs'); -%>
+                <script type="module" src="../main.js"></script>
+</body>
+
+</html>
