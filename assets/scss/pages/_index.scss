@@ -116,7 +116,7 @@
   }
 }
 
-.home-best-ranking {
+.home-best-ranking, .home-recommend {
   .swiper-wrapper {
     align-items: stretch;
   }
@@ -208,6 +208,49 @@
 .home-invite-area__content {
   @include media-breakpoint-up(md) {
     background-color: $Gray-07;
+  }
+}
+
+/* Section .home-recommend */
+.review-card__card {
+  height: 100%;
+}
+
+.review-card__img-wrap {
+  max-width: 256px;
+  aspect-ratio: 217 / 151;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  @include media-breakpoint-up(md) {
+    aspect-ratio: 256 / 250;
+  }
+}
+
+.review-card__img {
+  aspect-ratio: 217 / 151;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  transition: all 1.2s;
+  &:hover, &:focus {
+    transform: scale(1.1);
+  }
+  @include media-breakpoint-up(md) {
+    aspect-ratio: 256 / 250;
+  }
+}
+
+.review-card__content {
+  max-height: 95px;
+  display: none !important;
+  @media (min-width: 300px) {
+    display: flex !important;
+  }
+  @include media-breakpoint-up(md) {
+    max-height: 80px;
   }
 }
 
