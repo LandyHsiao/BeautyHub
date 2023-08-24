@@ -14,11 +14,11 @@
 }
 
 // make all heading classes has 5% letter-sapcing
-@for $i from 1 through 6 {
-  .h#{$i}, .display-#{$i} {
-      letter-spacing: map-get($letter-spacings, h);
-  }
-}
+// @for $i from 1 through 6 {
+//   .h#{$i}, .display-#{$i} {
+//       letter-spacing: map-get($letter-spacings, h);
+//   }
+// }
 
 // paragraph typography utitlity classes
 .para-1 {
