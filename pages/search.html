@@ -9,51 +9,54 @@
 </head>
 
 <body>
-    <%- include('./layout/header-others.ejs',{page: "search" }); -%>
+    <%- include('./layout/header-other.ejs',{page: "search" }); -%>
         <div class="container ">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item test-Gray-01 fs-md-6 fs-8"><a href="index.html">首頁</a></li>
-                    <li class="breadcrumb-item text-Gray-02 fs-md-6 fs-8 ff-cg" aria-current="page">搜尋</li>
+                    <li class="breadcrumb-item text-Gray-02 fs-md-6 fs-8" aria-current="page">搜尋</li>
                 </ol>
             </nav>
             <div class="row mb-md-30 mb-105">
                 <div class="col-md-4">
                     <div class="border border-1 border-primary py-md-9 px-md-6">
-                        <form action="" class="mb-6">
+                        <form action="" class="mb-11">
                             <h1
                                 class="test-Gray-01 pb-md-12 pb-6 ff-cg fs-md-3 fs-5 m-0 fw-md-bolder fw-bold lh-sm px-1">
                                 搜尋
                             </h1>
-                            <div class="input-group mb-3 px-1">
-                                <select class="form-select form-select-sm p-0 py-1 border-0">
-                                    <option selected>品牌</option>
-                                    <option value="1">產品</option>
-                                    <option value="2">分類</option>
-                                </select>
-                                <input type="text" class="form-control py-1 border-0 border-bottom border-primary w-25"
-                                    aria-label="Text input dropdown button">
+                            <div class="w__select">
+                                <div class="input-group mb-3 px-1">
+                                    <select class="form-select form-select-sm p-0 py-1 border-0">
+                                        <option selected>品牌</option>
+                                        <option value="1">產品</option>
+                                        <option value="2">分類</option>
+                                    </select>
+                                    <input type="text"
+                                        class="form-control py-1 border-0 border-bottom border-primary w-25"
+                                        aria-label="Text input dropdown button">
+                                </div>
                             </div>
                             <hr class="text-primary mb-3">
                             <h2
                                 class="test-Gray-01 pb-md-12 pb-6 ff-cg fs-md-3 fs-5 m-0 fw-md-bolder fw-bold lh-sm px-1">
                                 篩選
                             </h2>
-                            <select class="form-select form-select-sm p-0 py-1 border-0 mb-3"
+                            <select class="form-select form-select-sm p-0 py-1 border-0 mb-3 w-75 mx-auto"
                                 aria-label="Default select example">
                                 <option selected>分類</option>
                                 <option value="1">化妝品</option>
                                 <option value="2">保養品</option>
                                 <option value="3">成分</option>
                             </select>
-                            <select class="form-select form-select-sm p-0 py-1 border-0 mb-3"
+                            <select class="form-select form-select-sm p-0 py-1 border-0 mb-3 w-75 mx-auto"
                                 aria-label="Default select example">
                                 <option selected>品牌</option>
                                 <option value="1">heme</option>
                                 <option value="2">YSL</option>
                                 <option value="3">&be</option>
                             </select>
-                            <select class="form-select form-select-sm p-0 py-1 border-0 mb-3"
+                            <select class="form-select form-select-sm p-0 py-1 border-0 mb-3 w-75 mx-auto"
                                 aria-label="Default select example">
                                 <option selected>通路</option>
                                 <option value="1">屈城市</option>
@@ -70,7 +73,7 @@
                         <h2 class="test-Gray-01 pb-md-12 pb-6 ff-cg fs-md-3 fs-5 m-0 fw-md-bolder fw-bold lh-sm px-1">
                             列表
                         </h2>
-                        <nav aria-label="breadcrumb">
+                        <div aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item test-Gray-01 fs-md-6 fs-8"><a href="#">眉彩</a></li>
                                 <li class="breadcrumb-item text-Gray-02 fs-md-6 fs-8 ff-cg" aria-current="page">
@@ -113,7 +116,7 @@
                                 </li>
                             </ol>
 
-                        </nav>
+                        </div>
                     </div>
                 </div>
                 <!--  -->
