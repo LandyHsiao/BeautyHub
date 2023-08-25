@@ -31,18 +31,18 @@ $gray-800: $Gray-01;
 $gray-900: $Gray-01;
 
 $primary: $Primary-main;
-$secondary: $Secondary-main;
+$secondary: $Secondary-main; 
 // $success:       $green;
 // $info:          $cyan;
 // $warning:       $yellow;
 // $danger:        $red;
 // $light:         $gray-100;
 // $dark:          $gray-900;
-$body-color: #3d3d3d;
+$body-color: $Gray-01;
 $body-bg: $Background-main;
-$body-secondary-color: #3d3d3d;
+$body-secondary-color: $Gray-01;
 $body-secondary-bg: $Background-S1;
-$body-tertiary-color: #3d3d3d;
+$body-tertiary-color: $Gray-01;
 $body-tertiary-bg: $Background-S2;
 
 // Font
@@ -79,3 +79,9 @@ $btn-active-border-tint-amount: 0%;
 //select
 $form-select-font-family: $font-family-sans-serif;
 $form-select-border-radius-sm: 0;
+
+// breadcrumb
+$breadcrumb-font-size: 0.875rem;
+$breadcrumb-active-color: $Gray-02;
+$breadcrumb-divider-color: $Gray-02;
+$breadcrumb-divider: quote("\25AA");
