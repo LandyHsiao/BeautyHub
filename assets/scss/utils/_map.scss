@@ -127,4 +127,15 @@ $utilities: (
       bolder: $font-weight-bolder,
     ),
   ),
+  "line-height": (
+    responsive: true,
+    property: line-height,
+    class: lh,
+    values: (
+      1: 1,
+      sm: $line-height-sm,
+      base: $line-height-base,
+      lg: $line-height-lg,
+    )
+  ),
 );
