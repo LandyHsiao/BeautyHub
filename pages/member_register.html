@@ -13,8 +13,8 @@
     <div class="container-md py-md-4 py-6">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item fs-md-6 fs-8"><a href="index.html">首頁</a></li>
-          <li class="breadcrumb-item text-Gray-02 fs-md-6 fs-8" aria-current="page" class="text-Gray-02">註冊會員</li>
+          <li class="breadcrumb-ite"><a href="index.html">首頁</a></li>
+          <li class="breadcrumb-item" aria-current="page">註冊會員</li>
         </ol>
       </nav>
       <h1 class=" text-md-center text-start py-md-12 py-6 fs-md-3 fs-5 m-0">
@@ -27,15 +27,15 @@
           <div class="user__avatar--update d-flex flex-column align-items-center col-md-6 col-12 mb-md-0 mb-9">
             <img class="user__avatar mb-3" src="../assets/image/user_default.svg" alt="avatar">
             <input type="file" id="avatar-uploader" data-target="avatar-uploader" accept="image/*" hidden>
-            <label for="avatar-uploader" class="btn btn-outline-primary py-3 px-9">上傳圖片</label>
+            <label for="avatar-uploader" class="btn btn-outline-primary py-3 px-9 fw-medium">上傳圖片</label>
           </div>
 
-          <div class="member__register--account col-md-6 col-12 mb-md-0 mb-5 mb-md-9">
+          <div class="member__register--account col-md-6 col-12 mb-md-0 mb-5">
             <form action="" method="post"></form>
             <div class="form-floating mb-3">
-              <input type="text" class="form-control border border-1 border-Gray-04" id="floatingInput"
+              <input type="text" class="form-control border border-1 border-Gray-04" id="floatingNickname"
                 placeholder="暱稱">
-              <label for="floatingInput">暱稱</label>
+              <label for="floatingNickname">暱稱</label>
             </div>
 
             <div class="form-floating mb-3">
@@ -51,16 +51,16 @@
             </div>
 
             <div class="form-floating mb-3">
-              <input type="text" class="form-control border border-1 border-Gray-04" id="floatingInput"
+              <input type="text" class="form-control border border-1 border-Gray-04" id="floatingSkintype"
                 placeholder="膚況">
-              <label for="floatingInput">膚況</label>
+              <label for="floatingSkintype">膚況</label>
             </div>
             </form>
           </div>
 
         </div>
-        <bottom class="member__register--btn btn btn-primary py-md-4 px-md-18 py-3 px-8 col-md-4 col-12 mx-auto">註冊會員
-        </bottom>
+        <button class="member__register--btn btn btn-primary py-md-4 px-md-18 py-3 px-8 col-md-4 col-12 mx-auto fw-medium">註冊會員
+        </button>
       </div>
     </div>
   </div>
