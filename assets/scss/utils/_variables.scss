@@ -31,7 +31,7 @@ $gray-800: $Gray-01;
 $gray-900: $Gray-01;
 
 $primary: $Primary-main;
-$secondary: $Secondary-main;
+$secondary: $Secondary-main; 
 // $success:       $green;
 // $info:          $cyan;
 // $warning:       $yellow;
@@ -89,3 +89,10 @@ $input-group-addon-border-color: $Gray-04;
 //select
 $form-select-font-family: $font-family-sans-serif;
 $form-select-border-radius-sm: 0;
+
+// breadcrumb
+$breadcrumb-font-size: 0.875rem;
+$breadcrumb-active-color: $Gray-02;
+$breadcrumb-divider-color: $Gray-02;
+$breadcrumb-divider: quote("\25AA");
+
