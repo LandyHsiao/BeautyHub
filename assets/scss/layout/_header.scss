@@ -31,8 +31,7 @@
 
 .nav__list {
   &:hover {
-    border-bottom: 2px solid $Primary-main;
-    color: $primary !important;
+    color: $Gray-02 !important;
   }
 }
 
@@ -57,25 +56,6 @@
       position: relative;
       flex: 1 1 auto;
       width: 65px; //ann 1%;
-      min-width: 0;
-    }
-  }
-}
-
-.w__select-md {
-  .input-group {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    width: 100%;
-
-    >.form-control,
-    >.form-select,
-    >.form-floating {
-      position: relative;
-      flex: 1 1 auto;
-      width: 1px; //ann 1%;
       min-width: 0;
     }
   }
