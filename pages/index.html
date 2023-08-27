@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BeautyHub</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-  </head>
-  <body>
-    <%- include('./layout/header.ejs',{page: "index" }); -%>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeautyHub</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <%- include('./layout/header.ejs',{page: "index" }); -%>
     <section class="home-banner">
-      <div id="home-banner-carousel" class="home-banner__carousel carousel slide mb-6 mb-md-0" data-bs-ride="carousel" data-bs-touch="true" data-bs-pause="hover">
+      <div id="home-banner-carousel" class="home-banner__carousel carousel slide mb-6 mb-md-0" data-bs-ride="carousel"
+        data-bs-touch="true" data-bs-pause="hover">
         <div class="carousel-indicators mb-2 mb-md-9">
-          <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button d-block" data-bs-target="#home-banner-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#home-banner-carousel" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button d-block" data-bs-target="#home-banner-carousel" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="home-banner__carousel-1 carousel-item active h-100 pt-27 pb-7 py-md-60">
             <div class="container-sm">
               <div class="row">
                 <div class="col-12">
-                  <h3 class="home-banner__subtitle display-2 fw-bold text-Gray-07 mb-md-4 ls-h">Search<br class="d-md-none"> &<br class="d-md-none"> Share!</h3>
-                  <h2 class="home-banner__title d-none d-md-block display-2 fw-bold fs-md-1 mb-md-8 ls-h">讓 BeautyHub 成為你的美妝百科</h2>
+                  <h3 class="home-banner__subtitle display-2 fw-bold text-Gray-07 mb-md-4 ls-h">Search<br
+                      class="d-md-none"> &<br class="d-md-none"> Share!</h3>
+                  <h2 class="home-banner__title d-none d-md-block display-2 fw-bold fs-md-1 mb-md-8 ls-h">讓 BeautyHub
+                    成為你的美妝百科</h2>
                 </div>
               </div>
               <div class="row">
                 <div class="col-7 col-lg-5">
                   <form class="search d-none d-md-block home-banner__search-form">
                     <div class="home-banner__search-group input-group bg-Gray-06 border border-Gray-04">
-                      <input class="home-banner__search-input form-control d-none d-md-block py-4 px-3 position-relative border-0" id="home-search-input-s1" name="home-search-input-s1" type="search" placeholder="輸入關鍵字查詢" aria-label="Search">
+                      <input
+                        class="home-banner__search-input form-control d-none d-md-block py-4 px-3 position-relative border-0"
+                        id="home-search-input-s1" name="home-search-input-s1" type="search" placeholder="輸入關鍵字查詢"
+                        aria-label="Search">
                       <span class="input-group-text py-4 px-3 bg-Gray-06 border-0">
-                        <img class="home-banner__search-icon " src="../assets/image/search-icon.png" id="home-search-submit-s1" name="home-search-submit-s1" alt="搜尋框按鈕" role="button">
+                        <img class="home-banner__search-icon " src="../assets/image/search-icon.png"
+                          id="home-search-submit-s1" name="home-search-submit-s1" alt="搜尋框按鈕" role="button">
                       </span>
                     </div>
                   </form>
@@ -42,17 +54,23 @@
             <div class="container-sm">
               <div class="row">
                 <div class="col-12">
-                  <h3 class="home-banner__subtitle display-2 fw-bold text-Gray-07 mb-md-4 ls-h">Search<br class="d-md-none"> &<br class="d-md-none"> Share!</h3>
-                  <h2 class="home-banner__title d-none d-md-block display-2 fw-bold fs-md-1 mb-md-8 ls-h">讓 BeautyHub 成為你的美妝百科</h2>
+                  <h3 class="home-banner__subtitle display-2 fw-bold text-Gray-07 mb-md-4 ls-h">Search<br
+                      class="d-md-none"> &<br class="d-md-none"> Share!</h3>
+                  <h2 class="home-banner__title d-none d-md-block display-2 fw-bold fs-md-1 mb-md-8 ls-h">讓 BeautyHub
+                    成為你的美妝百科</h2>
                 </div>
               </div>
               <div class="row">
                 <div class="col-7 col-lg-5">
                   <form class="search d-none d-md-block home-banner__search-form">
                     <div class="home-banner__search-group input-group bg-Gray-06 border border-Gray-04">
-                      <input class="home-banner__search-input form-control d-none d-md-block py-4 px-3 position-relative border-0" id="home-search-input-s2" name="home-search-input-s2" type="search" placeholder="輸入關鍵字查詢" aria-label="Search">
+                      <input
+                        class="home-banner__search-input form-control d-none d-md-block py-4 px-3 position-relative border-0"
+                        id="home-search-input-s2" name="home-search-input-s2" type="search" placeholder="輸入關鍵字查詢"
+                        aria-label="Search">
                       <span class="input-group-text py-4 px-3 bg-Gray-06 border-0">
-                        <img class="home-banner__search-icon " src="../assets/image/search-icon.png" id="home-search-submit-s2" name="home-search-submit-s2" alt="搜尋框按鈕" role="button">
+                        <img class="home-banner__search-icon " src="../assets/image/search-icon.png"
+                          id="home-search-submit-s2" name="home-search-submit-s2" alt="搜尋框按鈕" role="button">
                       </span>
                     </div>
                   </form>
@@ -64,17 +82,23 @@
             <div class="container-sm">
               <div class="row">
                 <div class="col-12">
-                  <h3 class="home-banner__subtitle display-2 fw-bold text-Gray-07 mb-md-4 ls-h">Search<br class="d-md-none"> &<br class="d-md-none"> Share!</h3>
-                  <h2 class="home-banner__title d-none d-md-block display-2 fw-bold fs-md-1 mb-md-8 ls-h">讓 BeautyHub 成為你的美妝百科</h2>
+                  <h3 class="home-banner__subtitle display-2 fw-bold text-Gray-07 mb-md-4 ls-h">Search<br
+                      class="d-md-none"> &<br class="d-md-none"> Share!</h3>
+                  <h2 class="home-banner__title d-none d-md-block display-2 fw-bold fs-md-1 mb-md-8 ls-h">讓 BeautyHub
+                    成為你的美妝百科</h2>
                 </div>
               </div>
               <div class="row">
                 <div class="col-7 col-lg-5">
                   <form class="search d-none d-md-block home-banner__search-form">
                     <div class="home-banner__search-group input-group bg-Gray-06 border border-Gray-04">
-                      <input class="home-banner__search-input form-control d-none d-md-block py-4 px-3 position-relative border-0" id="home-search-input-s3" name="home-search-input-s3" type="search" placeholder="輸入關鍵字查詢" aria-label="Search">
+                      <input
+                        class="home-banner__search-input form-control d-none d-md-block py-4 px-3 position-relative border-0"
+                        id="home-search-input-s3" name="home-search-input-s3" type="search" placeholder="輸入關鍵字查詢"
+                        aria-label="Search">
                       <span class="input-group-text py-4 px-3 bg-Gray-06 border-0">
-                        <img class="home-banner__search-icon " src="../assets/image/search-icon.png" id="home-search-submit-s3" name="home-search-submit-s3" alt="搜尋框按鈕" role="button">
+                        <img class="home-banner__search-icon " src="../assets/image/search-icon.png"
+                          id="home-search-submit-s3" name="home-search-submit-s3" alt="搜尋框按鈕" role="button">
                       </span>
                     </div>
                   </form>
@@ -89,9 +113,13 @@
         <h2 class="home-banner__sm-title d-md-none display-4 fw-bold mb-6">成為你的美妝百科</h2>
         <form class="search d-md-none home-banner__sm-search-form px-6 px-sm-9">
           <div class="home-banner__sm-search-group d-md-none input-group bg-Gray-07 border border-Gray-04">
-            <input class="home-banner__sm-search-input form-control d-md-none py-4 px-3 position-relative border-0 bg-Gray-07" id="home-search-input-sm" name="home-search-input-sm" type="search" placeholder="輸入關鍵字查詢" aria-label="Search">
+            <input
+              class="home-banner__sm-search-input form-control d-md-none py-4 px-3 position-relative border-0 bg-Gray-07"
+              id="home-search-input-sm" name="home-search-input-sm" type="search" placeholder="輸入關鍵字查詢"
+              aria-label="Search">
             <span class="input-group-text py-4 px-3 bg-Gray-07 border-0">
-              <img class="home-banner__sm-search-icon " src="../assets/image/search-icon.png" alt="搜尋框按鈕" role="button" id="home-search-submit-sm" name="home-search-submit-sm">
+              <img class="home-banner__sm-search-icon " src="../assets/image/search-icon.png" alt="搜尋框按鈕" role="button"
+                id="home-search-submit-sm" name="home-search-submit-sm">
             </span>
           </div>
         </form>
@@ -100,383 +128,522 @@
     <section class="home-best-ranking">
       <div class="container-sm py-15 pt-lg-16 pb-lg-30">
         <h2 class="h5 fs-sm-4 fs-md-3 mb-6 mb-md-12 ls-md-h text-md-center lh-sm fw-semibold fw-md-bold">熱門排行</h2>
-        <ul class="home-ranking-tab nav nav-tabs text-center m-auto mb-3 mb-lg-12 text-Gray-02" id="home-ranking-tab" role="tablist">
+        <ul class="home-ranking-tab nav nav-tabs text-center m-auto mb-3 mb-lg-12 text-Gray-02" id="home-ranking-tab"
+          role="tablist">
           <li class="nav-item flex-grow-1" role="presentation">
-            <a class="active d-block py-4 border-bottom border-2 border-Secondary-light h6 mb-0" id="tab-1" data-bs-toggle="tab" data-bs-target="#tab-1-pane" type="button" role="tab" aria-controls="tab-1-pane" aria-selected="true">保養品</a>
+            <a class="active d-block py-4 border-bottom border-2 border-Secondary-light h6 mb-0" id="tab-1"
+              data-bs-toggle="tab" data-bs-target="#tab-1-pane" type="button" role="tab" aria-controls="tab-1-pane"
+              aria-selected="true">保養品</a>
           </li>
           <li class="nav-item flex-grow-1" role="presentation">
-            <a class="d-block py-4 border-bottom border-2 border-Secondary-light h6 mb-0" id="tab-2" data-bs-toggle="tab" data-bs-target="#tab-2-pane" type="button" role="tab" aria-controls="tab-2-pane" aria-selected="false">底妝</a>
+            <a class="d-block py-4 border-bottom border-2 border-Secondary-light h6 mb-0" id="tab-2"
+              data-bs-toggle="tab" data-bs-target="#tab-2-pane" type="button" role="tab" aria-controls="tab-2-pane"
+              aria-selected="false">底妝</a>
           </li>
           <li class="nav-item flex-grow-1" role="presentation">
-            <a class="d-block py-4 border-bottom border-2 border-Secondary-light h6 mb-0" id="tab-3" data-bs-toggle="tab" data-bs-target="#tab-3-pane" type="button" role="tab" aria-controls="tab-3-pane" aria-selected="false">防曬</a>
+            <a class="d-block py-4 border-bottom border-2 border-Secondary-light h6 mb-0" id="tab-3"
+              data-bs-toggle="tab" data-bs-target="#tab-3-pane" type="button" role="tab" aria-controls="tab-3-pane"
+              aria-selected="false">防曬</a>
           </li>
           <li class="nav-item flex-grow-1" role="presentation">
-            <a class="d-block py-4 border-bottom border-2 border-Secondary-light h6 mb-0" id="tab-4" data-bs-toggle="tab" data-bs-target="#tab-4-pane" type="button" role="tab" aria-controls="tab-4-pane" aria-selected="false">唇彩</a>
+            <a class="d-block py-4 border-bottom border-2 border-Secondary-light h6 mb-0" id="tab-4"
+              data-bs-toggle="tab" data-bs-target="#tab-4-pane" type="button" role="tab" aria-controls="tab-4-pane"
+              aria-selected="false">唇彩</a>
           </li>
           <li class="nav-item flex-grow-1" role="presentation">
-            <a class="d-block py-4 border-bottom border-2 border-Secondary-light h6 mb-0" id="tab-5" data-bs-toggle="tab" data-bs-target="#tab-5-pane" type="button" role="tab" aria-controls="tab-5-pane" aria-selected="false">眼妝</a>
+            <a class="d-block py-4 border-bottom border-2 border-Secondary-light h6 mb-0" id="tab-5"
+              data-bs-toggle="tab" data-bs-target="#tab-5-pane" type="button" role="tab" aria-controls="tab-5-pane"
+              aria-selected="false">眼妝</a>
           </li>
         </ul>
         <div class="home-ranking-panel row mb-105 mb-md-2 position-relative">
           <div class="tab-content col-12 text-center m-auto" id="home-ranking-tab_content">
             <div class="tab-pane fade show active" id="tab-1-pane" role="tabpanel" aria-labelledby="tab-1" tabindex="0">
               <div class="home-best-ranking__card-area">
-                <div class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y" id="home-ranking-swiper-prev"></div>
-                <div class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y" id="home-ranking-swiper-next"></div>
+                <div
+                  class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y"
+                  id="home-ranking-swiper-prev"></div>
+                <div
+                  class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y"
+                  id="home-ranking-swiper-next"></div>
                 <div class="swiper mx-0 pb-md-15" id="home-ranking-swiper-1">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="https://github.com/LandyHsiao/beauty-hub/blob/main/assets/image/hot-img-01.jpg?raw=true" class="product-card__img rounded-0" alt="...">
+                          <img
+                            src="https://github.com/LandyHsiao/beauty-hub/blob/main/assets/image/hot-img-01.jpg?raw=true"
+                            class="product-card__img rounded-0" alt="...">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4">黃金藍銅玻尿酸保濕化妝水</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">For Beloved One</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">For
+                            Beloved One</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">01</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">
+                          01</div>
                         <div class="card-shadow-1 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="https://github.com/LandyHsiao/beauty-hub/blob/main/assets/image/hot-img-02.jpg?raw=true" class="product-card__img rounded-0" alt="...">
+                          <img
+                            src="https://github.com/LandyHsiao/beauty-hub/blob/main/assets/image/hot-img-02.jpg?raw=true"
+                            class="product-card__img rounded-0" alt="...">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">金致臻顏花蜜奢養精華露</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">L'Oréal Paris</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">L'Oréal
+                            Paris</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">02</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">
+                          02</div>
                         <div class="card-shadow-2 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="https://github.com/LandyHsiao/beauty-hub/blob/main/assets/image/hot-img-03.jpg?raw=true" class="product-card__img rounded-0" alt="...">
+                          <img
+                            src="https://github.com/LandyHsiao/beauty-hub/blob/main/assets/image/hot-img-03.jpg?raw=true"
+                            class="product-card__img rounded-0" alt="...">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">極潤多效精華水感凝露</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">Hada-Labo 肌研</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">Hada-Labo
+                            肌研</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">03</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">
+                          03</div>
                         <div class="card-shadow-3 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5" href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="https://github.com/LandyHsiao/beauty-hub/blob/main/assets/image/hot-img-04.jpg?raw=true" class="product-card__img rounded-0" alt="...">
+                          <img
+                            src="https://github.com/LandyHsiao/beauty-hub/blob/main/assets/image/hot-img-04.jpg?raw=true"
+                            class="product-card__img rounded-0" alt="...">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">益菌生保濕調理精華水</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">DermaAngel護妍天使</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">DermaAngel護妍天使</span>
                         </div>
                       </a>
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5" href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="https://github.com/LandyHsiao/beauty-hub/blob/main/assets/image/hot-img-05.png?raw=true" class="product-card__img rounded-0" alt="...">
+                          <img
+                            src="https://github.com/LandyHsiao/beauty-hub/blob/main/assets/image/hot-img-05.png?raw=true"
+                            class="product-card__img rounded-0" alt="...">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">森果紅石榴多酚凍齡精華</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">Forest Beauty</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">Forest
+                            Beauty</span>
                         </div>
                       </a>
                     </div>
-                  </div>  
+                  </div>
                 </div>
               </div>
             </div>
             <div class="tab-pane fade" id="tab-2-pane" role="tabpanel" aria-labelledby="tab-2" tabindex="0">
               <div class="home-best-ranking__card-area">
-                <div class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y" id="home-ranking-swiper-prev"></div>
-                <div class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y" id="home-ranking-swiper-next"></div>
+                <div
+                  class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y"
+                  id="home-ranking-swiper-prev"></div>
+                <div
+                  class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y"
+                  id="home-ranking-swiper-next"></div>
                 <div class="swiper mx-0 pb-md-15" id="home-ranking-swiper-2">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/foundation-01.png" class="product-card__img rounded-0" alt="...">
+                          <img src="../assets/image/home-ranking/foundation-01.png" class="product-card__img rounded-0"
+                            alt="...">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">UV Primer 妝前隔離乳</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">&be</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">&be</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">01</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">
+                          01</div>
                         <div class="card-shadow-1 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/foundation-02.png" class="product-card__img rounded-0" alt="...">
+                          <img src="../assets/image/home-ranking/foundation-02.png" class="product-card__img rounded-0"
+                            alt="...">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">美術課三色修容餅</h5>
-                          <span class="card-text product-card__brand rounded-pill mb0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">too cool for school</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">too
+                            cool for school</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">02</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">
+                          02</div>
                         <div class="card-shadow-2 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/foundation-03.webp" class="product-card__img rounded-0" alt="...">
+                          <img src="../assets/image/home-ranking/foundation-03.webp" class="product-card__img rounded-0"
+                            alt="...">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">持久遮瑕氣墊粉餅</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">tirtir</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">tirtir</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">03</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">
+                          03</div>
                         <div class="card-shadow-3 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5" href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/foundation-04.jpg" class="product-card__img rounded-0" alt="...">
+                          <img src="../assets/image/home-ranking/foundation-04.jpg" class="product-card__img rounded-0"
+                            alt="...">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">FIT ME空氣絲絨蜜粉</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">Maybelline</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">Maybelline</span>
                         </div>
                       </a>
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5" href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/foundation-05.jpg" class="product-card__img rounded-0" alt="...">
+                          <img src="../assets/image/home-ranking/foundation-05.jpg" class="product-card__img rounded-0"
+                            alt="...">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">持久控油水光粉餅</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">IPSA</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">IPSA</span>
                         </div>
                       </a>
                     </div>
-                  </div>  
+                  </div>
                 </div>
               </div>
             </div>
             <div class="tab-pane fade" id="tab-3-pane" role="tabpanel" aria-labelledby="tab-3" tabindex="0">
               <div class="home-best-ranking__card-area">
-                <div class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y" id="home-ranking-swiper-prev"></div>
-                <div class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y" id="home-ranking-swiper-next"></div>
+                <div
+                  class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y"
+                  id="home-ranking-swiper-prev"></div>
+                <div
+                  class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y"
+                  id="home-ranking-swiper-next"></div>
                 <div class="swiper mx-0 pb-md-15" id="home-ranking-swiper-3">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/sun-protect-01.webp" class="product-card__img rounded-0" alt="柔光乳 敏感肌特效防曬露圖片">
+                          <img src="../assets/image/home-ranking/sun-protect-01.webp"
+                            class="product-card__img rounded-0" alt="柔光乳 敏感肌特效防曬露圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">柔光乳 敏感肌特效防曬露</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">ANESSA</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">ANESSA</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">01</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">
+                          01</div>
                         <div class="card-shadow-1 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/sun-protect-02.png" class="product-card__img rounded-0" alt="逆齡光采防曬霜圖片">
+                          <img src="../assets/image/home-ranking/sun-protect-02.png" class="product-card__img rounded-0"
+                            alt="逆齡光采防曬霜圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">逆齡光采防曬霜</h5>
-                          <span class="card-text product-card__brand rounded-pill mb0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">Clé de Peau Beauté</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">Clé
+                            de Peau Beauté</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">02</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">
+                          02</div>
                         <div class="card-shadow-2 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/sun-protect-03.webp" class="product-card__img rounded-0" alt="全效海洋友善防曬乳圖片">
+                          <img src="../assets/image/home-ranking/sun-protect-03.webp"
+                            class="product-card__img rounded-0" alt="全效海洋友善防曬乳圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">全效海洋友善防曬乳</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">SENKA 專科</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">SENKA
+                            專科</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">03</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">
+                          03</div>
                         <div class="card-shadow-3 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5" href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/sun-protect-04.webp" class="product-card__img rounded-0" alt="精萃再生光燦煥白隔離霜圖片">
+                          <img src="../assets/image/home-ranking/sun-protect-04.webp"
+                            class="product-card__img rounded-0" alt="精萃再生光燦煥白隔離霜圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4">精萃再生光燦煥白隔離霜</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">Dior</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">Dior</span>
                         </div>
                       </a>
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5" href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/sun-protect-05.jpg" class="product-card__img rounded-0" alt="新艷陽．夏 熱防禦果凍防曬棒圖片">
+                          <img src="../assets/image/home-ranking/sun-protect-05.jpg" class="product-card__img rounded-0"
+                            alt="新艷陽．夏 熱防禦果凍防曬棒圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4">新艷陽．夏 熱防禦果凍防曬棒</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">SHISEIDO</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">SHISEIDO</span>
                         </div>
                       </a>
                     </div>
-                  </div>  
+                  </div>
                 </div>
               </div>
             </div>
             <div class="tab-pane fade" id="tab-4-pane" role="tabpanel" aria-labelledby="tab-4" tabindex="0">
               <div class="home-best-ranking__card-area">
-                <div class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y" id="home-ranking-swiper-prev"></div>
-                <div class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y" id="home-ranking-swiper-next"></div>
+                <div
+                  class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y"
+                  id="home-ranking-swiper-prev"></div>
+                <div
+                  class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y"
+                  id="home-ranking-swiper-next"></div>
                 <div class="swiper mx-0 pb-md-15" id="home-ranking-swiper-4">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/lip-01.webp" class="product-card__img rounded-0" alt="絲柔粉霧唇膏圖片">
+                          <img src="../assets/image/home-ranking/lip-01.webp" class="product-card__img rounded-0"
+                            alt="絲柔粉霧唇膏圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">絲柔粉霧唇膏</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">M.A.C</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">M.A.C</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">01</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">
+                          01</div>
                         <div class="card-shadow-1 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/lip-02.png" class="product-card__img rounded-0" alt="奢華緞面漆光唇釉圖片">
+                          <img src="../assets/image/home-ranking/lip-02.png" class="product-card__img rounded-0"
+                            alt="奢華緞面漆光唇釉圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">奢華緞面漆光唇釉</h5>
-                          <span class="card-text product-card__brand rounded-pill mb0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">YSL</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">YSL</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">02</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">
+                          02</div>
                         <div class="card-shadow-2 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/lip-03.jpg" class="product-card__img rounded-0" alt="絲絨雙色唇膏圖片">
+                          <img src="../assets/image/home-ranking/lip-03.jpg" class="product-card__img rounded-0"
+                            alt="絲絨雙色唇膏圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">絲絨雙色唇膏</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">LANEIGE</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">LANEIGE</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">03</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">
+                          03</div>
                         <div class="card-shadow-3 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5" href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/lip-04.jpg" class="product-card__img rounded-0" alt="怪獸級持色唇膏圖片">
+                          <img src="../assets/image/home-ranking/lip-04.jpg" class="product-card__img rounded-0"
+                            alt="怪獸級持色唇膏圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">怪獸級持色唇膏</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">KATE</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">KATE</span>
                         </div>
                       </a>
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5" href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/lip-05.webp" class="product-card__img rounded-0" alt="水花瓣輕盈保濕豐潤唇膏圖片">
+                          <img src="../assets/image/home-ranking/lip-05.webp" class="product-card__img rounded-0"
+                            alt="水花瓣輕盈保濕豐潤唇膏圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">水花瓣輕盈保濕豐潤唇膏</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">Bbia</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">Bbia</span>
                         </div>
                       </a>
                     </div>
-                  </div>  
+                  </div>
                 </div>
               </div>
             </div>
             <div class="tab-pane fade" id="tab-5-pane" role="tabpanel" aria-labelledby="tab-5" tabindex="0">
               <div class="home-best-ranking__card-area">
-                <div class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y" id="home-ranking-swiper-prev"></div>
-                <div class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y" id="home-ranking-swiper-next"></div>
+                <div
+                  class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y"
+                  id="home-ranking-swiper-prev"></div>
+                <div
+                  class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y"
+                  id="home-ranking-swiper-next"></div>
                 <div class="swiper mx-0 pb-md-15" id="home-ranking-swiper-5">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/eye-shadow-01.webp" class="product-card__img rounded-0" alt="裸色深邃眼影圖片">
+                          <img src="../assets/image/home-ranking/eye-shadow-01.webp" class="product-card__img rounded-0"
+                            alt="裸色深邃眼影圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">裸色深邃眼影</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">EXCEL</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">EXCEL</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">01</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">
+                          01</div>
                         <div class="card-shadow-1 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/eye-shadow-02.webp" class="product-card__img rounded-0" alt="六色眼影盤 - 暖楓圖片">
+                          <img src="../assets/image/home-ranking/eye-shadow-02.webp" class="product-card__img rounded-0"
+                            alt="六色眼影盤 - 暖楓圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">六色眼影盤 - 暖楓</h5>
-                          <span class="card-text product-card__brand rounded-pill mb0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">heme</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">heme</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">02</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">
+                          02</div>
                         <div class="card-shadow-2 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
+                        href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/eye-shadow-03.webp" class="product-card__img rounded-0" alt="that's taupe眼影盤圖片">
+                          <img src="../assets/image/home-ranking/eye-shadow-03.webp" class="product-card__img rounded-0"
+                            alt="that's taupe眼影盤圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">that's taupe眼影盤</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">colourpop</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">colourpop</span>
                         </div>
-                        <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">03</div>
+                        <div
+                          class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center ">
+                          03</div>
                         <div class="card-shadow-3 position-absolute"></div>
                       </a>
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5" href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/eye-shadow-04.png" class="product-card__img rounded-0" alt="九宮格眼影盤圖片">
+                          <img src="../assets/image/home-ranking/eye-shadow-04.png" class="product-card__img rounded-0"
+                            alt="九宮格眼影盤圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">九宮格眼影盤</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">3CE</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">3CE</span>
                         </div>
                       </a>
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5" href="./product_01.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/eye-shadow-05.webp" class="product-card__img rounded-0" alt="拜占庭珠寶四色眼影圖片">
+                          <img src="../assets/image/home-ranking/eye-shadow-05.webp" class="product-card__img rounded-0"
+                            alt="拜占庭珠寶四色眼影圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
                           <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">拜占庭珠寶四色眼影</h5>
-                          <span class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">chanel</span>
+                          <span
+                            class="card-text product-card__brand rounded-pill mb-0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">chanel</span>
                         </div>
                       </a>
                     </div>
-                  </div>  
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      <div class="text-center mt-lg-2"><a href="./category_top_ranking.html" class="btn btn-outline-primary fw-medium">看更多</a></div>
+        <div class="text-center mt-lg-2"><a href="./category_top_ranking.html"
+            class="btn btn-outline-primary fw-medium">看更多</a></div>
       </div>
     </section>
     <section class="home-invite-area py-10 py-md-25">
@@ -496,88 +663,113 @@
       </div>
     </section>
     <section class="home-recommend py-15 py-md-30">
-    <div class="container-sm">
-      <h2 class="h5 fs-sm-4 fs-md-3 mb-6 mb-md-12 text-md-center fw-semibold fw-md-bold lh-sm">好評推推</h2>
-      <div class="home-recommend__card-area row position-relative mb-9 mb-md-7">
-        <div class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y" id="home-recommend-swiper-prev"></div>
-        <div class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y" id="home-recommend-swiper-next"></div>
-        <div class="swiper mx-0" id="home-recommend-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="">
-                <div class="review-card__img-wrap card-img-top mb-4">
-                  <img src="../assets/image/home-recommend/woman-profile-1.png" class="review-card__img rounded-0" alt="裸色深邃眼影圖片">
-                </div>
-                <div class="card-body review-card__body p-0 d-flex flex-column justify-content-between align-items-center w-100">
-                  <h5 class="card-title review-card__name h6 fs-lg-5 mb-3 mb-md-4 ">Bbia水花瓣唇膏</h5>
-                  <div class="card-text review-card__content text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center">
-                    <p class="mb-0 review-card__content-inner ls-h">顯色度高又滑順好塗抹，持久度還不錯！最推薦的是色號的是#04水花瓣杏粉橘，非常適合亞洲人的偏黃膚色 </p>
+      <div class="container-sm">
+        <h2 class="h5 fs-sm-4 fs-md-3 mb-6 mb-md-12 text-md-center fw-semibold fw-md-bold lh-sm">好評推推</h2>
+        <div class="home-recommend__card-area row position-relative mb-9 mb-md-7">
+          <div
+            class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y"
+            id="home-recommend-swiper-prev"></div>
+          <div
+            class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y"
+            id="home-recommend-swiper-next"></div>
+          <div class="swiper mx-0" id="home-recommend-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="">
+                  <div class="review-card__img-wrap card-img-top mb-4">
+                    <img src="../assets/image/home-recommend/woman-profile-1.png" class="review-card__img rounded-0"
+                      alt="裸色深邃眼影圖片">
                   </div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="">
-                <div class="review-card__img-wrap card-img-top mb-4">
-                  <img src="../assets/image/home-recommend/woman-profile-2.png" class="review-card__img rounded-0" alt="裸色深邃眼影圖片">
-                </div>
-                <div class="card-body review-card__body p-0 d-flex flex-column align-items-center justify-content-between w-100">
-                  <h5 class="card-title review-card__name h6 fs-lg-5 mb-3 mb-md-4 ">tsuvimi 雙色閃亮眼影蜜</h5>
-                  <div class="card-text review-card__content text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center">
-                    <p class="mb-0 review-card__content-inner ls-h">懶人救星，手殘人推薦入手～組合Q22栗子可頌包含兩個色號S16+S19，是不容易失手的大地色系，可以看到抹在皮膚上的質感非常絲滑</p>
+                  <div
+                    class="card-body review-card__body p-0 d-flex flex-column justify-content-between align-items-center w-100">
+                    <h5 class="card-title review-card__name h6 fs-lg-5 mb-3 mb-md-4 ">Bbia水花瓣唇膏</h5>
+                    <div
+                      class="card-text review-card__content text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center">
+                      <p class="mb-0 review-card__content-inner ls-h">顯色度高又滑順好塗抹，持久度還不錯！最推薦的是色號的是#04水花瓣杏粉橘，非常適合亞洲人的偏黃膚色
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="">
-                <div class="review-card__img-wrap card-img-top mb-4">
-                  <img src="../assets/image/home-recommend/woman-profile-3.png" class="review-card__img rounded-0" alt="裸色深邃眼影圖片">
-                </div>
-                <div class="card-body review-card__body p-0 d-flex flex-column justify-content-between align-items-center w-100">
-                  <h5 class="card-title review-card__name h6 fs-lg-5 mb-3 mb-md-4 ">仙人掌小姐保濕精華40mL</h5>
-                  <div class="card-text review-card__content text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center">
-                    <p class="mb-0 review-card__content-inner ls-h">手上試用的是加大40ML版，光是這個容量就CP值超高～適合妝前臨時急救，皮膚瞬間水潤起來啦！也可以收一罐放在辦公室定期灌溉缺水的臉蛋</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="">
+                  <div class="review-card__img-wrap card-img-top mb-4">
+                    <img src="../assets/image/home-recommend/woman-profile-2.png" class="review-card__img rounded-0"
+                      alt="裸色深邃眼影圖片">
                   </div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="">
-                <div class="review-card__img-wrap card-img-top mb-4">
-                  <img src="../assets/image/home-recommend/woman-profile-4.png" class="review-card__img rounded-0" alt="裸色深邃眼影圖片">
-                </div>
-                <div class="card-body review-card__body p-0 d-flex flex-column justify-content-between align-items-center w-100">
-                  <h5 class="card-title review-card__name h6 fs-lg-5 mb-3 mb-md-4 ">Kate 怪獸級持色唇膏</h5>
-                  <div class="card-text review-card__content text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center">
-                    <p class="mb-0 review-card__content-inner ls-h">限定款包裝超可愛🔥這次包了三款限定色，分別是兩個我最愛的土色系跟第一次挑戰的裸膚色系。土色系一如往常表現中等，但請看看這支#11清晨微光</p>
+                  <div
+                    class="card-body review-card__body p-0 d-flex flex-column align-items-center justify-content-between w-100">
+                    <h5 class="card-title review-card__name h6 fs-lg-5 mb-3 mb-md-4 ">tsuvimi 雙色閃亮眼影蜜</h5>
+                    <div
+                      class="card-text review-card__content text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center">
+                      <p class="mb-0 review-card__content-inner ls-h">
+                        懶人救星，手殘人推薦入手～組合Q22栗子可頌包含兩個色號S16+S19，是不容易失手的大地色系，可以看到抹在皮膚上的質感非常絲滑</p>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="">
-                <div class="review-card__img-wrap card-img-top mb-4">
-                  <img src="../assets/image/home-recommend/woman-profile-5.png" class="review-card__img rounded-0" alt="裸色深邃眼影圖片">
-                </div>
-                <div class="card-body review-card__body p-0 d-flex flex-column justify-content-between align-items-center w-100">
-                  <h5 class="card-title review-card__name h6 fs-lg-5 mb-3 mb-md-4 ">&be UV Primer 妝前隔離乳</h5>
-                  <div class="card-text review-card__content text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center">
-                    <p class="mb-0 review-card__content-inner ls-h">最近被Ocard燒到好不容易入手一瓶，只能說是不愧他的超高評價，完全是蜜糖中的蜜糖！超高的保濕度&控油力，居然！整天！都沒脫妝！！！</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="">
+                  <div class="review-card__img-wrap card-img-top mb-4">
+                    <img src="../assets/image/home-recommend/woman-profile-3.png" class="review-card__img rounded-0"
+                      alt="裸色深邃眼影圖片">
                   </div>
-                </div>
-              </a>
+                  <div
+                    class="card-body review-card__body p-0 d-flex flex-column justify-content-between align-items-center w-100">
+                    <h5 class="card-title review-card__name h6 fs-lg-5 mb-3 mb-md-4 ">仙人掌小姐保濕精華40mL</h5>
+                    <div
+                      class="card-text review-card__content text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center">
+                      <p class="mb-0 review-card__content-inner ls-h">
+                        手上試用的是加大40ML版，光是這個容量就CP值超高～適合妝前臨時急救，皮膚瞬間水潤起來啦！也可以收一罐放在辦公室定期灌溉缺水的臉蛋</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="">
+                  <div class="review-card__img-wrap card-img-top mb-4">
+                    <img src="../assets/image/home-recommend/woman-profile-4.png" class="review-card__img rounded-0"
+                      alt="裸色深邃眼影圖片">
+                  </div>
+                  <div
+                    class="card-body review-card__body p-0 d-flex flex-column justify-content-between align-items-center w-100">
+                    <h5 class="card-title review-card__name h6 fs-lg-5 mb-3 mb-md-4 ">Kate 怪獸級持色唇膏</h5>
+                    <div
+                      class="card-text review-card__content text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center">
+                      <p class="mb-0 review-card__content-inner ls-h">
+                        限定款包裝超可愛🔥這次包了三款限定色，分別是兩個我最愛的土色系跟第一次挑戰的裸膚色系。土色系一如往常表現中等，但請看看這支#11清晨微光</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="">
+                  <div class="review-card__img-wrap card-img-top mb-4">
+                    <img src="../assets/image/home-recommend/woman-profile-5.png" class="review-card__img rounded-0"
+                      alt="裸色深邃眼影圖片">
+                  </div>
+                  <div
+                    class="card-body review-card__body p-0 d-flex flex-column justify-content-between align-items-center w-100">
+                    <h5 class="card-title review-card__name h6 fs-lg-5 mb-3 mb-md-4 ">&be UV Primer 妝前隔離乳</h5>
+                    <div
+                      class="card-text review-card__content text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center">
+                      <p class="mb-0 review-card__content-inner ls-h">
+                        最近被Ocard燒到好不容易入手一瓶，只能說是不愧他的超高評價，完全是蜜糖中的蜜糖！超高的保濕度&控油力，居然！整天！都沒脫妝！！！</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>  
+          </div>
         </div>
+        <div class="text-center"><a href="" class="btn btn-outline-primary fw-medium">看更多</a></div>
       </div>
-      <div class="text-center"><a href="" class="btn btn-outline-primary fw-medium">看更多</a></div>
-    </div>
     </section>
     <section class="home-award-area">
       <div class="container-sm h-100">
         <div class="row h-100">
-          <div class="home-award-area__content d-flex text-center pb-10 py-0 py-sm-13 col col-sm-6 flex-sm-column mt-auto mt-sm-0 ms-sm-auto justify-content-around justify-content-sm-start align-items-end align-items-sm-center">
+          <div
+            class="home-award-area__content d-flex text-center pb-10 py-0 py-sm-13 col col-sm-6 flex-sm-column mt-auto mt-sm-0 ms-sm-auto justify-content-around justify-content-sm-start align-items-end align-items-sm-center">
             <div class="home-award-area__text-wrap text-Secondary-dark mb-sm-9 pt-sm-3 pb-sm-7">
               <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-9 ls-md-h">BEAUTY</div>
               <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-9 ls-md-h">AWARDS</div>
@@ -623,174 +815,175 @@
       </div>
     </section>
     <%- include('./layout/footer.ejs'); -%>
-    <script type="module" src="../main.js"></script>
-    <%- include('./layout/header_search_jq.ejs'); -%>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
-    <script>
-      const homeRankingSwiper_1 = new Swiper('#home-ranking-swiper-1', {
-        slidesPerView: 1.5,
-        spaceBetween: "24px",
-        // rewind: true,
-        navigation: {
-          nextEl: '#home-ranking-swiper-next',
-          prevEl: '#home-ranking-swiper-prev',
-        },
-        breakpoints: {
-          767: {
-            slidesPerView: 3,
-            centeredSlides: false
-          }
-        }
-      });
-      const homeRankingSwiper_2 = new Swiper('#home-ranking-swiper-2', {
-        slidesPerView: 1.5,
-        spaceBetween: "24px",
-        // rewind: true,
-        navigation: {
-          nextEl: '#home-ranking-swiper-next',
-          prevEl: '#home-ranking-swiper-prev',
-        },
-        breakpoints: {
-          767: {
-            slidesPerView: 3,
-            centeredSlides: false
-          }
-        }
-      });
-      const homeRankingSwiper_3 = new Swiper('#home-ranking-swiper-3', {
-        slidesPerView: 1.5,
-        spaceBetween: "24px",
-        // rewind: true,
-        navigation: {
-          nextEl: '#home-ranking-swiper-next',
-          prevEl: '#home-ranking-swiper-prev',
-        },
-        breakpoints: {
-          767: {
-            slidesPerView: 3,
-            centeredSlides: false
-          }
-        }
-      });
-      const homeRankingSwiper_4 = new Swiper('#home-ranking-swiper-4', {
-        slidesPerView: 1.5,
-        spaceBetween: "24px",
-        // rewind: true,
-        navigation: {
-          nextEl: '#home-ranking-swiper-next',
-          prevEl: '#home-ranking-swiper-prev',
-        },
-        breakpoints: {
-          767: {
-            slidesPerView: 3,
-            centeredSlides: false
-          }
-        }
-      });
-      const homeRankingSwiper_5 = new Swiper('#home-ranking-swiper-5', {
-        slidesPerView: 1.5,
-        spaceBetween: "24px",
-        // rewind: true,
-        navigation: {
-          nextEl: '#home-ranking-swiper-next',
-          prevEl: '#home-ranking-swiper-prev',
-        },
-        breakpoints: {
-          767: {
-            slidesPerView: 3,
-            centeredSlides: false
-          }
-        }
-      });
-      const homeRecommendSwiper = new Swiper('#home-recommend-swiper', {
-        slidesPerView: 1.5,
-        spaceBetween: "24px",
-        // rewind: true,
-        navigation: {
-          nextEl: '#home-recommend-swiper-next',
-          prevEl: '#home-recommend-swiper-prev',
-        },
-        breakpoints: {
-          767: {
-            slidesPerView: 3,
-            centeredSlides: false
-          }
-        }
-      });
+      <script type="module" src="../main.js"></script>
+      <%- include('./layout/header_search_jq.ejs'); -%>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
+        <script>
+          const homeRankingSwiper_1 = new Swiper('#home-ranking-swiper-1', {
+            slidesPerView: 1.5,
+            spaceBetween: "24px",
+            // rewind: true,
+            navigation: {
+              nextEl: '#home-ranking-swiper-next',
+              prevEl: '#home-ranking-swiper-prev',
+            },
+            breakpoints: {
+              767: {
+                slidesPerView: 3,
+                centeredSlides: false
+              }
+            }
+          });
+          const homeRankingSwiper_2 = new Swiper('#home-ranking-swiper-2', {
+            slidesPerView: 1.5,
+            spaceBetween: "24px",
+            // rewind: true,
+            navigation: {
+              nextEl: '#home-ranking-swiper-next',
+              prevEl: '#home-ranking-swiper-prev',
+            },
+            breakpoints: {
+              767: {
+                slidesPerView: 3,
+                centeredSlides: false
+              }
+            }
+          });
+          const homeRankingSwiper_3 = new Swiper('#home-ranking-swiper-3', {
+            slidesPerView: 1.5,
+            spaceBetween: "24px",
+            // rewind: true,
+            navigation: {
+              nextEl: '#home-ranking-swiper-next',
+              prevEl: '#home-ranking-swiper-prev',
+            },
+            breakpoints: {
+              767: {
+                slidesPerView: 3,
+                centeredSlides: false
+              }
+            }
+          });
+          const homeRankingSwiper_4 = new Swiper('#home-ranking-swiper-4', {
+            slidesPerView: 1.5,
+            spaceBetween: "24px",
+            // rewind: true,
+            navigation: {
+              nextEl: '#home-ranking-swiper-next',
+              prevEl: '#home-ranking-swiper-prev',
+            },
+            breakpoints: {
+              767: {
+                slidesPerView: 3,
+                centeredSlides: false
+              }
+            }
+          });
+          const homeRankingSwiper_5 = new Swiper('#home-ranking-swiper-5', {
+            slidesPerView: 1.5,
+            spaceBetween: "24px",
+            // rewind: true,
+            navigation: {
+              nextEl: '#home-ranking-swiper-next',
+              prevEl: '#home-ranking-swiper-prev',
+            },
+            breakpoints: {
+              767: {
+                slidesPerView: 3,
+                centeredSlides: false
+              }
+            }
+          });
+          const homeRecommendSwiper = new Swiper('#home-recommend-swiper', {
+            slidesPerView: 1.5,
+            spaceBetween: "24px",
+            // rewind: true,
+            navigation: {
+              nextEl: '#home-recommend-swiper-next',
+              prevEl: '#home-recommend-swiper-prev',
+            },
+            breakpoints: {
+              767: {
+                slidesPerView: 3,
+                centeredSlides: false
+              }
+            }
+          });
 
-      /* deal with review card text-overflow*/
-      // store full text
-      $(".review-card__content-inner").each(function() {
-        $(this).attr("data-full-text", $(this).text());
-      });
-      // cut at page first load
-      let w_xs = window.matchMedia("(max-width: 575px)");
-      let w_sm = window.matchMedia("(max-width: 767px)");
-      let w_md = window.matchMedia("(max-width: 991px)");
-      let w_lg = window.matchMedia("(max-width: 1199px)");
-      let w_xl = window.matchMedia("(max-width: 1399px)");
-      $(".review-card__content-inner").each(function() {
-        if(w_xs.matches) {
-          let text = $(this).attr("data-full-text").substring(0, 20) + "...";
-          $(this).text(text);
-        }
-        else if(w_sm.matches) {
-          let text = $(this).attr("data-full-text").substring(0, 47) + "...";
-          $(this).text(text);
-        }
-        else if(w_md.matches) {
-          let text = $(this).attr("data-full-text").substring(0, 23) + "...";
-          $(this).text(text);
-        }
-        else if(w_lg.matches) {
-          let text = $(this).attr("data-full-text").substring(0, 35) + "...";
-          $(this).text(text);
-        }
-        else if(w_xl.matches) {
-          let text = $(this).attr("data-full-text").substring(0, 40) + "...";
-          $(this).text(text);
-        }
-        else {
-          let text = $(this).attr("data-full-text").substring(0, 50) + "...";
-          $(this).text(text);
-        }
-      });
-      // cut at page resize
-      window.addEventListener("resize", () => {
-        let w_xs = window.matchMedia("(max-width: 575px)");
-        let w_sm = window.matchMedia("(max-width: 767px)");
-        let w_md = window.matchMedia("(max-width: 991px)");
-        let w_lg = window.matchMedia("(max-width: 1199px)");
-        let w_xl = window.matchMedia("(max-width: 1399px)");
-        let x = window.matchMedia("(min-width: 992px)");
-        $(".review-card__content-inner").each(function(i) {
-          if(w_xs.matches) {
-            let text = $(this).attr("data-full-text").substring(0, 20) + "...";
-            $(this).text(text);
-          }
-          else if(w_sm.matches) {
-            let text = $(this).attr("data-full-text").substring(0, 47) + "...";
-            $(this).text(text);
-          }
-          else if(w_md.matches) {
-            let text = $(this).attr("data-full-text").substring(0, 23) + "...";
-            $(this).text(text);
-          }
-          else if(w_lg.matches) {
-            let text = $(this).attr("data-full-text").substring(0, 35) + "...";
-            $(this).text(text);
-          }
-          else if(w_xl.matches) {
-            let text = $(this).attr("data-full-text").substring(0, 40) + "...";
-            $(this).text(text);
-          }
-          else {
-            let text = $(this).attr("data-full-text").substring(0, 50) + "...";
-            $(this).text(text);
-          }
-        });
-      });
-    </script>
-  </body>
+          /* deal with review card text-overflow*/
+          // store full text
+          $(".review-card__content-inner").each(function () {
+            $(this).attr("data-full-text", $(this).text());
+          });
+          // cut at page first load
+          let w_xs = window.matchMedia("(max-width: 575px)");
+          let w_sm = window.matchMedia("(max-width: 767px)");
+          let w_md = window.matchMedia("(max-width: 991px)");
+          let w_lg = window.matchMedia("(max-width: 1199px)");
+          let w_xl = window.matchMedia("(max-width: 1399px)");
+          $(".review-card__content-inner").each(function () {
+            if (w_xs.matches) {
+              let text = $(this).attr("data-full-text").substring(0, 20) + "...";
+              $(this).text(text);
+            }
+            else if (w_sm.matches) {
+              let text = $(this).attr("data-full-text").substring(0, 47) + "...";
+              $(this).text(text);
+            }
+            else if (w_md.matches) {
+              let text = $(this).attr("data-full-text").substring(0, 23) + "...";
+              $(this).text(text);
+            }
+            else if (w_lg.matches) {
+              let text = $(this).attr("data-full-text").substring(0, 35) + "...";
+              $(this).text(text);
+            }
+            else if (w_xl.matches) {
+              let text = $(this).attr("data-full-text").substring(0, 40) + "...";
+              $(this).text(text);
+            }
+            else {
+              let text = $(this).attr("data-full-text").substring(0, 50) + "...";
+              $(this).text(text);
+            }
+          });
+          // cut at page resize
+          window.addEventListener("resize", () => {
+            let w_xs = window.matchMedia("(max-width: 575px)");
+            let w_sm = window.matchMedia("(max-width: 767px)");
+            let w_md = window.matchMedia("(max-width: 991px)");
+            let w_lg = window.matchMedia("(max-width: 1199px)");
+            let w_xl = window.matchMedia("(max-width: 1399px)");
+            let x = window.matchMedia("(min-width: 992px)");
+            $(".review-card__content-inner").each(function (i) {
+              if (w_xs.matches) {
+                let text = $(this).attr("data-full-text").substring(0, 20) + "...";
+                $(this).text(text);
+              }
+              else if (w_sm.matches) {
+                let text = $(this).attr("data-full-text").substring(0, 47) + "...";
+                $(this).text(text);
+              }
+              else if (w_md.matches) {
+                let text = $(this).attr("data-full-text").substring(0, 23) + "...";
+                $(this).text(text);
+              }
+              else if (w_lg.matches) {
+                let text = $(this).attr("data-full-text").substring(0, 35) + "...";
+                $(this).text(text);
+              }
+              else if (w_xl.matches) {
+                let text = $(this).attr("data-full-text").substring(0, 40) + "...";
+                $(this).text(text);
+              }
+              else {
+                let text = $(this).attr("data-full-text").substring(0, 50) + "...";
+                $(this).text(text);
+              }
+            });
+          });
+        </script>
+</body>
+
 </html>
