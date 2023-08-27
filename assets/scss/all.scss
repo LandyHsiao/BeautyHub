@@ -23,10 +23,9 @@
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 
-
 // 8. Add additional custom code here
-@import "base/base";  // common setting for whole site
-@import "base/font";  // common web font import
+@import "base/base"; // common setting for whole site
+@import "base/font"; // common web font import
 @import "/node_modules/bootstrap-icons/font/bootstrap-icons.css"; // bootstrap icon fonts
 
 @import "utils/mixin";
@@ -34,6 +33,7 @@
 
 // import components stylesheets from here
 @import "components/buttons";
+@import "components/breadcrumb";
 
 // import layout stylesheet from here
 @import "layout/header";
@@ -42,3 +42,4 @@
 // import pages stylesheet from here
 @import "pages/index";
 @import "pages/category_top_ranking";
+@import "pages/_member_register";

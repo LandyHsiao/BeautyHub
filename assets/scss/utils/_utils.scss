@@ -1,5 +1,5 @@
 // generate letter-spacing utility classes with RWD
-// EX: lp-h, lp-md-p
+// EX: ls-h, ls-md-p
 @each $name, $value in $letter-spacings {
   .ls-#{$name} {
       letter-spacing: $value;
@@ -7,16 +7,9 @@
   @each $bp, $bp-value in $container-max-widths {
       .ls-#{$bp}-#{$name} {
         @include media-breakpoint-up($bp) {
-              letter-spacing: $value  !important;
+              letter-spacing: $value !important;
           }
       }
-  }
-}
-
-// make all heading classes has 5% letter-sapcing
-@for $i from 1 through 6 {
-  .h#{$i}, .display-#{$i} {
-      letter-spacing: map-get($letter-spacings, h);
   }
 }
 
@@ -27,6 +20,7 @@
   font-weight: $font-weight-normal;
   font-family: $font-family-sans-serif;
   letter-spacing: map-get($map: $letter-spacings, $key: h);
+  margin-bottom: 0;
 }
 
 .para-2 {
@@ -35,4 +29,5 @@
   font-weight: $font-weight-normal;
   font-family: $font-family-sans-serif;
   letter-spacing: map-get($map: $letter-spacings, $key: h);
+  margin-bottom: 0;
 }
