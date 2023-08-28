@@ -147,4 +147,15 @@ $utilities: (
       bolder: $font-weight-bolder,
     ),
   ),
+  "min-viewport-height": (
+    property: min-height,
+    class: min-vh,
+    values: (
+      100: 100vh,
+      75: 75vh,
+      50: 50vh,
+      30: 30vh,
+      25: 25vh
+    )
+  ),
 );
