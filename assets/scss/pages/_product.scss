@@ -63,13 +63,10 @@ $editor-min-height: 40vh;
 /* review & comments */
 .review-card__avartar {
   width: 50px;
-  height: 50px;
-  background-image: url('https://github.com/LandyHsiao/beauty-hub/blob/develop/assets/image/home-recommend/woman-profile-1.png?raw=true');
-  background-position: center;
-  background-size: cover;
+  aspect-ratio: 1;
+  object-position: center;
   @include media-breakpoint-up (md){
     width: 100px;
-    height: 100px;
   }
 }
 
@@ -78,23 +75,66 @@ $editor-min-height: 40vh;
 }
 
 .review-card__comment-avartar {
-  background-image: url('../image/user-prifile.jpg');
-  background-position: center;
-  background-size: cover;
+  object-position: center;
   aspect-ratio: 1;
+  width: 40px;
+  height: 40px;
+  // @include media-breakpoint-up(md) {
+  //   width: 40px;
+  //   height: 40px;
+  // }
+}
+
+.review-card.hidden{
+  display: none !important;
+}
+
+.review-card {
+  margin-bottom: 1rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
   @include media-breakpoint-up(md) {
-    width: 40px;
-    height: 40px;
+    margin-bottom: 2rem;
+  }
+  &.active {
+    .review-card__user {
+      display: none !important;
+    }
+    .review-card__user-expand {
+      @include media-breakpoint-up(md) {
+        display: block !important;
+      }
+    }
+    .review-card__comments, .review-card__send-comment {
+      @include media-breakpoint-up(md) {
+        margin-left: auto;
+        width: 85%;
+      }
+    }
+    .review-card__expand-wrap {
+      display: flex !important;
+      align-items: center;
+    }
+    .review-card__review-area {
+      flex-grow: 1;
+    }
+  }
+}
+
+.review-card__badge-heart, .review-card__badge-bookmark {
+  &:before {
+    vertical-align: middle;
+    line-height: 1.5;
   }
 }
 
 /* new review */
 
-#scrolling-container {
+.scrolling-container {
   min-height: $editor-min-height;
 }
-
-#editor {
+.editor {
   min-height: $editor-min-height;
 }
 
