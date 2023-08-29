@@ -158,4 +158,18 @@ $utilities: (
       25: 25vh
     )
   ),
+  "width": (
+    responsive: true,
+    property: width,
+    class: w,
+    values: (
+      10: 10%,
+      25: 25%,
+      30: 30%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto
+    )
+  ),
 );
