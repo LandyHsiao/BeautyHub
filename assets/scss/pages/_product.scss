@@ -1,0 +1,116 @@
+$editor-min-height: 40vh;
+
+/* prodcut-intro */
+.prodcut-intro__logo-wrap {
+  aspect-ratio: 1;
+  max-width: 100%;
+}
+
+.product_detail .nav-item .active {
+  border-color: $Secondary-dark !important;
+}
+
+/* chemical list */
+.chemical-list-numbered {
+  list-style-type: none;
+  counter-reset: section;
+
+  > .chemical-list__item:not(.chemical-list__head)::before {
+    // Increments only this instance of the section counter
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 24px;
+    line-height: 1.2;
+    vertical-align: top;
+    content: counters(section, ".") ". ";
+    font-family: $display-font-family;
+    counter-increment: section;
+    @include media-breakpoint-up(sm) {
+      content: '';
+    }
+  }
+}
+
+.chemical-list__head > * {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.chemical-list__item:not(.chemical-list__head) {
+  padding-top: 36.8px;
+  border-bottom: 1px solid $Gray-04;
+  &:hover {
+    background-color: $Background-S2;
+  }
+  @include media-breakpoint-up(sm) {
+    padding-top: 0.5rem;
+  }
+}
+
+.chemical-list__wrap-content {
+  width: 100%;
+  @include media-breakpoint-up(sm) {
+    width: calc(100% / 3);
+  }
+}
+.chemical-list__link-out .bi {
+  @media(min-width: 768px) {
+    vertical-align: baseline !important;
+  }
+}
+
+/* review & comments */
+.review-card__avartar {
+  width: 50px;
+  height: 50px;
+  background-image: url('https://github.com/LandyHsiao/beauty-hub/blob/develop/assets/image/home-recommend/woman-profile-1.png?raw=true');
+  background-position: center;
+  background-size: cover;
+  @include media-breakpoint-up (md){
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.review-card__body-content {
+  max-height: 1.5rem * 5;
+}
+
+.review-card__comment-avartar {
+  background-image: url('../image/user-prifile.jpg');
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1;
+  @include media-breakpoint-up(md) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* new review */
+
+#scrolling-container {
+  min-height: $editor-min-height;
+}
+
+#editor {
+  min-height: $editor-min-height;
+}
+
+.ql-toolbar.ql-snow .ql-formats {
+  margin-right: 8px;
+  @include media-breakpoint-up(md) {
+    margin-right: 16px;
+  }
+}
+
+.ql-editor {
+  min-height: $editor-min-height;
+}
+
+.review-submit {
+  @include media-breakpoint-up(sm) {
+    width: initial !important;
+  }
+}
