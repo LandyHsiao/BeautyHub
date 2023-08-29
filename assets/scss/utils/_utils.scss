@@ -29,3 +29,23 @@
   font-family: $font-family-sans-serif;
   letter-spacing: map-get($map: $letter-spacings, $key: h);
 }
+
+/* hover-effects */
+// use at fix-size img-wrapper & the img inside get the hover effect
+.hover-scale-img {
+  overflow: hidden;
+  img{
+    object-fit: contain;
+    object-position: center;
+    transition: 2s all;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.hover-text-primary {
+  &:hover {
+    color: $primary !important;
+  }
+}
