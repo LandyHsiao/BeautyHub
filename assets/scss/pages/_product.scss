@@ -55,34 +55,42 @@ $editor-min-height: 40vh;
   }
 }
 .chemical-list__link-out .bi {
-  @media(min-width: 768px) {
+  @include media-breakpoint-up(md) {
     vertical-align: baseline !important;
   }
 }
 
 /* review & comments */
-.review-card__avartar {
-  width: 50px;
+.review-card__avatar {
   aspect-ratio: 1;
   object-position: center;
-  @include media-breakpoint-up (md){
-    width: 100px;
+  @include media-breakpoint-up(md){
+    max-width: 100px;
   }
 }
 
 .review-card__body-content {
   max-height: 1.5rem * 5;
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.review-card__comment {
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .review-card__comment-avartar {
   object-position: center;
   aspect-ratio: 1;
-  width: 40px;
-  height: 40px;
-  // @include media-breakpoint-up(md) {
-  //   width: 40px;
-  //   height: 40px;
-  // }
+  width: 30px;
+  @include media-breakpoint-up(md) {
+    width: 50px;
+  }
 }
 
 .review-card.hidden{
@@ -97,19 +105,22 @@ $editor-min-height: 40vh;
   @include media-breakpoint-up(md) {
     margin-bottom: 2rem;
   }
+  &:not(.active) {
+    .review-card__body-content > * {
+      margin-bottom: 0 !important;
+      font-size: 1rem !important;
+      line-height: 1.5rem !important;
+      font-weight: normal !important;
+    }
+  }
   &.active {
     .review-card__user {
-      display: none !important;
+      justify-content: flex-start !important;
+      
     }
     .review-card__user-expand {
       @include media-breakpoint-up(md) {
         display: block !important;
-      }
-    }
-    .review-card__comments, .review-card__send-comment {
-      @include media-breakpoint-up(md) {
-        margin-left: auto;
-        width: 85%;
       }
     }
     .review-card__expand-wrap {
@@ -119,8 +130,32 @@ $editor-min-height: 40vh;
     .review-card__review-area {
       flex-grow: 1;
     }
+    .review-card__body-content {
+      max-height: initial;
+    }
   }
 }
+
+.review-card__comment-area-title {
+  display: none;
+  &.active {
+    display: block;
+  }
+  @include media-breakpoint-up(md) {
+    &, &.active {
+      display: none;
+    }
+  } 
+}
+
+.review-card__content-img {
+  width: 300px;
+  display: none;
+  &.active {
+    display: inline;
+  }
+}
+
 
 .review-card__badge-heart, .review-card__badge-bookmark {
   &:before {
