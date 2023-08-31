@@ -10,6 +10,12 @@ $editor-min-height: 40vh;
   border-color: $Secondary-dark !important;
 }
 
+/* product-intro tab */
+.product-intro-img {
+  width: 100%;
+  display: block;
+}
+
 /* chemical list */
 .chemical-list-numbered {
   list-style-type: none;
@@ -155,7 +161,6 @@ $editor-min-height: 40vh;
     display: inline;
   }
 }
-
 
 .review-card__badge-heart, .review-card__badge-bookmark {
   &:before {
