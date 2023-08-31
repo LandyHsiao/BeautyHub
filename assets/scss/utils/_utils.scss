@@ -1,15 +1,18 @@
 // generate letter-spacing utility classes with RWD
-// EX: lp-h, lp-md-p
-@each $name, $value in $letter-spacings {
+// EX: ls-h, ls-md-p
+@each $name,
+$value in $letter-spacings {
   .ls-#{$name} {
-      letter-spacing: $value;
+    letter-spacing: $value;
   }
-  @each $bp, $bp-value in $container-max-widths {
-      .ls-#{$bp}-#{$name} {
-        @include media-breakpoint-up($bp) {
-              letter-spacing: $value  !important;
-          }
+
+  @each $bp,
+  $bp-value in $container-max-widths {
+    .ls-#{$bp}-#{$name} {
+      @include media-breakpoint-up($bp) {
+        letter-spacing: $value !important;
       }
+    }
   }
 }
 
@@ -20,6 +23,7 @@
   font-weight: $font-weight-normal;
   font-family: $font-family-sans-serif;
   letter-spacing: map-get($map: $letter-spacings, $key: h);
+  margin-bottom: 0;
 }
 
 .para-2 {
@@ -28,6 +32,7 @@
   font-weight: $font-weight-normal;
   font-family: $font-family-sans-serif;
   letter-spacing: map-get($map: $letter-spacings, $key: h);
+  margin-bottom: 0;
 }
 
 /* hover-effects */
@@ -48,4 +53,18 @@
   &:hover {
     color: $primary !important;
   }
+}
+/* width */
+
+.w-152 {
+  width: 152px;
+}
+
+/* font-family */
+.ff-cg {
+  font-family: $display-font-family;
+}
+
+.ff-nst {
+  font-family: $font-family-sans-serif;
 }

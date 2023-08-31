@@ -33,6 +33,9 @@
 
 // import components stylesheets from here
 @import "components/buttons";
+@import "components/breadcrumb";
+
+
 
 // import layout stylesheet from here
 @import "layout/header";
@@ -42,6 +45,8 @@
 @import "pages/index";
 @import "pages/category_top_ranking";
 @import "pages/product";
+@import "pages/brand";
+@import "pages/_member_register";
 
 // import vendor stylesheet from hehe
 @import "vendor/quill-snow";

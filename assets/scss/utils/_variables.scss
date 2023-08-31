@@ -31,7 +31,7 @@ $gray-800: $Gray-01;
 $gray-900: $Gray-01;
 
 $primary: $Primary-main;
-$secondary: $Secondary-main;
+$secondary: $Secondary-main; 
 // $success:       $green;
 // $info:          $cyan;
 // $warning:       $yellow;
@@ -56,10 +56,8 @@ $input-btn-line-height: $line-height-sm;
 
 // border radius
 $border-radius: 0;
-$btn-border-radius: 0;
-$btn-border-radius-sm: 0;
-$btn-border-radius-lg: 0;
 $card-border-width: 0;
+$input-border-radius: 4px;
 
 // paddings
 $input-btn-padding-y: 1rem;
@@ -70,11 +68,23 @@ $input-padding-x: 0.75rem;
 // others
 $enable-rfs: false;
 
-$btn-active-bg-shade-amount: 0%;
-$btn-active-bg-tint-amount: 0%;
-$btn-active-border-shade-amount: 0%;
-$btn-active-border-tint-amount: 0%;
+// button
+$btn-border-radius: 0;
+$btn-border-radius-sm: 0;
+$btn-border-radius-lg: 0;
+$btn-active-bg-shade-amount:      0%;
+$btn-active-bg-tint-amount:       0%;
+$btn-active-border-shade-amount:  0%;
+$btn-active-border-tint-amount:   0%;
 
+// form control
+$input-focus-box-shadow: none;
+$input-placeholder-color: $Gray-02;
+$input-bg: $Gray-06;
+
+// input-group
+$input-group-addon-bg: $Gray-06;
+$input-group-addon-border-color: $Gray-04;
 
 //select
 $form-select-font-family: $font-family-sans-serif;
@@ -90,3 +100,9 @@ $badge-padding-x: 1.5rem;
 // list-group
 $list-group-border-width: 0;
 $list-group-item-padding-x: 0;
+
+// breadcrumb
+$breadcrumb-font-size: 0.875rem;
+$breadcrumb-active-color: $Gray-02;
+$breadcrumb-divider-color: $Gray-02;
+$breadcrumb-divider: quote("\25AA");
