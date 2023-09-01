@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeautyHub 註冊會員</title>
+</head>
+
+<body>
+  <%- include('./layout/header.ejs',{page: "member_register" }); -%>
+
+    <div class="container-md py-md-4 py-6">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+          <li class="breadcrumb-item" aria-current="page">註冊會員</li>
+        </ol>
+      </nav>
+      <h1 class=" text-md-center text-start py-md-12 py-6 fs-md-3 fs-5 m-0">
+        註冊會員
+      </h1>
+      <div class="member__register d-flex flex-column  py-md-12 py-105">
+        <div class="row justify-content-between align-items-center mb-md-10">
+
+          <div class="user__avatar--update d-flex flex-column align-items-center col-md-6 col-12 mb-md-0 mb-9">
+            <img class="user__avatar mb-3" src="../assets/image/user_default.svg" alt="avatar">
+            <input type="file" id="avatar-uploader" data-target="avatar-uploader" accept="image/*" hidden>
+            <label for="avatar-uploader" class="btn btn-outline-primary py-3 px-9 fw-medium">上傳圖片</label>
+          </div>
+
+          <div class="member__register--account col-md-6 col-12 mb-md-0 mb-5">
+            <form action="" method="post"></form>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control border border-1 border-Gray-04" id="floatingNickname"
+                placeholder="暱稱">
+              <label for="floatingNickname">暱稱</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control border border-1 border-Gray-04" id="floatingInput"
+                placeholder="電子信箱">
+              <label for="floatingInput">電子信箱</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control border border-1 border-Gray-04" id="floatingPassword"
+                placeholder="密碼">
+              <label for="floatingPassword">密碼</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control border border-1 border-Gray-04" id="floatingSkintype"
+                placeholder="膚況">
+              <label for="floatingSkintype">膚況</label>
+            </div>
+            </form>
+          </div>
+
+        </div>
+        <button
+          class="member__register--btn btn btn-primary py-md-4 px-md-18 py-3 px-8 col-md-4 col-12 mx-auto fw-medium">註冊會員
+        </button>
+      </div>
+    </div>
+    </div>
+    <%- include('./layout/footer.ejs'); -%>
+      <%- include('./layout/header_search_jq.ejs'); -%>
+        <script type="module" src="../main.js"></script>
+</body>
+
+</html>

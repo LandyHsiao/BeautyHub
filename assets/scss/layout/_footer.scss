@@ -4,15 +4,9 @@ footer {
 
 .footer__logo {
   background-size: contain;
-  background-image: url("../image/Logo-sm.png");
-  width: 85px;
-  height: 36px;
-
-  @include media-breakpoint-up(md) {
-    background-image: url("../image/Logo.png");
-    width: 134px;
-    height: 56px;
-  }
+  background-image: url("../image/Logo.png");
+  width: 134px;
+  height: 56px;
 }
 
 .footer__list-item a {
