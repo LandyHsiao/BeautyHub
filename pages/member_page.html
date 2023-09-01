@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BeautyHub 修改資料</title>
+    <title>BeautyHub 我的頁面</title>
 </head>
 
 <body>
@@ -13,11 +13,10 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item fs-md-6 fs-8"><a href="index.html">首頁</a></li>
-                    <li class="breadcrumb-item fs-md-6 fs-8" aria-current="page">我的頁面</li>
-                    <li class="breadcrumb-item fs-md-6 fs-8 active" aria-current="page">修改資料</li>
+                    <li class="breadcrumb-item fs-md-6 fs-8 active" aria-current="page">我的頁面</li>
                 </ol>
             </nav>
-            <form action="" class="py-md-12 py-105">
+            <div class="py-md-12 py-105">
                 <div class="row justify-content-between align-items-center mb-md-10">
                     <div class="d-flex flex-column align-items-center col-md-6 col-12 mb-md-0 mb-9">
                         <img src="../assets/image/home-recommend/woman-profile-1.png" alt="user__icon"
@@ -34,24 +33,23 @@
                         </li>
                         <li class="d-flex align-items-center mb-4">
                             <h1 class="fs-md-5 fs-6 fw-medium ls-md-s ls-p w-25">膚況：</h1>
-                            <select class="form-select w-75" aria-label="Default select example">
-                                <option selected>混合肌</option>
-                                <option value="1">敏感肌</option>
-                                <option value="2">油肌</option>
-                            </select>
+                            <p class="fs-md-5 fs-6 fw-medium ls-md-s ls-p">混合肌</p>
                         </li>
-                        <li class="d-flex align-items-center">
+                        <li class="d-flex align-items-center mb-4">
                             <h1 class="fs-md-5 fs-6 fw-medium ls-md-s ls-p w-25">密碼：</h1>
-                            <input class="form-control w-75" type="password" placeholder="old password here"
-                                aria-label="default input example">
+                            <p class="fs-md-5 fs-6 fw-medium ls-md-s ls-p">＊＊＊＊＊＊＊＊＊</p>
                         </li>
                     </ol>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <a href="./member_page.html" class="btn btn-primary py-md-4 px-md-18 py-3 px-8 fw-medium">儲存
+                    <a href="./member_edit_page.html" class="btn btn-primary py-md-4 px-md-18 py-3 px-8 fw-medium">修改資料
                     </a>
                 </div>
-            </form>
+            </div>
+            <hr class="text-primary mb-md-9 mb-5">
+            <div>
+                <h2 class="text-md-center text-start fs-md-5 fs-6 fw-medium ls-md-s ls-p mb-3">我的梳妝台</h2>
+            </div>
         </div>
         <%- include('./layout/footer.ejs'); -%>
             <%- include('./layout/header_search_jq.ejs'); -%>
