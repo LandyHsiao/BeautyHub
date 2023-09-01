@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeautyHub 註冊會員</title>
+</head>
+
+<body>
+    <%- include('./layout/header-other.ejs',{page: "member_edit_page" }); -%>
+        <!--  -->
+        <div class="container py-md-4 py-6">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">我的頁面</li>
+                </ol>
+            </nav>
+            <div class="py-md-12 py-105">
+                <div class="row justify-content-between align-items-center mb-md-10">
+                    <div class="d-flex flex-column align-items-center col-md-6 col-12 mb-md-0 mb-9">
+                        <img src="../assets/image/home-recommend/woman-profile-1.png" alt="user__icon"
+                            class="user__icon rounded-circle">
+                    </div>
+                    <div class="col-md-6 col-12 mb-md-0 mb-5">
+                        <h1 class="fs-md-5 fs-6 fw-medium ls-md-s ls-p mb-3">暱稱：梅子綠</h1>
+                        <p class="fs-md-5 fs-6 fw-medium ls-md-s ls-p mb-3">電子信箱：maykim0807@gmail.com</p>
+                        <p class="fs-md-5 fs-6 fw-medium ls-md-s ls-p mb-3">膚況：混合肌</p>
+                        <p class="fs-md-5 fs-6 fw-medium ls-md-s ls-p mb-3">密碼：＊＊＊＊＊＊＊＊＊</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-primary py-md-4 px-md-18 py-3 px-8 fw-medium">修改資料
+                    </button>
+                </div>
+            </div>
+            <hr class="text-primary mb-md-9 mb-5">
+            <div>
+                <h2 class="text-md-center text-start fs-md-5 fs-6 fw-medium ls-md-s ls-p mb-3">我的梳妝台</h2>
+            </div>
+        </div>
+        <%- include('./layout/footer.ejs'); -%>
+            <%- include('./layout/header_search_jq.ejs'); -%>
+                <script type="module" src="../main.js"></script>
+</body>
+
+</html>
