@@ -914,7 +914,7 @@
           /* deal with review card text-overflow*/
           // store full text
           $(".review-card__content-inner").each(function () {
-            $(this).attr("data-full-text", $(this).text());
+            $(this).attr("data-full-text", $(this).text().trim());
           });
           // cut at page first load
           let w_xs = window.matchMedia("(max-width: 575px)");
