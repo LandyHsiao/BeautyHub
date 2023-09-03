@@ -35,10 +35,32 @@ $value in $letter-spacings {
   margin-bottom: 0;
 }
 
+/* hover-effects */
+// use at fix-size img-wrapper & the img inside get the hover effect
+.hover-scale-img {
+  overflow: hidden;
+  img{
+    object-fit: contain;
+    object-position: center;
+    transition: 2s all;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.hover-text-primary {
+  &:hover {
+    color: $primary !important;
+  }
+}
+/* width */
+
 .w-152 {
   width: 152px;
 }
 
+/* font-family */
 .ff-cg {
   font-family: $display-font-family;
 }
