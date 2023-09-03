@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BeautyHub 會員登入</title>
+  <title>BeautyHub Beauty Awards 2023</title>
   <script type="module" crossorigin src="/beauty-hub/assets/member_register-90741de2.js"></script>
   <link rel="stylesheet" href="/beauty-hub/assets/member_register-a17f6f01.css">
 </head>
@@ -85,56 +85,126 @@
       </ul>
     </div>
   </div>
-</header>
-    <div class="container-md py-md-4 py-6">
+</header>    <div class="container-md py-md-4 py-6">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item fs-md-6 fs-8"><a href="index.html">首頁</a></li>
-          <li class="breadcrumb-item text-Gray-02 fs-md-6 fs-8" aria-current="page" class="text-Gray-02">登入會員</li>
+          <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Beauty Awards 2023</li>
         </ol>
       </nav>
-      <h1 class=" text-md-center text-start py-md-12 py-6 fs-md-3 fs-5 m-0 fw-md-bold fw-semibold">
-        登入會員
-      </h1>
-      <div
-        class="member__login row flex-md-row-reverse flex-column justify-content-center align-items-center py-md-12 py-105">
-        <div class="member__login--account col-md-6 col-12 mb-md-0 mb-8">
-          <!-- 這裡的flex-grow-1 為啥沒有用？ -->
-          <form action="" method="post" class="flex-grow-1">
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control border border-1 border-Gray-04" id="floatingInput"
-                placeholder="電子信箱">
-              <label for="floatingInput">電子信箱</label>
-            </div>
-            <div class="form-floating">
-              <input type="password" class="form-control border border-1 border-Gray-04" id="floatingPassword"
-                placeholder="密碼">
-              <label for="floatingPassword">密碼</label>
-            </div>
-            <div class="d-flex flex-lg-row flex-column  justify-content-around mt-md-6 mt-5">
-              <botton class="btn btn-primary  mb-lg-0 mb-3 py-md-4 px-md-18 py-2 px-8 fw-medium">登入會員</botton>
-              <botton class="btn btn-outline-primary py-md-4 px-md-18 py-2 px-8 fw-medium">註冊會員</botton>
-            </div>
-          </form>
+      <div class="d-flex flex-column justify-content-between align-items-center text-center">
+        <img src="data:image/png;base64,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" alt="" class="beauty__awards__title__img justify-content-center">
+      <h2
+        class="beauty__awards__title fs-lg-1 fs-md-2 fs-4 mb-0">
+        BEAUTY AWARDS
+      </h2>
+      <p class="beauty__awards__year border-bottom border-2 border-Gray-03 px-md-12 px-8 fs-md-2 fs-sm-3">2023SS</p>
+      <p class="beauty__awards__subtitle mb-md-4 mb-3 fw-light fs-md-6 fs-7">THE WINNER OF BEAUTY AWARDS SS 2023</p>
+    </div>
+
+      <div class="row pt-md-4 pt-3">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-md-8 mb-4 d-flex flex-column">
+          <a href="#" class="d-flex flex-column flex-grow-1 p-md-4 p-3 position-relative">
+            <img src="/beauty-hub/assets/beauty-awards-1-f4837a7a.png" alt="prize-1" class="card__item__img mb-2">
+            <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">01</div>
+            <h3 class="brand__name mb-2 fs-lg-4 fs-5">Guerlain</h3>
+            <p class="lh-base mb-0 text-justify flex-grow-1 text-Gray-01 link-Gray-02 fs-md-6 fs-7">皇家蜂王乳雙導精華</p>
+          </a>
         </div>
-        <hr class="d-md-none d-block">
-        <ul class="member__login--method col-md-6 col-12 list-unstyled text-center">
-          <li>
-            <a href="#" class="w-50 mb-md-8 mb-5 btn btn-outline-primary text-center px-0 fw-medium px-md-18">
-              FaceBook
-            </a>
-          </li>
-          <li>
-            <a href="#" class="w-50 mb-md-8 mb-5 btn btn-outline-primary text-center px-0 fw-medium px-md-18">
-              Google
-            </a>
-          </li>
-          <li>
-            <a href="#" class="w-50 btn btn-outline-primary text-center px-0 fw-medium px-md-18">
-              Apple
-            </a>
-          </li>
-        </ul>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-md-8 mb-4 d-flex flex-column">
+          <a href="#" class="d-flex flex-column flex-grow-1 p-md-4 p-3 position-relative">
+            <img src="/beauty-hub/assets/beauty-awards-2-bd8ab7ca.png" alt="prize-2" class="card__item__img mb-2">
+            <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">02</div>
+            <h3 class="brand__name mb-2 fs-lg-4 fs-5">Dior</h3>
+            <p class="lh-base mb-0 text-justify flex-grow-1 text-Gray-01 link-Gray-02 fs-md-6 fs-7">超完美持久柔光粉底液</p>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-md-8 mb-4 d-flex flex-column">
+          <a href="#" class="d-flex flex-column flex-grow-1 p-md-4 p-3 position-relative">
+            <img src="/beauty-hub/assets/beauty-awards-3-8e269233.png" alt="prize-3" class="card__item__img mb-2">
+            <div class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">03</div>
+            <h3 class="brand__name mb-2 fs-lg-4 fs-5">La Mer</h3>
+            <p class="lh-base mb-0 text-justify flex-grow-1 text-Gray-01 link-Gray-02 fs-md-6 fs-7">超能修護精華露</p>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-md-8 mb-4 d-flex flex-column">
+          <a href="#" class="d-flex flex-column flex-grow-1 p-md-4 p-3">
+            <img src="/beauty-hub/assets/beauty-awards-4-de8e76ea.png" alt="prize-4" class="card__item__img mb-2">
+            <h3 class="brand__name mb-2 fs-lg-4 fs-5">Clé de Peau Beauté</h3>
+            <p class="lh-base mb-0 text-justify flex-grow-1 text-Gray-01 link-Gray-02 fs-md-6 fs-7">塑妍逆引鑽白菁萃</p>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-md-8 mb-4 d-flex flex-column">
+          <a href="#" class="d-flex flex-column flex-grow-1 p-md-4 p-3">
+            <img src="/beauty-hub/assets/beauty-awards-5-035d2d1d.png" alt="prize-5" class="card__item__img mb-2">
+            <h3 class="brand__name mb-2 fs-lg-4 fs-5">Clarins</h3>
+            <p class="lh-base mb-0 text-justify flex-grow-1 text-Gray-01 link-Gray-02  fs-md-6 fs-7">氧氣亮白淡斑精華</p>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-md-8 mb-4 d-flex flex-column">
+          <a href="#" class="d-flex flex-column flex-grow-1 p-md-4 p-3">
+            <img src="/beauty-hub/assets/beauty-awards-6-ff9bc62e.png" alt="" class="card__item__img mb-2">
+            <h3 class="brand__name mb-2 fs-lg-4 fs-5">Sisley</h3>
+            <p class="lh-base mb-0 text-justify flex-grow-1 text-Gray-01 link-Gray-02  fs-md-6 fs-7">植物酵素極淨拋光面膜</p>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-md-8 mb-4 d-flex flex-column">
+          <a href="#" class="d-flex flex-column flex-grow-1 p-md-4 p-3">
+            <img src="/beauty-hub/assets/beauty-awards-7-02ea2296.png" alt="" class="card__item__img mb-2">
+            <h3 class="brand__name mb-2 fs-lg-4 fs-5">Clarins</h3>
+            <p class="lh-base mb-0 text-justify flex-grow-1 text-Gray-01 link-Gray-02  fs-md-6 fs-7">芳香調和身體乳</p>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-md-8 mb-4 d-flex flex-column">
+          <a href="#" class="d-flex flex-column flex-grow-1 p-md-4 p-3">
+            <img src="/beauty-hub/assets/beauty-awards-8-da2ac7c0.png" alt="" class="card__item__img mb-2">
+            <h3 class="brand__name mb-2 fs-lg-4 fs-5">Lancôme</h3>
+            <p class="lh-base mb-0 text-justify flex-grow-1 text-Gray-01 link-Gray-02  fs-md-6 fs-7">超緊顏抗痕亮采三效精華</p>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-md-8 mb-4 d-flex flex-column">
+          <a href="#" class="d-flex flex-column flex-grow-1 p-md-4 p-3">
+            <img src="/beauty-hub/assets/beauty-awards-9-0f2963be.png" alt="" class="card__item__img mb-2">
+            <h3 class="brand__name mb-2 fs-lg-4 fs-5">GARANCIA</h3>
+            <p class="lh-base mb-0 text-justify flex-grow-1 text-Gray-01 link-Gray-02  fs-md-6 fs-7">LA POUDRE MAGIQUE
+              ÉCLAT & JEUNESSE</p>
+          </a>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-md-8 mb-4 d-flex flex-column">
+          <a href="#" class="d-flex flex-column flex-grow-1 p-md-4 p-3">
+            <img src="/beauty-hub/assets/beauty-awards-10-c7d6f831.png" alt="" class="card__item__img mb-2">
+            <h3 class="brand__name mb-2 fs-lg-4 fs-5">Chanel</h3>
+            <p class="lh-base mb-0 text-justify flex-grow-1 text-Gray-01 link-Gray-02  fs-md-6 fs-7">1號紅色山茶花活能精萃</p>
+          </a>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-md-8 mb-4 d-flex flex-column">
+          <a href="#" class="d-flex flex-column flex-grow-1 p-md-4 p-3">
+            <img src="/beauty-hub/assets/beauty-awards-11-6ec9cdf6.png" alt="" class="card__item__img mb-2">
+            <h3 class="brand__name mb-2 fs-lg-4 fs-5">Kiehl's</h3>
+            <p class="lh-base mb-0 text-justify flex-grow-1 text-Gray-01 link-Gray-02  fs-md-6 fs-7">A醇全能新生抗痕精華</p>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-md-8 mb-4 d-flex flex-column">
+          <a href="#" class="d-flex flex-column flex-grow-1 p-md-4 p-3">
+            <img src="/beauty-hub/assets/beauty-awards-12-b7248244.png" alt="" class="card__item__img mb-2">
+            <h3 class="brand__name mb-2 fs-lg-4 fs-5">Clé de Peau Beauté</h3>
+            <p class="lh-base mb-0 text-justify flex-grow-1 text-Gray-01 link-Gray-02  fs-md-6 fs-7">精質光采粉底乳霜</p>
+          </a>
+        </div>
+
       </div>
     </div>
 
@@ -185,7 +255,6 @@
         $(".search__input").removeClass('d-none');
     });
 </script>        
-
 </body>
 
 </html>
