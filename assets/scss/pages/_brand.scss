@@ -1,0 +1,45 @@
+.brand__item--block {
+    max-width: 217px;
+    min-height: 174px;
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+        max-width: 376px;
+        max-height: 341px;
+    }
+}
+
+.brand__item--img {
+    max-width: 217px;
+    min-height: 174px;
+    object-fit: cover;
+    transition: all 1.2s;
+
+    @include media-breakpoint-up(md) {
+        max-width: 376px;
+        max-height: 434px;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}
+
+.brand__item--bg-01 {
+    background-image: url(../image/hot-bg-05.png);
+    background-position: center;
+    background-size: cover;
+    @include media-breakpoint-up(md)
+}
+
+.brand__item--bg-02 {
+    background-image: url(../image/hot-bg-06.png);
+    background-position: center;
+    background-size: cover;
+    @include media-breakpoint-up(md)
+}
+
+.box__sd {
+    box-shadow: 2px 2px 12px 0px rgba(208, 208, 208, 0.12);
+}

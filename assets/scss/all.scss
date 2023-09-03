@@ -35,6 +35,8 @@
 @import "components/buttons";
 @import "components/breadcrumb";
 
+
+
 // import layout stylesheet from here
 @import "layout/header";
 @import "layout/footer";
@@ -44,3 +46,9 @@
 @import "pages/category_top_ranking";
 @import "pages/_member_register";
 @import "pages/_about_b-hub";
+@import "pages/product";
+@import "pages/brand";
+@import "pages/_member_register";
+
+@import "vendor/quill-snow";
+@import "pages/search";

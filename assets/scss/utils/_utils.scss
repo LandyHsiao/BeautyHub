@@ -1,15 +1,18 @@
 // generate letter-spacing utility classes with RWD
 // EX: ls-h, ls-md-p
-@each $name, $value in $letter-spacings {
+@each $name,
+$value in $letter-spacings {
   .ls-#{$name} {
-      letter-spacing: $value;
+    letter-spacing: $value;
   }
-  @each $bp, $bp-value in $container-max-widths {
-      .ls-#{$bp}-#{$name} {
-        @include media-breakpoint-up($bp) {
-              letter-spacing: $value !important;
-          }
+
+  @each $bp,
+  $bp-value in $container-max-widths {
+    .ls-#{$bp}-#{$name} {
+      @include media-breakpoint-up($bp) {
+        letter-spacing: $value !important;
       }
+    }
   }
 }
 
@@ -30,4 +33,38 @@
   font-family: $font-family-sans-serif;
   letter-spacing: map-get($map: $letter-spacings, $key: h);
   margin-bottom: 0;
+}
+
+/* hover-effects */
+// use at fix-size img-wrapper & the img inside get the hover effect
+.hover-scale-img {
+  overflow: hidden;
+  img{
+    object-fit: contain;
+    object-position: center;
+    transition: 2s all;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.hover-text-primary {
+  &:hover {
+    color: $primary !important;
+  }
+}
+/* width */
+
+.w-152 {
+  width: 152px;
+}
+
+/* font-family */
+.ff-cg {
+  font-family: $display-font-family;
+}
+
+.ff-nst {
+  font-family: $font-family-sans-serif;
 }
