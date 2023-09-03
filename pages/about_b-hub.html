@@ -14,31 +14,36 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
-          <li class="breadcrumb-item" aria-current="page">關於我們</li>
-          <li class="breadcrumb-item active" aria-current="page">網站理念</li>
+          <li class="breadcrumb-item active" aria-current="page">關於我們</li>
+          <!-- <li class="breadcrumb-item active" aria-current="page">網站理念</li> -->
         </ol>
       </nav>
 
-      <section class="d-flex justify-content-between align-items-center row m-10">
+      <section class="d-flex justify-content-between row my-md-8 my-6 mx-0">
 
-        <div class="nav flex-column nav-pills align-items-center col-md-3 col-12 pe-0 mb-md-0 mb-4" id="v-pills-tab" role="tablist"
-          aria-orientation="vertical">
-          <h1 class="fs-xl-3 fs-5 my-10">
-            關於我們
-          </h1>
-          <button class="nav-link active fs-7 fs-md-6" id="v-pills-profile-tab" data-bs-toggle="pill"
-            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-            aria-selected="true">網站理念</button>
-          <button class="nav-link fs-7 fs-md-6" id="v-pills-faq-tab" data-bs-toggle="pill" data-bs-target="#v-pills-faq"
-            type="button" role="tab" aria-controls="v-pills-faq" aria-selected="false">常見問題</button>
-          <button class="nav-link fs-7 fs-md-6" id="v-pills-terms-tab" data-bs-toggle="pill" data-bs-target="#v-pills-terms"
-            type="button" role="tab" aria-controls="v-pills-terms" aria-selected="false">使用條款</button>
-          <button class="nav-link fs-7 fs-md-6" id="v-pills-privacy-tab" data-bs-toggle="pill" data-bs-target="#v-pills-privacy"
-            type="button" role="tab" aria-controls="v-pills-privacy" aria-selected="false">隱私權政策</button>
+        <div class="nav flex-md-column nav-pills align-items-center col-md-3 col-12 pe-0 mb-md-0 mb-4 " id="v-pills-tab"
+          role="tablist" aria-orientation="vertical">
+          <div class="nav-text d-sm-flex flex-sm-column mx-auto mb-auto">
+            <h1 class="fs-xl-3 fs-5 my-3 text-center">關於我們</h1>
+            <div class="d-flex flex-md-column about__us__btn__area">
+              <button class="nav-link about__us__btn active fs-7 fs-md-6" id="v-pills-profile-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                aria-selected="true">網站理念</button>
+              <button class="nav-link about__us__btn  fs-7 fs-md-6" id="v-pills-faq-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-faq" type="button" role="tab" aria-controls="v-pills-faq"
+                aria-selected="false">常見問題</button>
+              <button class="nav-link about__us__btn  fs-7 fs-md-6" id="v-pills-terms-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-terms" type="button" role="tab" aria-controls="v-pills-terms"
+                aria-selected="false">使用條款</button>
+              <button class="nav-link about__us__btn  fs-7 fs-md-6" id="v-pills-privacy-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-privacy" type="button" role="tab" aria-controls="v-pills-privacy"
+                aria-selected="false">隱私權政策</button>
+            </div>
+          </div>
         </div>
 
         <!-- 網站理念 -->
-        <div class="tab-content col-md-7" id="v-pills-tabContent">
+        <div class="tab-content col-md-7 col-12 px-0" id="v-pills-tabContent">
           <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel"
             aria-labelledby="v-pills-profile-tab">
             <h2 class="fs-xl-3 fs-5 py-2 border-bottom border-1 border-Gray-04">
@@ -105,7 +110,8 @@
                     class="faq__title py-4 fs-7 fs-md-6">評測是否受到監管？</span><span class="icon d-inline-block"
                     aria-hidden="true"></span></button>
                 <div class="faq__content">
-                  <p class="text-Gray-02 py-6 mb-0 fs-7 fs-md-6">我們會盡力監管平台上的評測內容，但無法保證所有評測都經過審核。如果您發現不實評測或不恰當評論，請通過舉報功能向我們報告。</p>
+                  <p class="text-Gray-02 py-6 mb-0 fs-7 fs-md-6">
+                    我們會盡力監管平台上的評測內容，但無法保證所有評測都經過審核。如果您發現不實評測或不恰當評論，請通過舉報功能向我們報告。</p>
                 </div>
               </div>
               <div class="faq__item">
@@ -113,33 +119,34 @@
                     class="faq__title py-4 me-8 fs-7 fs-md-6">平台上是否有專業品牌資訊？</span><span class="icon d-inline-block"
                     aria-hidden="true"></span></button>
                 <div class="faq__content">
-                  <p class="text-Gray-02 py-6 mb-0 fs-7 fs-md-6">是的，BeautyHub致力於建立全台最大的化妝品資料庫，收集各種品牌和產品的詳細資訊，讓用戶能在同一平台中輕鬆查找所需信息。 </p>
+                  <p class="text-Gray-02 py-6 mb-0 fs-7 fs-md-6">
+                    是的，BeautyHub致力於建立全台最大的化妝品資料庫，收集各種品牌和產品的詳細資訊，讓用戶能在同一平台中輕鬆查找所需信息。 </p>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- 使用條款 -->
-          <div class="tab-pane fade " id="v-pills-terms" role="tabpanel" aria-labelledby="v-pills-terms-tab">
+          <div class="tab-pane fade" id="v-pills-terms" role="tabpanel" aria-labelledby="v-pills-terms-tab">
             <h2 class="fs-xl-3 fs-md-5 fs-5 py-2 border-bottom border-1 border-Gray-04">
               使用條款
             </h2>
             <div class="terms__content fs-7 fs-md-6">
               <p>感謝您使用BeautyHub的美妝心得評測平台。在使用本平台前，當您成為本網站的會員時，即表示您已詳細閱讀、明確瞭解並同意接受本「使用條款」之所有內容：</p>
-                <h3 class="text-Secondary-main fs-6">【內容真實性】</h3>
-                <p class="mb-4 ps-2">本平台上的美妝心得評測來自用戶自發性的發布，並不代表本平台對評測的真實性、準確性或可靠性做出保證。用戶需自行判斷評測的可信度和適用性，並承擔因相信評測所產生的風險。
-                </p>
-                <h3 class="text-Secondary-main fs-6">【效果主觀性】</h3>
-                <p class="mb-4 ps-2">美妝產品的使用效果可能因人而異，每個人的膚質和使用習慣都不同。因此，本平台上的評測僅供參考，不應被視為專業意見或建議。</p>
-                <h3 class="text-Secondary-main fs-6">【平台內容】</h3>
-                <p class="mb-4 ps-2">本平台力求提供準確和完整的美妝產品資訊，但無法保證所有內容的準確性和即時性。本平台不承擔因資訊不完整或錯誤而引起的損失或損害責任。</p>
-                <h3 class="text-Secondary-main fs-6">【個人責任】</h3>
-                <p class="mb-4 ps-2">所有在本平台上發布的評測和內容由用戶自行創建，用戶應對其內容的真實性和合法性負責。本平台不應對用戶內容的合法性、版權和其他權利負責。</p>
-                <h3 class="text-Secondary-main fs-6">【服務變更】</h3>
-                <p class="mb-4 ps-2">本平台保留隨時修改或中斷服務的權利，包括但不限於功能、界面、服務時間和內容。對於因此而造成的損失或不便，本平台不承擔任何責任。</p>
-                <h3 class="text-Secondary-main fs-6">【免責範圍】</h3>
-                <p class="mb-4 ps-2">在任何情況下，本平台及其所有者、管理員、員工和關聯方均不對因使用本平台而引起的任何直接或間接損失或損害負責。
-                </p>
+              <h3 class="text-Secondary-main fs-6">【內容真實性】</h3>
+              <p class="mb-4 ps-2">本平台上的美妝心得評測來自用戶自發性的發布，並不代表本平台對評測的真實性、準確性或可靠性做出保證。用戶需自行判斷評測的可信度和適用性，並承擔因相信評測所產生的風險。
+              </p>
+              <h3 class="text-Secondary-main fs-6">【效果主觀性】</h3>
+              <p class="mb-4 ps-2">美妝產品的使用效果可能因人而異，每個人的膚質和使用習慣都不同。因此，本平台上的評測僅供參考，不應被視為專業意見或建議。</p>
+              <h3 class="text-Secondary-main fs-6">【平台內容】</h3>
+              <p class="mb-4 ps-2">本平台力求提供準確和完整的美妝產品資訊，但無法保證所有內容的準確性和即時性。本平台不承擔因資訊不完整或錯誤而引起的損失或損害責任。</p>
+              <h3 class="text-Secondary-main fs-6">【個人責任】</h3>
+              <p class="mb-4 ps-2">所有在本平台上發布的評測和內容由用戶自行創建，用戶應對其內容的真實性和合法性負責。本平台不應對用戶內容的合法性、版權和其他權利負責。</p>
+              <h3 class="text-Secondary-main fs-6">【服務變更】</h3>
+              <p class="mb-4 ps-2">本平台保留隨時修改或中斷服務的權利，包括但不限於功能、界面、服務時間和內容。對於因此而造成的損失或不便，本平台不承擔任何責任。</p>
+              <h3 class="text-Secondary-main fs-6">【免責範圍】</h3>
+              <p class="mb-4 ps-2">在任何情況下，本平台及其所有者、管理員、員工和關聯方均不對因使用本平台而引起的任何直接或間接損失或損害負責。
+              </p>
               <p>以上，特此聲明。</p>
             </div>
           </div>

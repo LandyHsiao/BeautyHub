@@ -1,7 +1,14 @@
 .profile__content,
 .terms__content,
-.privacy__content{
+.privacy__content {
   text-align: justify;
+}
+
+.about__us__btn {
+  --bs-nav-link-padding-x: 10px;
+  --bs-nav-link-padding-y: 8px;
+  word-wrap: keep-all;
+  white-space: nowrap;
 }
 
 .faq__area {
@@ -87,5 +94,22 @@
     overflow: hidden;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
+  }
+}
+
+* {
+  outline: 1px solid red;
+}
+
+.about__us__btn__area {
+
+  @media(max-width:375px) {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0;
+
+    .about__us__btn {
+      width: 50%;
+    }
   }
 }
