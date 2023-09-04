@@ -1,9 +1,26 @@
-.card__item__img {
-  aspect-ratio: 1 / 1;
+.beauty__awards__title,
+.beauty__awards__year,
+.product-brand__name {
+  font-family: $display-font-family;
+}
+
+.beauty__awards__title__img {
+  width: 66px;
+  height: 34px;
+
+  @media (max-width:576px) {
+    width: 50px;
+    height: 26px;
+  }
+}
+
+.product-card__img {
+  max-width: 100%;
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: center;
+  aspect-ratio: 1.2;
   transition: all 1.2s;
 
   &:hover,
@@ -12,22 +29,7 @@
   }
 }
 
-.beauty__awards__title,
-.beauty__awards__year,
-.brand__name {
-  font-family: $display-font-family;
-}
-
-.brand__name {
-  color: $gradient-02;
-}
-
-.beauty__awards__title__img {
-  width: 80px;
-  height: 33px;
-
-  @media (max-width:576px) {
-    width: 50px;
-    height: 23px;
-  }
+.product-card__label {
+  width: 50px;
+  height: 50px;
 }
