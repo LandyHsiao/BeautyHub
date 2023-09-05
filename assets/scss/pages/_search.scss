@@ -1,0 +1,31 @@
+// * {
+//     outline: 1px solid red;
+// }
+
+.search__item--block {
+    max-width: 217px;
+    min-height: 174px;
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+        max-width: 376px;
+        max-height: 341px;
+    }
+}
+
+.search__item--img {
+    max-width: 217px;
+    min-height: 174px;
+    object-fit: cover;
+    transition: all 1.2s;
+
+    @include media-breakpoint-up(md) {
+        max-width: 376px;
+        max-height: 341px;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}
