@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>BeautyHub 我的頁面</title>
 </head>
+<style>
+    * {
+        outline: 1px solid red;
+    }
+</style>
 
 <body>
     <%- include('./layout/header-other.ejs',{page: "member_page" }); -%>
@@ -28,7 +34,9 @@
                             <p class="fs-md-5 fs-6 fw-medium ls-md-s ls-p">梅子綠</p>
                         </li>
                         <li class="d-flex align-items-center mb-4">
-                            <h1 class="fs-md-5 fs-6 fw-medium ls-md-s ls-p w-25">電子信箱：</h1>
+                            <h1 class="fs-md-5 fs-6 fw-medium ls-md-s ls-p w-25">電子<br
+                                    class="d-lg-none d-md-block d-none">信箱：
+                            </h1>
                             <p class="fs-md-5 fs-6 fw-medium ls-md-s ls-p">maykim0807@gmail.com</p>
                         </li>
                         <li class="d-flex align-items-center mb-4">
@@ -42,18 +50,281 @@
                     </ol>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <a href="./member_edit_page.html" class="btn btn-primary py-md-4 px-md-18 py-3 px-8 fw-medium">修改資料
+                    <a href="member_edit_page.html"
+                        class="member__register--btn btn btn-primary py-md-4 px-md-18 py-3 px-8 col-md-4 col-12 mx-auto fw-medium">修改資料
                     </a>
                 </div>
             </div>
             <hr class="text-primary mb-md-9 mb-5">
-            <div>
-                <h2 class="text-md-center text-start fs-md-5 fs-6 fw-medium ls-md-s ls-p mb-3">我的梳妝台</h2>
+            <h2 class="text-md-center text-start fs-md-5 fs-6 fw-medium ls-md-s ls-p mb-3">我的梳妝台</h2>
+            <div class="border border-primary mb-4">
+                <h3 class="text-md-center text-start fs-md-5 fs-6 fw-medium ls-md-s ls-p m-3">保養品
+                    <a href="#" class="ms-2"><i class="bi bi-pencil-square"></i></a>
+                </h3>
+                <div class="row align-items-center">
+                    <div class="col-1 d-lg-block d-none">
+                        <div
+                            class="swiper-button-prev-CareProducts member_edit_page--prev text-center bg-secondary p-2">
+                            <i class="bi bi-arrow-left-short text-Gray-07 h2"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-12">
+                        <div class="swiper swiperCareProducts">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="d-flex flex-column flex-grow-1">
+                                            <div
+                                                class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                <div class="my__dress__table__item--block">
+                                                    <img src="../assets/image/hot-img-05.png"
+                                                        class="my__dress__table__item--img"
+                                                        alt="Forest Beauty 森果紅石榴多酚凍齡精華">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                        森果紅石榴多酚凍齡精華
+                                                    </h2>
+                                                    <span
+                                                        class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                        Forest Beauty
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="d-flex flex-column flex-grow-1">
+                                            <div
+                                                class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                <div class="my__dress__table__item--block">
+                                                    <img src="../assets/image/hot-img-06.jpg"
+                                                        class="my__dress__table__item--img" alt="舒敏保濕化妝水">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                        舒敏保濕化妝水</h2>
+                                                    <span
+                                                        class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                        Paula's Choice
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="d-flex flex-column flex-grow-1">
+                                            <div
+                                                class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                <div class="my__dress__table__item--block">
+                                                    <img src="../assets/image/hot-img-07.jpg"
+                                                        class="my__dress__table__item--img"
+                                                        alt="Forest Beauty 森果紅石榴多酚凍齡精華">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                        秘之湧天堂之泉ALLDAY
+                                                        SPA</h2>
+                                                    <span
+                                                        class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                        Oguma水美媒
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="d-flex flex-column flex-grow-1">
+                                            <div
+                                                class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                <div class="my__dress__table__item--block">
+                                                    <img src="../assets/image/hot-img-09.jpeg"
+                                                        class="my__dress__table__item--img"
+                                                        alt="Forest Beauty 森果紅石榴多酚凍齡精華">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">超級精華
+                                                        黃金雙激萃</h2>
+                                                    <span
+                                                        class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                        Clarins 克蘭詩
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-lg-block d-none">
+                        <div
+                            class="swiper-button-next-CareProducts bg-secondary member_edit_page--next text-center p-2">
+                            <i class="bi bi-arrow-right-short text-Gray-07 h2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-primary">
+                <h3 class="text-md-center text-start fs-md-5 fs-6 fw-medium ls-md-s ls-p m-3">化妝品
+                    <a href="#" class="ms-2"><i class="bi bi-pencil-square"></i></a>
+                </h3>
+                <div class="row align-items-center">
+                    <div class="col-1 d-lg-block d-none">
+                        <div class="swiper-button-prev-Cosmetic bg-secondary member_edit_page--prev text-center p-2">
+                            <i class="bi bi-arrow-left-short text-Gray-07 h2"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-12">
+                        <div class="swiper swiperCosmetic">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="d-flex flex-column flex-grow-1">
+                                            <div
+                                                class="card p-5 bg-white d-flex align-items-center justify-content-center flex-column flex-grow-1 overflow-hidden">
+                                                <div class="my__dress__table__item--block">
+                                                    <img src="../assets/image/product-img-01.jpeg"
+                                                        class="my__dress__table__item--img" alt="特調眼彩盤">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h2 class="card-title  fs-md-5 fs-6 fw-medium mb-4">特調眼彩盤</h2>
+                                                    <span
+                                                        class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2  fs-md-7 fs-8 ls-sm-h">
+                                                        heme
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="d-flex flex-column flex-grow-1">
+                                            <div
+                                                class="card box__sd p-5 bg-white d-flex align-items-center justify-content-center ov-h flex-column flex-grow-1 overflow-hidden">
+                                                <div class="my__dress__table__item--block">
+                                                    <img src="../assets/image/product-img-02.jpeg"
+                                                        class="my__dress__table__item--img" alt="輕透柔光粉底液 SPF50+">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h2 class="card-title  fs-md-5 fs-6 fw-medium mb-4">輕透柔光粉底液
+                                                        SPF50+</h2>
+                                                    <span
+                                                        class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2  fs-md-7 fs-8 ls-sm-h">
+                                                        heme
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="d-flex flex-column flex-grow-1">
+                                            <div
+                                                class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1 overflow-hidden">
+                                                <div class="my__dress__table__item--block">
+                                                    <img src="../assets/image/home-ranking/lip-01.webp"
+                                                        class="my__dress__table__item--img" alt="絲柔粉霧唇膏">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                        絲柔粉霧唇膏</h2>
+                                                    <span
+                                                        class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                        M.A.C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="d-flex flex-column flex-grow-1">
+                                            <div
+                                                class="card box__sd p-5 bg-white d-flex align-items-center justify-content-center flex-column flex-grow-1 overflow-hidden">
+                                                <div class="my__dress__table__item--block">
+                                                    <img src="../assets/image/product-img-03.jpeg"
+                                                        class="my__dress__table__item--img" alt="純色腮紅">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h2 class="card-title  fs-md-5 fs-6 fw-medium mb-4">純色腮紅</h2>
+                                                    <span
+                                                        class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2  fs-md-7 fs-8 ls-sm-h">
+                                                        heme
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-lg-block d-none">
+                        <div class="swiper-button-next-Cosmetic bg-secondary member_edit_page--next text-center p-2">
+                            <i class="bi bi-arrow-right-short text-Gray-07 h2"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <%- include('./layout/footer.ejs'); -%>
             <%- include('./layout/header_search_jq.ejs'); -%>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
                 <script type="module" src="../main.js"></script>
+                <script>
+                    const swiperCareProducts = new Swiper(".swiperCareProducts", {
+                        // slide 間距
+                        spaceBetween: 24,
+                        slidesPerView: 3,
+                        mousewheel: true,
+                        navigation: {
+                            nextEl: '.swiper-button-next-CareProducts',
+                            prevEl: '.swiper-button-prev-CareProducts',
+                        },
+                        breakpoints: {
+                            992: {
+                                slidesPerView: 3,
+                            },
+                            768: {
+                                slidesPerView: 2,
+                            },
+                            375: {
+                                slidesPerView: 1,
+                            }
+                        },
+                    });
+                    const swiperCosmetic = new Swiper(".swiperCosmetic", {
+                        // slide 間距
+                        spaceBetween: 24,
+                        slidesPerView: 3,
+                        mousewheel: true,
+                        navigation: {
+                            nextEl: '.swiper-button-next-Cosmetic',
+                            prevEl: '.swiper-button-prev-Cosmetic',
+                        },
+                        breakpoints: {
+                            992: {
+                                slidesPerView: 3,
+                            },
+                            768: {
+                                slidesPerView: 2,
+                            },
+                            375: {
+                                slidesPerView: 1,
+                            }
+                        },
+                    });
+                </script>
 </body>
 
 </html>
