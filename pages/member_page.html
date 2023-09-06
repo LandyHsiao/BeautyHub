@@ -8,9 +8,9 @@
     <title>BeautyHub 我的頁面</title>
 </head>
 <style>
-    /* * {
-        outline: 1px solid red;
-    } */
+    * {
+        /* outline: 1px solid red; */
+    }
 </style>
 
 <body>
@@ -271,7 +271,6 @@
                 </div>
             </div>
         </div>
-        <!--  -->
         <div class="container-fluid">
             <div class="d-flex align-items-center justify-content-center">
                 <div class="swiper-button-prev-Cosmetic-d">
@@ -1022,9 +1021,14 @@
         </div>
         <div class="container">
             <hr class="text-primary mb-md-9 mb-5">
-            <h2 class="text-md-center text-start fs-md-5 fs-6 fw-medium ls-md-s ls-p mb-3">我的評論
-                <a href="#" class="ms-2"><i class="bi bi-pencil-square"></i></a>
+            <h2 class="text-md-center text-start fs-md-5 fs-6 fw-medium ls-md-s ls-p mb-3">我的收藏評論
             </h2>
+            <div class="row grid gy-4 position-relative pb-15">
+                <a class="col-2 btn btn-outline-primary position-absolute bottom-0 start-50 translate-middle-x border-0 text-decoration-underline link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-offset-2 collect__products-open"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    展開
+                </a>
+            </div>
         </div>
         <%- include('./layout/footer.ejs'); -%>
             <%- include('./layout/header_search_jq.ejs'); -%>
