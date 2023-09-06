@@ -1,0 +1,128 @@
+<script>
+    const swiperCareProducts = new Swiper('.swiperCareProducts', {
+        // slide 間距
+        spaceBetween: 24,
+        slidesPerView: 3,
+        mousewheel: true,
+        navigation: {
+            nextEl: '.swiper-button-next-CareProducts',
+            prevEl: '.swiper-button-prev-CareProducts',
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            375: {
+                slidesPerView: 1,
+            }
+        },
+    });
+    $('.open-open__swiperCareProducts').click(function () {
+        $('.open-open__swiperCareProducts').addClass('d-none');
+        $('.close-open__swiperCareProducts').removeClass('d-none');
+    });
+    $('.open__swiperCareProducts').on('click', function () {
+        swiperCareProducts.params.grid.rows = 2;
+        swiperCareProducts.params.grid.fill = 'row';
+        swiperCareProducts.update();
+        $('.swiperCareProducts').addClass('swiper-grid');
+    })
+    $('.close-open__swiperCareProducts').click(function () {
+        $('.open-open__swiperCareProducts').removeClass('d-none');
+        $('.close-open__swiperCareProducts').addClass('d-none');
+    });
+    $('.close__swiperCareProducts').on('click', function () {
+        swiperCareProducts.params.grid.rows = 1;
+        swiperCareProducts.params.grid.fill = 'cloum';
+        swiperCareProducts.update();
+        $('.swiperCareProducts').removeClass('swiper-grid');
+    })
+    // 
+    const swiperCosmetic = new Swiper('.swiperCosmetic', {
+        // slide 間距
+        spaceBetween: 24,
+        slidesPerView: 3,
+        mousewheel: true,
+        navigation: {
+            nextEl: '.swiper-button-next-Cosmetic',
+            prevEl: '.swiper-button-prev-Cosmetic',
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            375: {
+                slidesPerView: 1,
+            }
+        },
+    });
+    $('.open-open__swiperCosmetic').click(function () {
+        $('.open-open__swiperCosmetic').addClass('d-none');
+        $('.close-open__swiperCosmetic').removeClass('d-none');
+    });
+    $('.open__swiperCosmetic').on('click', function () {
+        swiperCosmetic.params.grid.rows = 2;
+        swiperCosmetic.params.grid.fill = 'row';
+        swiperCosmetic.update();
+        $('.swiperCosmetic').addClass('swiper-grid');
+    });
+    $('.close-open__swiperCosmetic').click(function () {
+        $('.open-open__swiperCosmetic').removeClass('d-none');
+        $('.close-open__swiperCosmetic').addClass('d-none');
+    });
+    $('.close__swiperCosmetic').on('click', function () {
+        swiperCosmetic.params.grid.rows = 1;
+        swiperCosmetic.params.grid.fill = 'cloum';
+        swiperCosmetic.update();
+        $('.swiperCosmetic').removeClass('swiper-grid');
+    })
+    //我用Modal
+    // $('.collect__products-open').click(function () {
+    //     $('.collect__products').slideToggle('slow', function () {
+    //         $('.collect__products-open').addClass('d-none');
+    //         $('.collect__products').removeClass('d-none');
+    //         $('.collect__products').removeClass('d-md-none');
+    //         $('.collect__products-close').removeClass('d-none');
+    //     })
+    // });
+    // $('.collect__products-close').click(function () {
+    //     $('.collect__products').slideToggle('slow', function () {
+    //         $('.collect__products-close').addClass('d-none');
+    //         $('.collect__products').addClass('d-none');
+    //         $('.collect__products').addClass('d-md-none');
+    //         $('.collect__products-open').removeClass('d-none');
+    //     })
+    // });
+    // 
+    const swiperCollectproducts = new Swiper('.swiperCollectproducts', {
+        // slide 間距
+        spaceBetween: 24,
+        slidesPerView: 3,
+        // mousewheel: true,
+        navigation: {
+            nextEl: '.swiper-button-next-Collectproducts',
+            prevEl: '.swiper-button-prev-Collectproducts',
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            375: {
+                slidesPerView: 1,
+            }
+        },
+        grid: {
+            rows: 2,
+            fill: 'row'
+        },
+    });
+</script>

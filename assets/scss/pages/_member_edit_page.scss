@@ -32,6 +32,37 @@
     }
 }
 
+.swiper-button-prev-CareProducts-d,
+.swiper-button-next-CareProducts-d,
+.swiper-button-prev-Cosmetic-d,
+.swiper-button-next-Cosmetic-d {
+    @media (max-width:1300px) {
+        display: none;
+    }
+
+    @media (max-width:1199px) {
+        display: block;
+    }
+
+    @media (max-width:1119px) {
+        display: none;
+    }
+
+    @media (max-width:992px) {
+        display: block;
+    }
+
+    @media (max-width:882px) {
+        display: none;
+    }
+
+    @media (max-width:767px) {
+        display: none;
+    }
+}
+
+
+
 // .swiper-button-next,
 // .swiper-button-prev {
 //     position: initial;
@@ -41,4 +72,9 @@
 //     &::after {
 //         content: '';
 //     }
+// }
+// .swiper-slide-test {
+//     height: calc((100% - 30px) / 2) !important;
+//     display: flex;
+//     gap: 24px;
 // }
