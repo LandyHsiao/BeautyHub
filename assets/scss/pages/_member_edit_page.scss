@@ -35,7 +35,9 @@
 .swiper-button-prev-CareProducts-d,
 .swiper-button-next-CareProducts-d,
 .swiper-button-prev-Cosmetic-d,
-.swiper-button-next-Cosmetic-d {
+.swiper-button-next-Cosmetic-d,
+.swiper-button-prev-CommentCollect-d,
+.swiper-button-next-CommentCollect-d {
     @media (max-width:1300px) {
         display: none;
     }
@@ -61,20 +63,39 @@
     }
 }
 
+.comment__collect__item--block {
+    // aspect-ratio: 217/151;
+    min-width: 100%;
+    max-height: 151px;
+    overflow: hidden;
+    text-align: center;
 
+    @include media-breakpoint-up(md) {
+        // aspect-ratio: 256/250;
+        min-width: 256px;
+        max-width: 256px;
+        max-height: 250px;
+    }
+}
 
-// .swiper-button-next,
-// .swiper-button-prev {
-//     position: initial;
-//     width: auto;
-//     height: auto;
+.comment__collect--img {
+    // aspect-ratio: 217/151;
+    min-width: 100%;
+    max-height: 151px;
+    object-fit: cover;
+    // object-position: center top;
+    transition: all 1.2s;
 
-//     &::after {
-//         content: '';
-//     }
-// }
-// .swiper-slide-test {
-//     height: calc((100% - 30px) / 2) !important;
-//     display: flex;
-//     gap: 24px;
-// }
+    @include media-breakpoint-up(md) {
+        // aspect-ratio: 256/250;
+        max-width: 256px;
+        max-height: 250px;
+        // object-position: center center;
+        object-fit: cover;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}
