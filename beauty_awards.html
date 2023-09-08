@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeautyHub Beauty Awards 2023</title>
+  <script type="module" crossorigin src="/beauty-hub/assets/search-7350839d.js"></script>
+  <link rel="stylesheet" href="/beauty-hub/assets/search-61c5205d.css">
+</head>
+
+<body>
+  <header>
+  <div class="container-md py-2">
+    <div class="row">
+      <div class="d-flex justify-content-between">
+        <a href="./index.html" class="header__logo"> </a>
+        <div class="d-flex align-items-center">
+          <div class="d-md-block d-none">
+            <a href="member_login.html" class="d-flex align-items-center">
+              <p class="text-Gray-01 m-0 me-1 fw-medium lh-sm">註冊/登入</p>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIuSURBVHgB7VY5TsNAFP3OIlEkkpukdrooi2Q6Opwj5ARASQU3AI7ACQgdJZwAcwKMsnZMncpISZWN96NxZEVO8ifQJU8aeTb/efO3+URHHDos2gOVSuUylUpdoOvpKX8+nz/3er0WGcKYQL1ef1osFpdJa5hvdbvdKzJA2mRzrVa7w+c2NuWjKTSHB5ZlucVi0RoOh75QpFwDruva0+n0G10bN1Wz2awxGAwUr5XLZSeTyXzyGlqIfikIglAiN0VC4HBXH8B4jA5n6P6jHtp6rwhiAlCvE/WhgTBhXUV9aMem/yYAoUHssPP1dUTBai6dTovUv5RFBqhWq98xTdyPRqOl2vP5/B20snRO9g9EQkkq04gAosDD533bHmiq2e/3X0kIozBEeKlCofADLZxheLK2HMIM1zj8hQywVybksEMm9GK+8DUej1tKKbHtj4hgbALHcWx4vafDLor3ECb5aLfbYuczJsAH53K5G9j9FqGWmGg4GfGD1Ol0HoRiZQTY6bLZ7DuEO5L9TGQymTTi6XoTdmbChMPZ0x+Q70u4qcUN5jjlOU5CvIH38j/87y75OzWA5MOvXPS4+Mh+zU3hpl/FJ4oVKiDYoH0J6MqHBfKtAqTYUxIgThraudpWKW01gS67luAUS0LAPM0kGUYEuAAhrUrc/k3iUBH0Xl8PPS3LjMBaUeGTIZj0BlkyAvECBHZUZAiofuWo2wqUjQRQVLxyWOkWkCH++v8Rh4NfoYEVDupJGRYAAAAASUVORK5CYII=" alt="icon-group" class="icon__group" />
+            </a>
+          </div>
+          <div class="d-flex align-items-center d-md-none">
+            <div class="d-flex align-items-center">
+              <form action="" class="d-md-block me-2 result__nav-icon">
+                <div class="d-flex justify-content-end search__input d-none" style="width: 170px;">
+                  <select class=" form-select form-select-sm p-0 border-0" style="width: 65px;">
+                    <option selected>品牌</option>
+                    <option value="1">產品</option>
+                    <option value="2">分類</option>
+                  </select>
+                  <input type="text" class="form-control py-1 p-0 w-50" aria-label="Text input dropdown button">
+                </div>
+              </form>
+              <a href="#" class="me-3 p-2 click__search-icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKMSURBVHgB7Va9ctpAEF4RmEnpDDMwQ2OVwMBEbxAeAZ4gSpfOcZcOeAI7XVIFP4FJl1TBVdrL8KdS6RigkLsU/ORbWzdzEfo5yXZlvhnN7Z1Ot9/urXaX6IjnDkN3Y71et3K5XBviG8MwrP1+f+K/EpgLzK8mk8mIUiKRgGVZ5na7vYCCduJhhuFi37s0RF5QvHILyn/hUEtZ9vA4WPsOhR5GViy9waNdKpWM5XI5Ig0YCcp/SldjFLiCD+Px+Ca4l68HJM7w2MpyH57oURYCvttZuXm3yTAuoficEgAiNkhe0L0nmPT5dDq9jPsmF7YI5V2pHOjpKGfMZrMBho6cg3gXxpzEfXMQA2z9brcbsAwSLizoUArg7l3EAIstPC9x1l+s3UTtP/AArD9Tpj3KgHw+/4nug5WNsOP2HhBQIt6D9VeUAUIID+4fsozRrNVqp6RLAJAEBD0A/NdIGR4xKQUBGTQePQCw/FbKiAOTUhB4dODXdCPfBRc4nfIYyH5Z8FoKCOxb0iUAjHwiZqPRaFF2yNrhIT8IbQJc1aQMEm8pA5rNpi0TGcZh3N6DROQnkhZEE49VLpd/Y80hTXAig9Kv5Acz3N9Zr9eRAR0VhH0p8GFcbEhT+WazuVZriOM4btw3oeU4mE5x0HsusZVKxV0sFqHWcLxA8TXEqrL8I6ksxzYkOLRLSjrm+o9h6HdAMrI52ttK8QoitiwndkRcYrmq8V9BGmC3g4xH/9eRSBKxHRFjtVqJYrH4jZMJDq4q3Y8K7ow+Y89HlO4vXP2UK7wbo7ok7aZUolqtmoVC4ZQ9wpYi6MR8Pv8Ttjd4hWENSmoCaREg4eEqXqnvn7wWQGFfEoDXBnTEEQH8Aw0NPYt4CwEyAAAAAElFTkSuQmCC" alt="icon-search" class="icon__search result__nav-icon" />
+              </a>
+            </div>
+            <nav class="navbar d-md-none d-md-block">
+              <a href="#nav" class="navbar-toggler justify-content-end p-2 border-0 click__nav-icon" type="button"
+                data-bs-toggle="collapse" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="nav__link"></div>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav me-auto   vh-100">
+          <li class="nav-item border-bottom border-Gray-04">
+            <a class="nav-link py-5 px-3 text-center nav__list_sm fw-medium lh-sm" aria-current="page"
+              href="./index.html">首頁</a>
+          </li>
+          <li class="nav-item border-bottom border-Gray-04">
+            <a class="nav-link py-5 px-3 text-center nav__list_sm fw-medium lh-sm" aria-current="page"
+              href="category_top_ranking.html">熱門排行</a>
+          </li>
+          <li class="nav-item border-bottom border-Gray-04">
+            <a class="nav-link py-5 px-3 text-center nav__list_sm fw-medium lh-sm" aria-current="page" href="#">關於我們</a>
+          </li>
+          <li class="nav-item border-bottom border-Gray-04">
+            <a class="nav-link py-5 px-3 text-center nav__list_sm fw-medium lh-sm" aria-current="page"
+              href="member_login.html">登入/註冊</a>
+          </li>
+          <li class="nav-item border-bottom border-Gray-04">
+            <a class="nav-link py-5 px-3 text-center nav__list_sm fw-medium lh-sm" aria-current="page" href="#">通知</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="d-md-flex justify-content-md-center list-unstyled d-none d-md-block mb-0">
+        <li class="me-3">
+          <a class="py-3 px-6 d-md-block nav__list fw-medium lh-sm text-Gray-01"
+            href="./index.html"> 首頁 </a>
+        </li>
+        <li class="me-3">
+          <a class="py-3 px-6 d-md-block nav__list fw-medium lh-sm text-Gray-01"
+            href="category_top_ranking.html">熱門排行</a>
+        </li>
+        <li>
+          <a class="py-3 px-6 d-md-block nav__list fw-medium lh-sm text-Gray-01"
+            href="#">關於我們</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>    <div class="container-md py-md-4 py-6">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Beauty Awards 2023</li>
+        </ol>
+      </nav>
+      <div class="d-flex flex-column justify-content-between align-items-center text-center mb-md-6 mb-4">
+        <img src="data:image/png;base64,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" alt=""
+          class="beauty__awards__title__img justify-content-center mb-md-2 mb-1">
+        <h2 class="beauty__awards__title fs-lg-1 fs-md-2 fs-4 mb-0">
+          BEAUTY AWARDS
+        </h2>
+        <p class="beauty__awards__year border-bottom border-2 border-Gray-03 px-md-12 px-8 fs-md-2 fs-sm-3">2023SS</p>
+        <p class="beauty__awards__subtitle mb-md-4 mb-3 fw-light fs-md-6 fs-7">THE WINNER OF BEAUTY AWARDS SS 2023</p>
+      </div>
+
+      <div class="row mb-105 mb-md-2 position-relative">
+        <div class="text-center m-auto col-lg-4 col-md-6 col-sm-12">
+          <div class="beauty__awards__card-area mx-0 pb-md-7 mb-md-0 mb-4">
+            <div class="card">
+              <a class="bg-white text-center p-5 position-relative h-100" href="#">
+                <div class="mb-4">
+                  <img src="/beauty-hub/assets/beauty-awards-1-f4837a7a.png" alt="prize-1" class="product-card__img">
+                </div>
+                <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
+                  <h5 class="card-title product-card__name fs-md-5 fs-6 mb-4">皇家蜂王乳雙導精華</h5>
+                  <span
+                    class="card-text product-brand__name rounded-pill mb-0 d-inline-block text-primary fs-7 fs-md-6 bg-Background-S2 py-2 px-6">Guerlain</span>
+                </div>
+                <div
+                  class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">
+                  01</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center m-auto col-lg-4 col-md-6 col-sm-12">
+          <div class="beauty__awards__card-area mx-0 pb-md-7 mb-md-0 mb-4">
+            <div class="card">
+              <a class="bg-white text-center p-5 position-relative h-100" href="#">
+                <div class="mb-4">
+                  <img src="/beauty-hub/assets/beauty-awards-2-bd8ab7ca.png" alt="prize-2" class="product-card__img">
+                </div>
+                <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
+                  <h5 class="card-title product-card__name fs-md-5 fs-6 mb-4">超完美持久柔光粉底液</h5>
+                  <span
+                    class="card-text product-brand__name rounded-pill mb-0 d-inline-block text-primary fs-7 fs-md-6 bg-Background-S2 py-2 px-6">Dior</span>
+                </div>
+                <div
+                  class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">
+                  02</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center m-auto col-lg-4 col-md-6 col-sm-12">
+          <div class="beauty__awards__card-area mx-0 pb-md-7 mb-md-0 mb-4">
+            <div class="card">
+              <a class="bg-white text-center p-5 position-relative h-100" href="#">
+                <div class="mb-4">
+                  <img src="/beauty-hub/assets/beauty-awards-3-8e269233.png" alt="prize-3" class="product-card__img">
+                </div>
+                <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
+                  <h5 class="card-title product-card__name fs-md-5 fs-6 mb-4">超能修護精華露</h5>
+                  <span
+                    class="card-text product-brand__name rounded-pill mb-0 d-inline-block text-primary fs-7 fs-md-6 bg-Background-S2 py-2 px-6">La
+                    Mer</span>
+                </div>
+                <div
+                  class="product-card__label position-absolute top-0 start-0 display-4 mb-0 p-3 bg-Gray-05 fw-bold text-center">
+                  03</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center m-auto col-lg-4 col-md-6 col-sm-12">
+          <div class="beauty__awards__card-area mx-0 pb-md-7 mb-md-0 mb-4">
+            <div class="card">
+              <a class="bg-white text-center p-5 position-relative h-100" href="#">
+                <div class="mb-4">
+                  <img src="/beauty-hub/assets/beauty-awards-4-de8e76ea.png" alt="prize-4" class="product-card__img">
+                </div>
+                <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
+                  <h5 class="card-title product-card__name fs-md-5 fs-6 mb-4">塑妍逆引鑽白菁萃</h5>
+                  <span
+                    class="card-text product-brand__name rounded-pill mb-0 d-inline-block text-primary fs-7 fs-md-6 bg-Background-S2 py-2 px-6">Clé
+                    de Peau Beauté</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center m-auto col-lg-4 col-md-6 col-sm-12">
+          <div class="beauty__awards__card-area mx-0 pb-md-7 mb-md-0 mb-4">
+            <div class="card">
+              <a class="bg-white text-center p-5 position-relative h-100" href="#">
+                <div class="mb-4">
+                  <img src="/beauty-hub/assets/beauty-awards-5-035d2d1d.png" alt="prize-5" class="product-card__img">
+                </div>
+                <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
+                  <h5 class="card-title product-card__name fs-md-5 fs-6 mb-4">氧氣亮白淡斑精華</h5>
+                  <span
+                    class="card-text product-brand__name rounded-pill mb-0 d-inline-block text-primary fs-7 fs-md-6 bg-Background-S2 py-2 px-6">Clarins</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center m-auto col-lg-4 col-md-6 col-sm-12">
+          <div class="beauty__awards__card-area mx-0 pb-md-7 mb-md-0 mb-4">
+            <div class="card">
+              <a class="bg-white text-center p-5 position-relative h-100" href="#">
+                <div class="mb-4">
+                  <img src="/beauty-hub/assets/beauty-awards-6-ff9bc62e.png" alt="prize-6" class="product-card__img">
+                </div>
+                <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
+                  <h5 class="card-title product-card__name fs-md-5 fs-6 mb-4">植物酵素極淨拋光面膜</h5>
+                  <span
+                    class="card-text product-brand__name rounded-pill mb-0 d-inline-block text-primary fs-7 fs-md-6 bg-Background-S2 py-2 px-6">Sisley</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center m-auto col-lg-4 col-md-6 col-sm-12">
+          <div class="beauty__awards__card-area mx-0 pb-md-7 mb-md-0 mb-4">
+            <div class="card">
+              <a class="bg-white text-center p-5 position-relative h-100" href="#">
+                <div class="mb-4">
+                  <img src="/beauty-hub/assets/beauty-awards-7-02ea2296.png" alt="prize-7" class="product-card__img">
+                </div>
+                <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
+                  <h5 class="card-title product-card__name fs-md-5 fs-6 mb-4">芳香調和身體乳</h5>
+                  <span
+                    class="card-text product-brand__name rounded-pill mb-0 d-inline-block text-primary fs-7 fs-md-6 bg-Background-S2 py-2 px-6">Clarins</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center m-auto col-lg-4 col-md-6 col-sm-12">
+          <div class="beauty__awards__card-area mx-0 pb-md-7 mb-md-0 mb-4">
+            <div class="card">
+              <a class="bg-white text-center p-5 position-relative h-100" href="#">
+                <div class="mb-4">
+                  <img src="/beauty-hub/assets/beauty-awards-8-da2ac7c0.png" alt="prize-8" class="product-card__img">
+                </div>
+                <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
+                  <h5 class="card-title product-card__name fs-md-5 fs-6 mb-4">緊顏抗痕亮采三效精華</h5>
+                  <span
+                    class="card-text product-brand__name rounded-pill mb-0 d-inline-block text-primary fs-7 fs-md-6 bg-Background-S2 py-2 px-6">Lancôme</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center m-auto col-lg-4 col-md-6 col-sm-12">
+          <div class="beauty__awards__card-area mx-0 pb-md-7 mb-md-0 mb-4">
+            <div class="card">
+              <a class="bg-white text-center p-5 position-relative h-100" href="#">
+                <div class="mb-4">
+                  <img src="/beauty-hub/assets/beauty-awards-9-0f2963be.png" alt="prize-9" class="product-card__img">
+                </div>
+                <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
+                  <h5 class="card-title product-card__name fs-md-5 fs-6 mb-4">LA POUDRE MAGIQUE</h5>
+                  <span
+                    class="card-text product-brand__name rounded-pill mb-0 d-inline-block text-primary fs-7 fs-md-6 bg-Background-S2 py-2 px-6">GARANCIA</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center m-auto col-lg-4 col-md-6 col-sm-12">
+          <div class="beauty__awards__card-area mx-0 pb-md-7 mb-md-0 mb-4">
+            <div class="card">
+              <a class="bg-white text-center p-5 position-relative h-100" href="#">
+                <div class="mb-4">
+                  <img src="/beauty-hub/assets/beauty-awards-10-c7d6f831.png" alt="prize-10"
+                    class="product-card__img">
+                </div>
+                <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
+                  <h5 class="card-title product-card__name fs-md-5 fs-6 mb-4">1號紅色山茶花活能精萃</h5>
+                  <span
+                    class="card-text product-brand__name rounded-pill mb-0 d-inline-block text-primary fs-7 fs-md-6 bg-Background-S2 py-2 px-6">GARANCIA</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center m-auto col-lg-4 col-md-6 col-sm-12">
+          <div class="beauty__awards__card-area mx-0 pb-md-7 mb-md-0 mb-4">
+            <div class="card">
+              <a class="bg-white text-center p-5 position-relative h-100" href="#">
+                <div class="mb-4">
+                  <img src="/beauty-hub/assets/beauty-awards-11-6ec9cdf6.png" alt="prize-11"
+                    class="product-card__img">
+                </div>
+                <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
+                  <h5 class="card-title product-card__name fs-md-5 fs-6 mb-4">A醇全能新生抗痕精華</h5>
+                  <span
+                    class="card-text product-brand__name rounded-pill mb-0 d-inline-block text-primary fs-7 fs-md-6 bg-Background-S2 py-2 px-6">Kiehl's</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center m-auto col-lg-4 col-md-6 col-sm-12">
+          <div class="beauty__awards__card-area mx-0 pb-md-7 mb-md-0 mb-4">
+            <div class="card">
+              <a class="bg-white text-center p-5 position-relative h-100" href="#">
+                <div class="mb-4">
+                  <img src="/beauty-hub/assets/beauty-awards-12-b7248244.png" alt="prize-12"
+                    class="product-card__img">
+                </div>
+                <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
+                  <h5 class="card-title product-card__name fs-md-5 fs-6 mb-4">精質光采粉底乳霜</h5>
+                  <span
+                    class="card-text product-brand__name rounded-pill mb-0 d-inline-block text-primary fs-7 fs-md-6 bg-Background-S2 py-2 px-6">Clé
+                    de Peau Beauté</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer class="footer pb-9 pb-md-10 pt-7 pt-md-12 bg-Secondary-light rounded-tr-30">
+  <div class="footer__logo-area mb-9 mb-md-4">
+    <div class="footer__logo m-auto ms-md-auto me-md-30"></div>
+  </div>
+  <div class="footer__content container-sm mb-9 mb-md-15">
+    <div class="row">
+      <ul class="footer__content-items list-unstyled d-flex flex-column flex-md-row col col-md-10 col-xl-8 mx-auto justify-content-between mb-0 text-center text-md-start">
+      <li class="footer__content-item footer__about-us mb-6 mb-md-0">
+        <p class="h6 fs-md-5 text-Gray-01 mb-4 mb-md-7 fw-normal fw-md-medium ls-h ls-md-p lh-base lh-md-sm">關於我們</p>
+        <ul class="list-unstyled text-Gray-02">
+          <li class="footer__list-item mb-2 mb-md-3 ls-h fs-7 fs-md-6"><a href="">網站理念</a></li>
+          <li class="footer__list-item mb-2 mb-md-3 ls-h fs-7 fs-md-6"><a href="">常見問題</a></li>
+          <li class="footer__list-item mb-2 mb-md-3 ls-h fs-7 fs-md-6"><a href="">使用條款</a></li>
+          <li class="footer__list-item ls-h fs-7 fs-md-6"><a href="" class="">隱私權政策</a></li>
+        </ul>
+      </li>
+      <li class="footer__content-item footer__contact-us mb-6 mb-md-0">
+        <p class="h6 fs-md-5 text-Gray-01 mb-4 mb-md-7 fw-normal fw-md-medium ls-h ls-md-p lh-base lh-md-sm">聯絡我們</p>
+        <ul class="list-unstyled text-Gray-02">
+          <li class="footer__list-item mb-2 mb-md-3"><a href="mailto:service@teamBeautyHub.com.tw" class="text-wrap text-break ls-h">service@teamBeautyHub.com.tw</a></li>
+          <li class="footer__list-item ls-h">星期ㄧ - 星期五  9:30 - 18:00</li>
+        </ul>
+      </li>
+      <li class="footer__content-item footer__follow-us">
+        <p class="h6 fs-md-5 text-Gray-01 mb-4 mb-md-7 fw-normal fw-md-medium ls-h ls-md-p lh-base lh-md-sm">追蹤我們</p>
+        <ul class="list-unstyled d-flex justify-content-center justify-content-md-between text-Gray-02">
+          <li class="footer__list-item me-4 me-md-0"><a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEaSURBVHgB7ZXRDYIwEIYPcAAGgaQjOIIbWEdwAkfQDdQJXAE36AsJj4zgMwTwr1GCBEM5IMbYLyFNr0fvz/V6JbL8Ow6NIAiCJYad4ziiqiq/uYb5KY7jTd8eC2IghPCLojgiyOoZjLi4xADB96/gYxksIAxDieCSJmLwESD4+sOSwndrzCOaQwAQbQNEHVBwW2LAqQG/w6aICasIp+TrAnprAFWvr1ud9q4777ruEn5vTc3zvEgpldJYAQh4MfCRGGTTlue5nqd9/852BGhWVxO/WQQgI2mSJKmJ71wZiEwde2sAL90KX12EZVme2j765dNF95pnWWaU/sf+NBA8wVWHAIlOeCYGthFZAVbA7wnQbbbDdiOLhckdWHJqPCTh8tcAAAAASUVORK5CYII=" alt="Facebook連結" class="footer__list-icon"></a></li>
+          <li class="footer__list-item"><a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALqSURBVHgB7VdLbhpBEK0BvHcky9vM0gtbhhMYbsANDDeITxDmBPYuygo4QcwJGE5gwk8sx1tWSICE+OY90407MEADs0ueNJqmu6fqVXV9GpF/Hc6hDclk8nI+n6cxvJQjsFwug0QiEdTr9UBOIXB7e5vG6zuetJwHPxaLlRqNRjlsMS7hyl/w+oHHlfPhwhvZ6+trp9fr+ZuLTojygqwsJ/r4uBSPx+tyAnh0juPk1soc56XZbD7tJHB3d5eDwiLHPEMIyHS73UDOwM3NjQsDqlDuqqlMq9Xy9XrC3Aylj/LJ/mTlKnA/vAjl3ng8ziAg32QVyJz39d6Y8ZErKuDo9nMsp3LI+MaHY8qCB0pqOU2Ceu/aA7PZzDVk+LIHzBBE9j2EJ/kbwply5QMp91sPJpPJA16VvwjwjMBY9kG5tsioXiwW/EYMAwqIIQash5/edDr9mB8Oh96mHHy37YFD4BFBeRXK3V17sJZj5INEqt1uP9nIjYkl1Lm6ShHPNA3rviCiMXSynFNrLrxRtJVrRYDW0zqtfDQapZDPtSAI+pzDuHJxcZHSJICsqqTREIBF6/RkZGvFJhCAfXgib0zdS1QEjCIinU6nsmsfMqFuEE1KVARMmDm8CXpBjoQVAViztgzHsdMypGFWj1kbJCoCYhQRCC6GeUHNPcsn0bJERUA1j1eOmWZIyTdtLRUz4jlnpKl1KbcuRAiwPKpbUlVMF1O/oJiWilKq3+yinq1c6yBkgLFD0ro9215ZI45pZKYHDkawEpxHj/fgkUftcnilzofFSSyARhZsEUD99rU7sYGRXj5AxNrNCg96gKN8X5PRA5XDPscsu+p+EAnMUk4d5hFtxoC2im23GgUJ3UX1780Y2rqUIr2eWe/XG1Y3GauzDQH7Ae+Zum4UkNLeXgIE0ov3toJEiLAbMRH6vwD399rV1dW7urm4ch58Xs2h/GfY4sG/ZrxWo9d/NTuiDeD2/mAwqIW17v8w8QdWI6gOHvz5jAAAAABJRU5ErkJggg==" alt="Instagram連結" class="footer__list-icon"></a></li>
+        </ul>
+      </li>
+    </ul>
+    </div>
+  </div>
+  <div class="footer__copyright container-md text-center text-Gray-03 fs-7">
+    <p class="mb-1 mb-md-3 ls-md-h fs-8 fs-md-7">Copyright © 2023 BeautyHub LTD. All Rights Reserved.</p>
+    <p class="mb-0 ls-md-h fs-8 fs-md-7">本網站僅供學習使用不作為商業用途</p>
+  </div>
+</footer>      <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+<script>
+    $(".click__nav-icon").click(function () {
+        $(".result__nav-icon").slideToggle();
+    });
+    $(".icon__search").click(function () {
+        $(".search__input").removeClass('d-none');
+    });
+</script>        
+</body>
+
+</html>
