@@ -90,9 +90,23 @@ $input-group-addon-border-color: $Gray-04;
 $form-select-font-family: $font-family-sans-serif;
 $form-select-border-radius-sm: 0;
 
+// badge
+$badge-font-size: 0.875rem;
+$badge-font-weight: 400;
+$badge-color: $primary;
+$badge-padding-y: 0.5rem;
+$badge-padding-x: 1.5rem;
+
+// list-group
+$list-group-border-width: 0;
+$list-group-item-padding-x: 0;
+
 // breadcrumb
 $breadcrumb-font-size: 0.875rem;
 $breadcrumb-active-color: $Gray-02;
 $breadcrumb-divider-color: $Gray-02;
 $breadcrumb-divider: quote("\25AA");
 
+// pagination
+$pagination-border-width: 0;
+$pagination-focus-box-shadow: none;

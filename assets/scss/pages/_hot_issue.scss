@@ -1,0 +1,27 @@
+.hot__issue__title{
+  border-bottom: 5px solid $Secondary-dark;
+  position: relative;
+  font-family: $display-font-family;
+  &::after{
+    position: absolute;
+    content: "";
+    background:$Primary-main;
+    height: 5px;
+    width: 18%;
+    bottom: -5px;
+    left: 0;
+  }
+}
+
+  .hot__issue__card-link {
+    border-bottom:5px solid transparent;
+    &:hover{
+    border-bottom:5px solid rgba(189,90,66,0.8);
+    opacity: 0.8;
+    color:$Primary-main;
+    }
+    .hot__issue__text{
+      text-align: justify;
+    }
+  }
+
