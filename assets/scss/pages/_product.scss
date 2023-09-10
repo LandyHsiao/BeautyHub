@@ -6,6 +6,10 @@ $editor-min-height: 40vh;
   max-width: 100%;
 }
 
+.prodcut-intro__tag-list {
+  gap: 8px 4px;
+}
+
 .product_detail .nav-item .active {
   border-color: $Secondary-dark !important;
 }
@@ -167,6 +171,10 @@ $editor-min-height: 40vh;
     vertical-align: middle;
     line-height: 1.5;
   }
+}
+
+.review__pagination.hidden {
+  display: none;
 }
 
 /* new review */
