@@ -136,9 +136,9 @@
     }
 }
 
-.member_page>.swiper-button-prev,
-.member_page>.swiper-button-next {
-    display: none;
+.member_page .swiper-button-prev::after,
+.member_page .swiper-button-next::after {
+    content: '';
 }
 
 .card-container {
