@@ -135,3 +135,16 @@
         transform: scale(1.1);
     }
 }
+
+.member_page>.swiper-button-prev,
+.member_page>.swiper-button-next {
+    display: none;
+}
+
+.card-container {
+    height: 95px;
+
+    @include media-breakpoint-up(md) {
+        height: 80px;
+    }
+}

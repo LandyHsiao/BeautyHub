@@ -8,12 +8,12 @@
     <title>BeautyHub 我的頁面</title>
 </head>
 <style>
-    /* * {
+    * {
         outline: 1px solid red;
-    } */
+    }
 </style>
 
-<body>
+<body class="member_page">
     <%- include('./layout/header-other.ejs',{page: "member_page" }); -%>
         <div class="container py-md-4 py-6">
             <nav aria-label="breadcrumb">
@@ -66,7 +66,7 @@
         <div class="container-fluid">
             <div class="d-flex align-items-center justify-content-center">
                 <div class="swiper-button-prev-CareProducts-d">
-                    <div class="swiper-button-prev-CareProducts member_edit_page--prev bg-secondary d-flex align-items-center justify-content-center"
+                    <div class="swiper-button-prev swiper-button-prev-CareProducts member_edit_page--prev bg-secondary d-flex align-items-center justify-content-center"
                         style="width: 48px;height: 48px;">
                         <i
                             class="bi bi-arrow-left-short text-Gray-07 h2 d-flex align-items-center justify-content-center m-0 p-0"></i>
@@ -269,11 +269,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal fade" id="CareProducts-edit" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
+                    <div class="modal fade" id="CareProducts-edit" tabindex="-1" aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content rounded-0">
-                                <div class="modal-header border-0">
+                                <div class="modal-header border-0 container">
                                     <h5
                                         class="modal-title text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0">
                                         保養品
@@ -524,7 +523,7 @@
                     </div>
                 </div>
                 <div class="swiper-button-next-CareProducts-d">
-                    <div class="swiper-button-next-CareProducts bg-secondary member_edit_page--next d-flex align-items-center justify-content-center"
+                    <div class="swiper-button-next swiper-button-next-CareProducts bg-secondary member_edit_page--next d-flex align-items-center justify-content-center"
                         style="width: 48px;height: 48px;">
                         <i
                             class="bi bi-arrow-right-short text-Gray-07 h2 d-flex align-items-center justify-content-center m-0 p-0"></i>
@@ -737,11 +736,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal fade" id="Cosmetic-edit" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
+                    <div class="modal fade" id="Cosmetic-edit" tabindex="-1" aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content rounded-0">
-                                <div class="modal-header border-0">
+                                <div class="modal-header border-0 container">
                                     <h5
                                         class="modal-title text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0">
                                         化妝品
@@ -1009,8 +1007,8 @@
         <div class="container pb-md-12 pb-6">
             <hr class="text-primary">
             <h2 class="text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0 py-md-12 py-6">我的收藏產品
-                <a style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#CollectproductsEdit"
-                    class="ms-2 pe-auto"><i class="bi bi-pencil-square"></i></a>
+                <a data-bs-toggle="modal" href="#CollectproductsEdit" class="ms-2"><i
+                        class="bi bi-pencil-square"></i></a>
             </h2>
             <div class="row grid gy-4">
                 <div class="col-lg-4 col-md-6 col">
@@ -1084,11 +1082,10 @@
                     展開
                 </a>
             </div>
-            <div class="modal fade" id="Collectproducts" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="Collectproducts" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content rounded-0">
-                        <div class="modal-header border-0">
+                        <div class="modal-header border-0 container">
                             <h5 class="modal-title text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0">
                                 我的收藏產品
                                 <a style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#CollectproductsEdit"
@@ -1475,11 +1472,10 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="CollectproductsEdit" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="CollectproductsEdit" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content rounded-0">
-                        <div class="modal-header border-0">
+                        <div class="modal-header border-0 container">
                             <h5 class="modal-title text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0">
                                 我的收藏產品
                             </h5>
@@ -1933,8 +1929,8 @@
         <div class="container pb-md-12 pb-6">
             <hr class="text-primary">
             <h2 class="text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0 py-md-12 py-6">我的收藏評論
-                <a style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#CommentCollectEdit"
-                    class="ms-2 pe-auto"><i class="bi bi-pencil-square"></i></a>
+                <a data-bs-toggle="modal" href="#CommentCollectEdit" class="ms-2"><i
+                        class="bi bi-pencil-square"></i></a>
             </h2>
             <div class="row grid gy-4">
                 <div class="col-lg-4 col-md-6 col-12 d-flex flex-column">
@@ -1949,15 +1945,15 @@
                                 <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
                                     Bbia水花瓣唇膏</h2>
                                 <p
-                                    class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                    class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                     顯色度高又滑順好塗抹，持久度還不錯！最推薦的是色號的是#04水花瓣杏粉橘。
                                 </p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 d-md-block d-none">
-                    <div class="d-flex flex-column">
+                <div class="col-lg-4 col-md-6 col-12 d-flex flex-column d-md-block d-none">
+                    <div class="d-flex flex-column flex-grow-1">
                         <a href="#" class="d-flex flex-column flex-grow-1">
                             <div
                                 class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
@@ -1968,8 +1964,8 @@
                                 <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
                                     tsuvimi 雙色閃亮眼影蜜</h2>
                                 <p
-                                    class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
-                                    懶人救星，手殘人推薦入手～組合Q22栗子可頌包含兩個色號S16+S19，是不容易失手的...
+                                    class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                    懶人救星，手殘人推薦入手～組合Q22栗子可頌包含兩個色號S16+S19，是不容...
                                 </p>
                             </div>
                         </a>
@@ -1987,8 +1983,8 @@
                                 <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
                                     仙人掌小姐保濕精華40mL</h2>
                                 <p
-                                    class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
-                                    手上試用的是加大40ML版，光是這個容量就CP值超高～適合妝前臨時急救，皮膚瞬間水潤...
+                                    class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                    手上試用的是加大40ML版，光是這個容量就CP值超高～適合妝前臨時急救，皮膚...
                                 </p>
                             </div>
                         </a>
@@ -2001,11 +1997,10 @@
                     展開
                 </a>
             </div>
-            <div class="modal fade" id="comment__collect" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="comment__collect" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content rounded-0">
-                        <div class="modal-header border-0">
+                        <div class="modal-header border-0 container">
                             <h5 class="modal-title text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0">
                                 我的收藏評論
                                 <a style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#CommentCollectEdit"
@@ -2022,7 +2017,7 @@
                                             class="bi bi-arrow-left-short text-Gray-07 h2 d-flex align-items-center justify-content-center m-0 p-0"></i>
                                     </div>
                                 </div>
-                                <div class="swiper swiperCommentCollect container mx-6 ">
+                                <div class="swiper swiperCommentCollect container mx-6 h-100">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="d-flex flex-column flex-grow-1">
@@ -2034,10 +2029,10 @@
                                                                 class="comment__collect--img" alt="梅子綠">
                                                         </div>
                                                         <h2
-                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
+                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 d-flex flex-column flex-grow-1">
                                                             Bbia水花瓣唇膏</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             顯色度高又滑順好塗抹，持久度還不錯！最推薦的是色號的是#04水花瓣杏粉橘。
                                                         </p>
                                                     </div>
@@ -2045,7 +2040,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="d-flex flex-column">
+                                            <div class="d-flex flex-column flex-grow-1">
                                                 <a href="#" class="d-flex flex-column flex-grow-1">
                                                     <div
                                                         class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
@@ -2054,10 +2049,10 @@
                                                                 class="comment__collect--img" alt="Kelly♥">
                                                         </div>
                                                         <h2
-                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
+                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 d-flex flex-column flex-grow-1">
                                                             tsuvimi 雙色閃亮眼影蜜</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             懶人救星，手殘人推薦入手～組合Q22栗子可頌包含兩個色號S16+S19，是不...
                                                         </p>
                                                     </div>
@@ -2065,7 +2060,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="d-flex flex-column">
+                                            <div class="d-flex flex-column flex-grow-1">
                                                 <a href="#" class="d-flex flex-column flex-grow-1">
                                                     <div
                                                         class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
@@ -2074,10 +2069,10 @@
                                                                 class="comment__collect--img" alt="">
                                                         </div>
                                                         <h2
-                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
+                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 d-flex flex-column flex-grow-1">
                                                             仙人掌小姐保濕精華40mL</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             手上試用的是加大40ML版，光是這個容量就CP值超高～適合妝前臨時急救，皮...
                                                         </p>
                                                     </div>
@@ -2085,7 +2080,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="d-flex flex-column">
+                                            <div class="d-flex flex-column flex-grow-1">
                                                 <a href="#" class="d-flex flex-column flex-grow-1">
                                                     <div
                                                         class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
@@ -2094,10 +2089,10 @@
                                                                 class="comment__collect--img" alt="Kelly♥">
                                                         </div>
                                                         <h2
-                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
+                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 d-flex flex-column flex-grow-1">
                                                             黃金藍銅玻尿酸保濕化妝水</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             我對這款產品印象深刻，它的質地輕盈，迅速被皮膚吸收，即刻為肌膚注入水...
                                                         </p>
                                                     </div>
@@ -2105,7 +2100,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="d-flex flex-column">
+                                            <div class="d-flex flex-column flex-grow-1">
                                                 <a href="#" class="d-flex flex-column flex-grow-1">
                                                     <div
                                                         class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
@@ -2114,10 +2109,10 @@
                                                                 class="comment__collect--img" alt="">
                                                         </div>
                                                         <h2
-                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
+                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 d-flex flex-column flex-grow-1">
                                                             金致臻顏花蜜奢養精華露</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             質地是比較濃稠的那種，建議可以採取"少量多餐"的方式進行測試，很好吸收是...
                                                         </p>
                                                     </div>
@@ -2134,12 +2129,11 @@
                                                                 class="comment__collect--img" alt="梅子綠">
                                                         </div>
                                                         <h2
-                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
+                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 d-flex flex-column flex-grow-1">
                                                             黃金藍銅玻尿酸保濕化妝水</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
-                                                            質地與吸收力
-                                                            這款化妝水的質地輕盈，幾乎像是水的質地，但不同的是，..
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            質地與吸收力，這款化妝水的質地輕盈，幾乎像是水的質地，但不同的是，...
                                                         </p>
                                                     </div>
                                                 </a>
@@ -2150,15 +2144,15 @@
                                                 <a href="#" class="d-flex flex-column flex-grow-1">
                                                     <div
                                                         class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
-                                                        <div class="comment__collect__item--block mb-md-4 mb-3">
+                                                        <div class="comment__collect__item--block mb-md-4 mb-3 h-100">
                                                             <img src="../assets/image/home-recommend/woman-profile-5.png"
                                                                 class="comment__collect--img" alt="梅子綠">
                                                         </div>
                                                         <h2
-                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
+                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 d-flex flex-column flex-grow-1">
                                                             &be UV Primer 妝前隔離乳</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             最近被Ocard燒到好不容易入手一瓶，只能說是不愧他的超高評價，完全是蜜...
                                                         </p>
                                                     </div>
@@ -2169,17 +2163,17 @@
                                             <div class="d-flex flex-column">
                                                 <a href="#" class="d-flex flex-column flex-grow-1">
                                                     <div
-                                                        class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                        class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column h-100">
                                                         <div class="comment__collect__item--block mb-md-4 mb-3">
                                                             <img src="../assets/image/home-recommend/woman-profile-2.png"
                                                                 class="comment__collect--img" alt="Kelly♥">
                                                         </div>
                                                         <h2
-                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
+                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 d-flex flex-column flex-grow-1">
                                                             極潤多效精華水感凝露</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
-                                                            水潤清透的質地，微濃稠好推勻，延展性很優，用量真的滿省的!!吸收度也算不錯，...
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            水潤清透的質地，微濃稠好推勻，延展性很優，用量真的滿省的!!吸收度也算...
                                                         </p>
                                                     </div>
                                                 </a>
@@ -2200,11 +2194,10 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="CommentCollectEdit" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="CommentCollectEdit" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content rounded-0">
-                        <div class="modal-header border-0">
+                        <div class="modal-header border-0 container">
                             <h5 class="modal-title text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0">
                                 我的收藏評論
                             </h5>
@@ -2239,7 +2232,7 @@
                                                             class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
                                                             Bbia水花瓣唇膏</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             顯色度高又滑順好塗抹，持久度還不錯！最推薦的是色號的是#04水花瓣杏粉橘。
                                                         </p>
                                                     </div>
@@ -2263,7 +2256,7 @@
                                                             class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
                                                             tsuvimi 雙色閃亮眼影蜜</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             懶人救星，手殘人推薦入手～組合Q22栗子可頌包含兩個色號S16+S19，是不...
                                                         </p>
                                                     </div>
@@ -2287,7 +2280,7 @@
                                                             class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
                                                             仙人掌小姐保濕精華40mL</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             手上試用的是加大40ML版，光是這個容量就CP值超高～適合妝前臨時急救，皮...
                                                         </p>
                                                     </div>
@@ -2311,7 +2304,7 @@
                                                             class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
                                                             黃金藍銅玻尿酸保濕化妝水</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             我對這款產品印象深刻，它的質地輕盈，迅速被皮膚吸收，即刻為肌膚注入水...
                                                         </p>
                                                     </div>
@@ -2335,7 +2328,7 @@
                                                             class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
                                                             金致臻顏花蜜奢養精華露</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             質地是比較濃稠的那種，建議可以採取"少量多餐"的方式進行測試，很好吸收是...
                                                         </p>
                                                     </div>
@@ -2359,7 +2352,7 @@
                                                             class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
                                                             黃金藍銅玻尿酸保濕化妝水</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             質地與吸收力
                                                             這款化妝水的質地輕盈，幾乎像是水的質地，但不同的是，..
                                                         </p>
@@ -2384,7 +2377,7 @@
                                                             class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
                                                             &be UV Primer 妝前隔離乳</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             最近被Ocard燒到好不容易入手一瓶，只能說是不愧他的超高評價，完全是蜜...
                                                         </p>
                                                     </div>
@@ -2408,7 +2401,7 @@
                                                             class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
                                                             極潤多效精華水感凝露</h2>
                                                         <p
-                                                            class="card-text text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
                                                             水潤清透的質地，微濃稠好推勻，延展性很優，用量真的滿省的!!吸收度也算不錯，...
                                                         </p>
                                                     </div>
@@ -2434,8 +2427,7 @@
         <div class="container pb-md-12 pb-6">
             <hr class="text-primary">
             <h2 class="text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0 py-md-12 py-6">我的評論
-                <a style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#CommentEdit" class="ms-2 pe-auto"><i
-                        class="bi bi-pencil-square"></i></a>
+                <a data-bs-toggle="modal" href="#CommentEdit" class="ms-2"><i class="bi bi-pencil-square"></i></a>
             </h2>
             <div class="row grid gy-4">
                 <div class="col-lg-4 col-md-6 col-12 d-flex flex-column">
@@ -2502,14 +2494,14 @@
                     展開
                 </a>
             </div>
-            <div class="modal fade" id="comment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="comment" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content rounded-0">
-                        <div class="modal-header border-0">
+                        <div class="modal-header border-0 container">
                             <h5 class="modal-title text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0">
                                 我的評論
-                                <a style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#CommentEdit"
-                                    class="ms-2 pe-auto"><i class="bi bi-pencil-square"></i></a>
+                                <a data-bs-toggle="modal" href="#CommentEdit" class="ms-2 pe-auto"><i
+                                        class="bi bi-pencil-square"></i></a>
                             </h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -2708,11 +2700,10 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="CommentEdit" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="CommentEdit" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content rounded-0">
-                        <div class="modal-header border-0">
+                        <div class="modal-header border-0 container">
                             <h5 class="modal-title text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0">
                                 我的評論
                             </h5>
@@ -2950,8 +2941,7 @@
         <div class="container pb-md-30 pb-15">
             <hr class="text-primary">
             <h2 class="text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0 py-md-12 py-6">我的追蹤清單
-                <a style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#TrackingListEdit"
-                    class="ms-2 pe-auto"><i class="bi bi-pencil-square"></i></a>
+                <a data-bs-toggle="modal" href="#TrackingListEdit" class="ms-2"><i class="bi bi-pencil-square"></i></a>
             </h2>
             <div class="row grid gy-4">
                 <div class="col-lg-4 col-md-6 col-12 d-flex flex-column">
@@ -3005,11 +2995,10 @@
                     展開
                 </a>
             </div>
-            <div class="modal fade" id="TrackingList" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="TrackingList" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content rounded-0">
-                        <div class="modal-header border-0">
+                        <div class="modal-header border-0 container">
                             <h5 class="modal-title text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0">
                                 我的追蹤清單
                                 <a style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#TrackingListEdit"
@@ -3179,11 +3168,10 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="TrackingListEdit" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="TrackingListEdit" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content rounded-0">
-                        <div class="modal-header border-0">
+                        <div class="modal-header border-0 container">
                             <h5 class="modal-title text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0">
                                 我的追蹤清單
                             </h5>
