@@ -1,0 +1,162 @@
+.user__icon {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.my__dress__table__item--block,
+.product__collection__item--block {
+    max-width: 217px;
+    min-height: 174px;
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+        max-width: 376px;
+        max-height: 341px;
+    }
+}
+
+.my__dress__table__item--img,
+.product__collection__item--img {
+    max-width: 217px;
+    min-height: 174px;
+    object-fit: cover;
+    transition: all 1.2s;
+
+    @include media-breakpoint-up(md) {
+        max-width: 376px;
+        max-height: 341px;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}
+
+
+.swiper-button-prev-CareProducts-d,
+.swiper-button-next-CareProducts-d,
+.swiper-button-prev-Cosmetic-d,
+.swiper-button-next-Cosmetic-d {
+    @media (max-width:1300px) {
+        display: none;
+    }
+
+    @media (max-width:1199px) {
+        display: block;
+    }
+
+    @media (max-width:1119px) {
+        display: none;
+    }
+
+    @media (max-width:992px) {
+        display: block;
+    }
+
+    @media (max-width:882px) {
+        display: none;
+    }
+
+    @media (max-width:767px) {
+        display: none;
+    }
+}
+
+.comment__collect__item--block {
+    // aspect-ratio: 217/151;
+    min-width: 100%;
+    max-height: 151px;
+    overflow: hidden;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        // aspect-ratio: 256/250;
+        min-width: 256px;
+        max-width: 256px;
+        max-height: 250px;
+    }
+
+    @media (min-width:376px) {
+        min-width: 256px;
+        max-width: 256px;
+        max-height: 250px;
+    }
+}
+
+.comment__collect--img {
+    // aspect-ratio: 217/151;
+    min-width: 100%;
+    max-height: 151px;
+    object-fit: cover;
+    // object-position: center top;
+    transition: all 1.2s;
+
+    @include media-breakpoint-up(md) {
+        aspect-ratio: 256/250;
+        max-width: 256px;
+        max-height: 250px;
+        // object-position: center center;
+        object-fit: cover;
+    }
+
+    @media (min-width:376px) {
+        min-width: 256px;
+        max-width: 256px;
+        max-height: 250px;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}
+
+.tracking__list__item--block {
+    aspect-ratio: 151/151;
+    max-height: 151px;
+    overflow: hidden;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        // aspect-ratio: 256/250;
+        min-width: 256px;
+        max-width: 256px;
+        max-height: 250px;
+    }
+}
+
+.tracking__list--img {
+    aspect-ratio: 151/151;
+    max-height: 151px;
+    object-fit: cover;
+    // object-position: center top;
+    transition: all 1.2s;
+
+    @include media-breakpoint-up(md) {
+        aspect-ratio: 256/250;
+        max-width: 256px;
+        max-height: 250px;
+        // object-position: center center;
+        object-fit: cover;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}
+
+.member_page .swiper-button-prev::after,
+.member_page .swiper-button-next::after {
+    content: '';
+}
+
+.card-container {
+    height: 95px;
+
+    @include media-breakpoint-up(md) {
+        height: 80px;
+    }
+}

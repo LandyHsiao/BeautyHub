@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeautyHub 修改資料</title>
+</head>
+
+<body>
+    <%- include('./layout/header-other.ejs',{page: "member_page" }); -%>
+        <div class="container py-md-4 py-6">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item fs-md-6 fs-8"><a href="index.html">首頁</a></li>
+                    <li class="breadcrumb-item fs-md-6 fs-8" aria-current="page"><a href="member_page.html">我的頁面</a>
+                    </li>
+                    <li class="breadcrumb-item fs-md-6 fs-8 active" aria-current="page">修改資料</li>
+                </ol>
+            </nav>
+            <h1 class="text-md-center text-start py-md-12 py-6 fs-md-3 fw-md-bolder fw-semibold fs-5 m-0">
+                修改資料
+            </h1>
+            <form action="" class="py-md-12 py-105">
+                <div class="row justify-content-between align-items-center mb-md-10">
+                    <div class="d-flex flex-column align-items-center col-md-6 col-12 mb-md-0 mb-9">
+                        <img src="../assets/image/home-recommend/woman-profile-1.png" alt="user__icon"
+                            class="user__icon rounded-circle mb-3">
+                        <input type="file" id="avatar-uploader" data-target="avatar-uploader" accept="image/*" hidden>
+                        <label for="avatar-uploader" class="btn btn-outline-primary py-3 px-9 fw-medium">上傳圖片</label>
+                    </div>
+                    <ol class="col-md-6 col-12 mb-md-0 mb-5">
+                        <li class="d-flex align-items-center mb-4">
+                            <p class="fs-md-5 fs-6 fw-medium ls-md-s ls-p lh-sm w-25 m-0">暱稱：</p>
+                            <h1 class="fs-md-5 fs-6 fw-medium ls-md-s ls-p lh-sm m-0">梅子綠</h1>
+                        </li>
+                        <li class="d-flex align-items-center mb-4">
+                            <h1 class="fs-md-5 fs-6 fw-medium ls-md-s ls-p lh-sm w-25 m-0">電子信箱：</h1>
+                            <p class="fs-md-5 fs-6 fw-medium ls-md-s ls-p lh-sm m-0">maykim0807@gmail.com</p>
+                        </li>
+                        <li class="d-flex align-items-center mb-4">
+                            <label class="fs-md-5 fs-6 fw-medium ls-md-s ls-p lh-sm w-25 m-0" for="skin">膚況：</label>
+                            <select class="form-select w-75" aria-label="Default select example" id="skin">
+                                <option selected>混合肌</option>
+                                <option value="1">敏感肌</option>
+                                <option value="2">油肌</option>
+                            </select>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <label class="fs-md-5 fs-6 fw-medium ls-md-s ls-p lh-sm w-25 m-0" for="password">密碼：</label>
+                            <input class="form-control w-75" type="password" placeholder="old password here"
+                                aria-label="default input example" id="password">
+                        </li>
+                    </ol>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="member_page.html"
+                        class="member__register--btn btn btn-primary py-md-4 px-md-18 py-3 px-8 col-md-4 col-12 mx-auto fw-medium">儲存
+                    </a>
+                </div>
+            </form>
+        </div>
+        <%- include('./layout/footer.ejs'); -%>
+            <%- include('./layout/header_search_jq.ejs'); -%>
+                <script type="module" src="../main.js"></script>
+</body>
+
+</html>
