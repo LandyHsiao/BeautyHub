@@ -7,6 +7,11 @@
 
     <title>BeautyHub 搜尋</title>
 </head>
+<style>
+    * {
+        outline: 1px solid red;
+    }
+</style>
 
 <body>
     <%- include('./layout/header-other.ejs',{page: "search" }); -%>
@@ -65,8 +70,9 @@
                             <hr class="text-primary mb-3">
                             <div class="text-center">
                                 <botton type="submit"
-                                    class="btn btn-outline-primary py-md-4 px-lg-18 px-md-9 py-2 d-inline-block w-lg-50 fs-lg-6 fs- ff-nst">
-                                    搜尋</botton>
+                                    class="btn btn-outline-primary py-md-4 px-md-18 px-lg-9 py-2 d-inline-block w-lg-50 fs-lg-6 fs- ff-nst flex-nowrap">
+                                    搜尋
+                                </botton>
                             </div>
                         </form>
                         <h2
