@@ -77,6 +77,12 @@
         max-width: 256px;
         max-height: 250px;
     }
+
+    @media (min-width:376px) {
+        min-width: 256px;
+        max-width: 256px;
+        max-height: 250px;
+    }
 }
 
 .comment__collect--img {
@@ -93,6 +99,12 @@
         max-height: 250px;
         // object-position: center center;
         object-fit: cover;
+    }
+
+    @media (min-width:376px) {
+        min-width: 256px;
+        max-width: 256px;
+        max-height: 250px;
     }
 
     &:hover,
