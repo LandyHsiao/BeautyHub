@@ -40,7 +40,7 @@ $value in $letter-spacings {
 .hover-scale-img {
   overflow: hidden;
   img{
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     transition: 2s all;
     &:hover {
