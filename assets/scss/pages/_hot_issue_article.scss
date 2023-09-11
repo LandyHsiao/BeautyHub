@@ -1,0 +1,28 @@
+.main__content__title,
+.hot__issue__banner p,
+.hot__issue__content p {
+  text-align: justify;
+}
+
+.hot__issue__recommend {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &-title {
+    border-bottom: 5px solid $Secondary-dark;
+    position: relative;
+    font-family: $display-font-family;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background: $Primary-main;
+      height: 5px;
+      width: 18%;
+      bottom: -5px;
+      left: 0;
+    }
+  }
+}
