@@ -1,0 +1,121 @@
+.user__icon--open {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+
+    @include media-breakpoint-up(md) {
+        width: 217px;
+        height: 217px;
+    }
+}
+
+.open__dress__table__item--block {
+    max-width: 217px;
+    min-height: 174px;
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+        max-width: 376px;
+        max-height: 341px;
+    }
+}
+
+.open__dress__table__item--img {
+    max-width: 217px;
+    min-height: 174px;
+    object-fit: cover;
+    transition: all 1.2s;
+
+    @include media-breakpoint-up(md) {
+        max-width: 376px;
+        max-height: 341px;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}
+
+.comment__collect__open--item--block {
+    // aspect-ratio: 217/151;
+    min-width: 100%;
+    max-height: 151px;
+    overflow: hidden;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        // aspect-ratio: 256/250;
+        min-width: 256px;
+        max-width: 256px;
+        max-height: 250px;
+    }
+
+    @media (min-width:376px) {
+        min-width: 256px;
+        max-width: 256px;
+        max-height: 250px;
+    }
+}
+
+.comment__collect--open--img {
+    // aspect-ratio: 217/151;
+    min-width: 100%;
+    max-height: 151px;
+    object-fit: cover;
+    // object-position: center top;
+    transition: all 1.2s;
+
+    @include media-breakpoint-up(md) {
+        aspect-ratio: 256/250;
+        max-width: 256px;
+        max-height: 250px;
+        // object-position: center center;
+        object-fit: cover;
+    }
+
+    @media (min-width:376px) {
+        min-width: 256px;
+        max-width: 256px;
+        max-height: 250px;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}
+
+.member_open_page .swiper-button-prev::after,
+.member_open_page .swiper-button-next::after {
+    content: '';
+}
+
+.swiper-button-prev-CareProducts-open-d,
+.swiper-button-next-CareProducts-open-d,
+.swiper-button-prev-Cosmetic-open-d,
+.swiper-button-next-Cosmetic-open-d {
+    @media (max-width:1300px) {
+        display: none;
+    }
+
+    @media (max-width:1199px) {
+        display: block;
+    }
+
+    @media (max-width:1119px) {
+        display: none;
+    }
+
+    @media (max-width:992px) {
+        display: block;
+    }
+
+    @media (max-width:882px) {
+        display: none;
+    }
+
+    @media (max-width:767px) {
+        display: none;
+    }
+}
