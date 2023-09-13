@@ -279,3 +279,11 @@
     font-size: 54px;
   }
 }
+
+/* Section .home-hot-issue */
+.home-hot-issue__card-img {
+  @include media-breakpoint-up(md) {
+    aspect-ratio: 812 / 457;
+    object-position: center;
+  }
+}
