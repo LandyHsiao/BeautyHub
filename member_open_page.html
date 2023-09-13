@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>BeautyHub 我的頁面</title>
+  <script type="module" crossorigin src="/beauty-hub/assets/search-dff993f2.js"></script>
+  <link rel="stylesheet" href="/beauty-hub/assets/search-1cd20157.css">
+</head>
+
+<body class="member_open_page">
+    <header>
+    <div class="container-md py-2">
+        <div class="row">
+            <div class="d-flex justify-content-between">
+                <a href="./index.html" class="header__logo"> </a>
+                <div class="d-flex align-items-center">
+                    <form action="" class="d-md-block d-none me-2">
+                        <div class="d-flex justify-content-end">
+                            <select class="form-select form-select-sm p-0 py-1 border-0 w-50">
+                                <option selected>品牌</option>
+                                <option value="1">產品</option>
+                                <option value="2">分類</option>
+                            </select>
+                            <input type="text" class="form-control py-1" aria-label="Text input dropdown button">
+                        </div>
+                    </form>
+                    <div class="d-md-block d-none">
+                        <a href="member_login.html" class="d-flex align-items-center">
+                            <p class="text-Gray-01 m-0 me-1 fw-medium lh-sm">註冊/登入</p>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIuSURBVHgB7VY5TsNAFP3OIlEkkpukdrooi2Q6Opwj5ARASQU3AI7ACQgdJZwAcwKMsnZMncpISZWN96NxZEVO8ifQJU8aeTb/efO3+URHHDos2gOVSuUylUpdoOvpKX8+nz/3er0WGcKYQL1ef1osFpdJa5hvdbvdKzJA2mRzrVa7w+c2NuWjKTSHB5ZlucVi0RoOh75QpFwDruva0+n0G10bN1Wz2awxGAwUr5XLZSeTyXzyGlqIfikIglAiN0VC4HBXH8B4jA5n6P6jHtp6rwhiAlCvE/WhgTBhXUV9aMem/yYAoUHssPP1dUTBai6dTovUv5RFBqhWq98xTdyPRqOl2vP5/B20snRO9g9EQkkq04gAosDD533bHmiq2e/3X0kIozBEeKlCofADLZxheLK2HMIM1zj8hQywVybksEMm9GK+8DUej1tKKbHtj4hgbALHcWx4vafDLor3ECb5aLfbYuczJsAH53K5G9j9FqGWmGg4GfGD1Ol0HoRiZQTY6bLZ7DuEO5L9TGQymTTi6XoTdmbChMPZ0x+Q70u4qcUN5jjlOU5CvIH38j/87y75OzWA5MOvXPS4+Mh+zU3hpl/FJ4oVKiDYoH0J6MqHBfKtAqTYUxIgThraudpWKW01gS67luAUS0LAPM0kGUYEuAAhrUrc/k3iUBH0Xl8PPS3LjMBaUeGTIZj0BlkyAvECBHZUZAiofuWo2wqUjQRQVLxyWOkWkCH++v8Rh4NfoYEVDupJGRYAAAAASUVORK5CYII=" alt="icon-group" class="icon__group" />
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center d-md-none">
+                        <div class="d-flex align-items-center">
+                            <form action="" class="d-md-block me-2 result__nav-icon">
+                                <div class="d-flex justify-content-end search__input d-none" style="width: 170px;">
+                                    <select class=" form-select form-select-sm p-0 border-0" style="width: 65px;">
+                                        <option selected>品牌</option>
+                                        <option value="1">產品</option>
+                                        <option value="2">分類</option>
+                                    </select>
+                                    <!--  -->
+                                    <input type="text" class="form-control py-1 p-0 w-50"
+                                        aria-label="Text input dropdown button">
+                                </div>
+                            </form>
+                            <a href="#" class="me-3 p-2 click__search-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKMSURBVHgB7Va9ctpAEF4RmEnpDDMwQ2OVwMBEbxAeAZ4gSpfOcZcOeAI7XVIFP4FJl1TBVdrL8KdS6RigkLsU/ORbWzdzEfo5yXZlvhnN7Z1Ot9/urXaX6IjnDkN3Y71et3K5XBviG8MwrP1+f+K/EpgLzK8mk8mIUiKRgGVZ5na7vYCCduJhhuFi37s0RF5QvHILyn/hUEtZ9vA4WPsOhR5GViy9waNdKpWM5XI5Ig0YCcp/SldjFLiCD+Px+Ca4l68HJM7w2MpyH57oURYCvttZuXm3yTAuoficEgAiNkhe0L0nmPT5dDq9jPsmF7YI5V2pHOjpKGfMZrMBho6cg3gXxpzEfXMQA2z9brcbsAwSLizoUArg7l3EAIstPC9x1l+s3UTtP/AArD9Tpj3KgHw+/4nug5WNsOP2HhBQIt6D9VeUAUIID+4fsozRrNVqp6RLAJAEBD0A/NdIGR4xKQUBGTQePQCw/FbKiAOTUhB4dODXdCPfBRc4nfIYyH5Z8FoKCOxb0iUAjHwiZqPRaFF2yNrhIT8IbQJc1aQMEm8pA5rNpi0TGcZh3N6DROQnkhZEE49VLpd/Y80hTXAig9Kv5Acz3N9Zr9eRAR0VhH0p8GFcbEhT+WazuVZriOM4btw3oeU4mE5x0HsusZVKxV0sFqHWcLxA8TXEqrL8I6ksxzYkOLRLSjrm+o9h6HdAMrI52ttK8QoitiwndkRcYrmq8V9BGmC3g4xH/9eRSBKxHRFjtVqJYrH4jZMJDq4q3Y8K7ow+Y89HlO4vXP2UK7wbo7ok7aZUolqtmoVC4ZQ9wpYi6MR8Pv8Ttjd4hWENSmoCaREg4eEqXqnvn7wWQGFfEoDXBnTEEQH8Aw0NPYt4CwEyAAAAAElFTkSuQmCC" alt="icon-search"
+                                    class="icon__search result__nav-icon" />
+                            </a>
+                        </div>
+                        <nav class="navbar d-md-none d-md-block">
+                            <a href="#nav" class="navbar-toggler justify-content-end p-2 border-0 click__nav-icon"
+                                type="button" data-bs-toggle="collapse" aria-controls="nav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <div class="nav__link"></div>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto   vh-100">
+                    <li class="nav-item border-bottom border-Gray-04">
+                        <a class="nav-link py-5 px-3 text-center nav__list_sm fw-medium lh-sm" aria-current="page"
+                            href="./index.html">首頁</a>
+                    </li>
+                    <li class="nav-item border-bottom border-Gray-04">
+                        <a class="nav-link py-5 px-3 text-center nav__list_sm fw-medium lh-sm" aria-current="page"
+                            href="category_top_ranking.html">熱門排行</a>
+                    </li>
+                    <li class="nav-item border-bottom border-Gray-04">
+                        <a class="nav-link py-5 px-3 text-center nav__list_sm fw-medium lh-sm" aria-current="page"
+                            href="about_b-hub.html">關於我們</a>
+                    </li>
+                    <li class="nav-item border-bottom border-Gray-04">
+                        <a class="nav-link py-5 px-3 text-center nav__list_sm fw-medium lh-sm" aria-current="page"
+                            href="member_login.html">登入/註冊</a>
+                    </li>
+                    <li class="nav-item border-bottom border-Gray-04">
+                        <a class="nav-link py-5 px-3 text-center nav__list_sm fw-medium lh-sm" aria-current="page"
+                            href="#">通知</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="d-md-flex justify-content-md-center list-unstyled d-none d-md-block mb-0">
+                <li class="me-3">
+                    <a class="py-3 px-6 d-md-block nav__list fw-medium lh-sm text-Gray-01"
+                        href="./index.html"> 首頁 </a>
+                </li>
+                <li class="me-3">
+                    <a class="py-3 px-6 d-md-block nav__list fw-medium lh-sm text-Gray-01"
+                        href="category_top_ranking.html">熱門排行</a>
+                </li>
+                <li>
+                    <a class="py-3 px-6 d-md-block nav__list fw-medium lh-sm text-Gray-01"
+                        href="#">關於我們</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>        <div class="container py-md-4 py-6">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item fs-md-6 fs-8"><a href="index.html">首頁</a></li>
+                    <li class="breadcrumb-item fs-md-6 fs-8 active" aria-current="page">梅子綠的頁面</li>
+                </ol>
+            </nav>
+            <div class="py-md-12 py-105 mb-md-10 text-center">
+                <img src="/beauty-hub/assets/woman-profile-1-c623def8.png" alt="user__icon--open"
+                    class="user__icon--open rounded-circle mb-md-4 mb-3">
+                <h1 class="fs-md-3 fw-md-bolder fw-semibold fs-5 mb-1">梅子綠</h1>
+                <p class="fs-md-5 fs-6 fw-medium ls-md-s ls-p lh-sm mb-md-4 mb-3">混合肌</p>
+                <a href="#" class="btn btn-outline-primary mx-auto fw-medium">追蹤
+                </a>
+            </div>
+            <hr class="text-primary">
+            <h2 class="text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0 py-md-12 py-6">
+                梳妝台
+            </h2>
+        </div>
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="swiper-button-prev-CareProducts-open-d position-relative">
+                    <div class="swiper-button-prev swiper-button-prev-CareProducts-Open member_edit_page--prev bg-secondary d-flex align-items-center justify-content-center position-absolute start-50 translate-middle-x"
+                        style="width: 48px;height: 48px;">
+                        <i
+                            class="bi bi-arrow-left-short text-Gray-07 h2 d-flex align-items-center justify-content-center m-0 p-0"></i>
+                    </div>
+                </div>
+                <div class="container m-6">
+                    <div class="border border-primary px-md-6 px-5 pt-md-6 pt-5 pb-12 position-relative">
+                        <h3 class="text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-md-5 fs-6 mb-4">保養品
+                        </h3>
+                        <a style="cursor: pointer;"
+                            class="position-absolute bottom-0 start-50 translate-middle-x border-0 text-decoration-underline link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-offset-2 open__swiperOpenCareProducts open-open__swiperOpenCareProducts mb-4 fw-medium ls-s pe-auto">
+                            展開
+                        </a>
+                        <a style="cursor: pointer;"
+                            class="position-absolute bottom-0 start-50 translate-middle-x border-0 text-decoration-underline link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-offset-2 close__swiperOpenCareProducts close-open__swiperOpenCareProducts d-none mb-4 fw-medium ls-s pe-auto">
+                            收縮
+                        </a>
+                        <div class="row align-items-center">
+                            <div class="swiper swiperOpenCareProducts">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column flex-grow-1">
+                                            <a href="product_01.html" class="d-flex flex-column d-block">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/hot-img-06-985f781d.jpg"
+                                                            class="open__dress__table__item--img" alt="舒敏保濕化妝水">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            舒敏保濕化妝水</h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                Paula's Choice
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/hot-img-09-3167cce7.jpeg"
+                                                            class="open__dress__table__item--img" alt="裸色深邃眼影">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            超級精華
+                                                            黃金雙激萃</h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                Clarins 克蘭詩
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/hot-img-10-2916ef31.webp"
+                                                            class="open__dress__table__item--img" alt="B5彈潤修復精華">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            B5彈潤修復精華
+                                                        </h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                La Roche-Posay
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/hot-img-08-8d7a9594.jpg"
+                                                            class="open__dress__table__item--img" alt="芯生悠賦活化妝水">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            芯生悠賦活化妝水
+                                                        </h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                Orbis
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/hot-img-04-fa150b6f.jpg"
+                                                            class="open__dress__table__item--img" alt="益菌生保濕調理精華水">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            益菌生保濕調理精華水
+                                                        </h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                DermaAngel護妍天使
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/collect-img-1d6f03f0.jpg"
+                                                            class="open__dress__table__item--img" alt="黃金亮眼萃">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            黃金亮眼萃
+                                                        </h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                CLARINS 克蘭詩
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_03.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/hot-img-03-98cd1bc9.jpg"
+                                                            class="open__dress__table__item--img" alt="極潤多效精華水感凝露">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            極潤多效精華水感凝露
+                                                        </h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                Hada-Labo
+                                                                肌研
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/collect-img02-314c11f0.webp"
+                                                            class="open__dress__table__item--img" alt="全效緊緻眼霜">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            全效緊緻眼霜
+                                                        </h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                CLARINS 克蘭詩
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next-CareProducts-open-d position-static position-relative">
+                    <div class="swiper-button-next swiper-button-next-CareProducts-Open bg-secondary member_edit_page--next d-flex align-items-center justify-content-center position-absolute start-50 translate-middle-x"
+                        style="width: 48px;height: 48px;">
+                        <i
+                            class="bi bi-arrow-right-short text-Gray-07 h2 d-flex align-items-center justify-content-center m-0 p-0"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pb-md-12 pb-6">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="swiper-button-prev-Cosmetic-open-d position-relative">
+                    <div class="swiper-button-prev swiper-button-prev-Cosmetic-Open bg-secondary member_edit_page--prev d-flex align-items-center justify-content-center position-absolute start-50 translate-middle-x"
+                        style="width: 48px;height: 48px;">
+                        <i
+                            class="bi bi-arrow-left-short text-Gray-07 h2 d-flex align-items-center justify-content-center m-0 p-0"></i>
+                    </div>
+                </div>
+                <div class="container m-6">
+                    <div class="border border-primary px-md-6 px-5 pt-md-6 pt-5 pb-12 position-relative">
+                        <h3 class="text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-md-5 fs-6 mb-4">化妝品
+                        </h3>
+                        <a style="cursor: pointer;"
+                            class="position-absolute bottom-0 start-50 translate-middle-x border-0 text-decoration-underline link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-offset-2 open__swiperOpenCosmetic open-open__swiperOpenCosmetic mb-4 fw-medium ls-s pe-auto">
+                            展開
+                        </a>
+                        <a style="cursor: pointer;"
+                            class="position-absolute bottom-0 start-50 translate-middle-x border-0 text-decoration-underline link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-offset-2 close__swiperOpenCosmetic close-open__swiperOpenCosmetic d-none mb-4 fw-medium ls-s pe-auto">
+                            收縮
+                        </a>
+                        <div class="row align-items-center">
+                            <div class="swiper swiperOpenCosmetic">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column flex-grow-1">
+                                            <a href="product_01.html" class="d-flex flex-column d-block h-100">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/product-img-01-cd5cd99f.jpeg"
+                                                            class="open__dress__table__item--img" alt="特調眼彩盤">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            特調眼彩盤</h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                heme
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/eye-shadow-01-e2781181.webp"
+                                                            class="open__dress__table__item--img" alt="裸色深邃眼影">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            裸色深邃眼影</h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                EXCEL
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/eye-shadow-04-aa3a5a45.png"
+                                                            class="open__dress__table__item--img" alt="九宮格眼影盤">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            九宮格眼影盤
+                                                        </h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                3CE
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/lip-01-fd3c9a04.webp"
+                                                            class="open__dress__table__item--img" alt="絲柔粉霧唇膏">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            絲柔粉霧唇膏
+                                                        </h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                M.A.C
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/lip-02-13be46f2.png"
+                                                            class="open__dress__table__item--img" alt="奢華緞面漆光唇釉">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            奢華緞面漆光唇釉
+                                                        </h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                YSL
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/product-img-02-ffd7ff12.jpeg"
+                                                            class="open__dress__table__item--img" alt="輕透柔光粉底液 SPF50+">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            輕透柔光粉底液 SPF50+
+                                                        </h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                heme
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_16.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/lip-05-7f2da19e.webp"
+                                                            class="open__dress__table__item--img" alt="水花瓣輕盈保濕豐潤唇膏">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            水花瓣輕盈保濕豐潤唇膏
+                                                        </h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                Hada-Labo
+                                                                肌研
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column">
+                                            <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                <div
+                                                    class="card p-5 bg-white d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                    <div class="open__dress__table__item--block">
+                                                        <img src="/beauty-hub/assets/product-img-03-7ef00d99.jpeg"
+                                                            class="open__dress__table__item--img" alt="純色腮紅">
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-4">
+                                                            純色腮紅
+                                                        </h2>
+                                                        <a href="brand.html">
+                                                            <span
+                                                                class="card-text text-primary text-center bg-Background-S2 rounded-pill d-line-block px-6 py-2 ff-nst fs-md-7 fs-8 ls-sm-h">
+                                                                heme
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next-Cosmetic-open-d position-relative">
+                    <div class="swiper-button-next swiper-button-next-Cosmetic-Open bg-secondary member_edit_page--next d-flex align-items-center justify-content-center position-absolute start-50 translate-middle-x"
+                        style="width: 48px;height: 48px;">
+                        <i
+                            class="bi bi-arrow-right-short text-Gray-07 h2 d-flex align-items-center justify-content-center m-0 p-0"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pb-md-30 pb-15">
+            <hr class="text-primary">
+            <h2 class="text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0 py-md-12 py-6">評論
+            </h2>
+            <div class="row grid gy-4">
+                <div class="col-lg-4 col-md-6 col-12 d-flex flex-column">
+                    <div class="d-flex flex-column flex-grow-1">
+                        <a href="product_16.html" class="d-flex flex-column flex-grow-1">
+                            <div
+                                class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                <div class="comment__collect__open--item--block mb-md-4 mb-3">
+                                    <img src="/beauty-hub/assets/lip-05-7f2da19e.webp"
+                                        class="comment__collect--open--img" alt="Bbia水花瓣唇膏">
+                                </div>
+                                <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
+                                    Bbia水花瓣唇膏</h2>
+                                <p
+                                    class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                    顯色度高又滑順好塗抹，持久度還不錯！最推薦的是色號的是#04水花瓣杏粉橘。
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex flex-column d-md-block d-none">
+                    <div class="d-flex flex-column flex-grow-1">
+                        <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                            <div
+                                class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                <div class="comment__collect__open--item--block mb-md-4 mb-3">
+                                    <img src="/beauty-hub/assets/hot-img-01-f41698e5.jpg" class="comment__collect--open--img"
+                                        alt="黃金藍銅玻尿酸保濕化妝水">
+                                </div>
+                                <h2 class="card-title text-center ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
+                                    黃金藍銅玻尿酸保濕化妝水</h2>
+                                <p
+                                    class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                    質地與吸收力
+                                    這款化妝水的質地輕盈，幾乎像是水的質地，但不同的是，..
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex flex-column d-lg-block d-none">
+                    <div class="d-flex flex-column flex-grow-1">
+                        <a href="product_02.html" class="d-flex flex-column flex-grow-1">
+                            <div
+                                class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                <div class="comment__collect__open--item--block mb-md-4 mb-3">
+                                    <img src="/beauty-hub/assets/hot-img-02-78890bb3.jpg" class="comment__collect--open--img"
+                                        alt="金致臻顏花蜜奢養精華露">
+                                </div>
+                                <h2 class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3">
+                                    金致臻顏花蜜奢養精華露</h2>
+                                <p
+                                    class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                    本體是微霧狀的凝露，流動性較一般的化妝水低，帶點微奶香的蜜味聞起來...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a style="cursor: pointer;" class="text-center border-0 text-decoration-underline link-underline link-underline-opacity-0
+                    link-underline-opacity-75-hover link-offset-2 fw-medium ls-s collect__products-open"
+                    data-bs-toggle="modal" data-bs-target="#commentopen">
+                    展開
+                </a>
+            </div>
+            <div class="modal fade" id="commentopen" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header border-0 container">
+                            <h5 class="modal-title text-md-center text-start fs-md-3 fw-md-bolder fw-semibold fs-5 m-0">
+                                評論
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body container-fluid">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="swiper-button-prev-OpenCommentCollect-d position-relative ms-4 ps-4">
+                                    <div class="swiper-button-prev swiper-button-prev-OpenCommentCollect bg-secondary member_edit_page--prev d-flex align-items-center justify-content-center position-absolute start-50 translate-middle-x"
+                                        style="width: 48px;height: 48px;">
+                                        <i
+                                            class="bi bi-arrow-left-short text-Gray-07 h2 d-flex align-items-center justify-content-center m-0 p-0"></i>
+                                    </div>
+                                </div>
+                                <div class="swiper swiperOpenCommentCollect container mx-6 ">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide h-auto">
+                                            <div class="d-flex flex-column h-100">
+                                                <a href="product_16.html" class="d-flex flex-column flex-grow-1">
+                                                    <div
+                                                        class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                        <div class="comment__collect__open--item--block mb-md-4 mb-3">
+                                                            <img src="/beauty-hub/assets/lip-05-7f2da19e.webp"
+                                                                class="comment__collect--open--img" alt="Bbia水花瓣唇膏">
+                                                        </div>
+                                                        <h2
+                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3  flex-grow-1">
+                                                            Bbia水花瓣唇膏</h2>
+                                                        <p
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            顯色度高又滑順好塗抹，持久度還不錯！最推薦的是色號的是#04水花瓣杏粉橘。
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide h-auto">
+                                            <div class="d-flex flex-column h-100">
+                                                <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                    <div
+                                                        class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                        <div class="comment__collect__open--item--block mb-md-4 mb-3">
+                                                            <img src="/beauty-hub/assets/hot-img-01-f41698e5.jpg"
+                                                                class="comment__collect--open--img" alt="黃金藍銅玻尿酸保濕化妝水">
+                                                        </div>
+                                                        <h2
+                                                            class="card-title text-center ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 flex-grow-1 ">
+                                                            黃金藍銅玻尿酸保濕化妝水</h2>
+                                                        <p
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            質地與吸收力
+                                                            這款化妝水的質地輕盈，幾乎像是水的質地，但不同的是，..
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide h-auto">
+                                            <div class="d-flex flex-column h-100">
+                                                <a href="product_02.html" class="d-flex flex-column flex-grow-1">
+                                                    <div
+                                                        class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                        <div class="comment__collect__open--item--block mb-md-4 mb-3">
+                                                            <img src="/beauty-hub/assets/hot-img-02-78890bb3.jpg"
+                                                                class="comment__collect--open--img" alt="金致臻顏花蜜奢養精華露">
+                                                        </div>
+                                                        <h2
+                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 flex-grow-1">
+                                                            金致臻顏花蜜奢養精華露</h2>
+                                                        <p
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            本體是微霧狀的凝露，流動性較一般的化妝水低，帶點微奶香的蜜味聞起來...
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide h-auto">
+                                            <div class="d-flex flex-column h-100">
+                                                <a href="product_03.html" class="d-flex flex-column flex-grow-1">
+                                                    <div
+                                                        class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                        <div class="comment__collect__open--item--block mb-md-4 mb-3">
+                                                            <img src="/beauty-hub/assets/hot-img-03-98cd1bc9.jpg"
+                                                                class="comment__collect--open--img" alt="極潤多效精華水感凝露">
+                                                        </div>
+                                                        <h2
+                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 flex-grow-1 ">
+                                                            極潤多效精華水感凝露</h2>
+                                                        <p
+                                                            class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle w-100 overflow-hidden d-flex flex-column justify-content-center mb-0 ls-h">
+                                                            很濃稠，很好推開，沒有味道，讓肌膚不止有水還有油，可以讓肌膚一下達...
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide h-auto">
+                                            <div class="d-flex flex-column h-100">
+                                                <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                    <div
+                                                        class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                        <div class="comment__collect__open--item--block mb-md-4 mb-3">
+                                                            <img src="/beauty-hub/assets/hot-img-04-fa150b6f.jpg"
+                                                                class="comment__collect--open--img" alt="極潤多效精華水感凝露">
+                                                        </div>
+                                                        <h2
+                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 flex-grow-1">
+                                                            極潤多效精華水感凝露</h2>
+                                                        <p class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02
+                                                            bg-white py-4 py-md-1 px-3 align-middle w-100
+                                                            overflow-hidden d-flex flex-column justify-content-center
+                                                            mb-0 ls-h">
+                                                            透明的水狀，流動有一點緩慢，用手掌推開按壓臉部，吸收速度偏快，使用完臉...
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide h-auto">
+                                            <div class="d-flex flex-column h-100">
+                                                <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                    <div
+                                                        class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                        <div class="comment__collect__open--item--block mb-md-4 mb-3">
+                                                            <img src="/beauty-hub/assets/hot-img-05-13b1de8a.png"
+                                                                class="comment__collect--open--img" alt="森果紅石榴多酚凍齡精華露">
+                                                        </div>
+                                                        <h2
+                                                            class="card-title text-center ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 flex-grow-1 ">
+                                                            森果紅石榴多酚凍齡精華露</h2>
+                                                        <p class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02
+                                                            bg-white py-4 py-md-1 px-3 align-middle w-100
+                                                            overflow-hidden d-flex flex-column justify-content-center
+                                                            mb-0 ls-h">
+                                                            質地非常清爽，就像在用化妝水一樣，但卻能夠提供非常棒的保濕和抗老效果...
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide h-auto">
+                                            <div class="d-flex flex-column h-100">
+                                                <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                    <div
+                                                        class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                        <div class="comment__collect__open--item--block mb-md-4 mb-3">
+                                                            <img src="/beauty-hub/assets/hot-img-07-a26e7df6.jpg"
+                                                                class="comment__collect--open--img"
+                                                                alt="秘之湧天堂之泉ALLDAY SPA">
+                                                        </div>
+                                                        <h2
+                                                            class="card-title text-center ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 flex-grow-1 ">
+                                                            秘之湧天堂之泉ALLDAY SPA</h2>
+                                                        <p class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02
+                                                            bg-white py-4 py-md-1 px-3 align-middle w-100
+                                                            overflow-hidden d-flex flex-column justify-content-center
+                                                            mb-0 ls-h">
+                                                            修護兼定妝的化妝水，基本上想要什麼時候用都可以，質地很水很清...
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide h-auto">
+                                            <div class="d-flex flex-column h-100">
+                                                <a href="product_01.html" class="d-flex flex-column flex-grow-1">
+                                                    <div
+                                                        class="card p-md-6 p-5 bg-body d-flex align-items-center justify-content-center overflow-hidden flex-column flex-grow-1">
+                                                        <div class="comment__collect__open--item--block mb-md-4 mb-3">
+                                                            <img src="/beauty-hub/assets/hot-img-08-8d7a9594.jpg"
+                                                                class="comment__collect--open--img" alt="芯生悠賦活化妝水">
+                                                        </div>
+                                                        <h2
+                                                            class="card-title ff-nst fs-md-5 fs-6 fw-medium mb-md-4 mb-3 flex-grow-1">
+                                                            芯生悠賦活化妝水</h2>
+                                                        <p class="card-text card-container text-start fs-7 fs-md-6 text-Gray-02
+                                                            bg-white py-4 py-md-1 px-3 align-middle w-100
+                                                            overflow-hidden d-flex flex-column justify-content-center
+                                                            mb-0 ls-h">
+                                                            很水，所以非常好抹勻，也因為尚有一絲絲的稠度，抹在臉上滑嫩嫩...
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next-OpenCommentCollect-d position-relative me-4 pe-4">
+                                    <div class="swiper-button-next swiper-button-next-OpenCommentCollect bg-secondary member_edit_page--next d-flex align-items-center justify-content-center position-absolute start-50 translate-middle-x"
+                                        style="width: 48px;height: 48px;">
+                                        <i
+                                            class="bi bi-arrow-right-short text-Gray-07 h2 d-flex align-items-center justify-content-center m-0 p-0"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="text-primary mb-md-9 mb-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <footer class="footer pb-9 pb-md-10 pt-7 pt-md-12 bg-Secondary-light rounded-tr-30">
+  <div class="footer__logo-area mb-9 mb-md-4">
+    <div class="footer__logo m-auto ms-md-auto me-md-30"></div>
+  </div>
+  <div class="footer__content container-sm mb-9 mb-md-15">
+    <div class="row">
+      <ul class="footer__content-items list-unstyled d-flex flex-column flex-md-row col col-md-10 col-xl-8 mx-auto justify-content-between mb-0 text-center text-md-start">
+      <li class="footer__content-item footer__about-us mb-6 mb-md-0">
+        <p class="h6 fs-md-5 text-Gray-01 mb-4 mb-md-7 fw-normal fw-md-medium ls-h ls-md-p lh-base lh-md-sm">關於我們</p>
+        <ul class="list-unstyled text-Gray-02">
+          <li class="footer__list-item mb-2 mb-md-3 ls-h fs-7 fs-md-6"><a href="./about_b-hub.html">網站理念</a></li>
+          <li class="footer__list-item mb-2 mb-md-3 ls-h fs-7 fs-md-6"><a href="./about_b-hub.html">常見問題</a></li>
+          <li class="footer__list-item mb-2 mb-md-3 ls-h fs-7 fs-md-6"><a href="./about_b-hub.html">使用條款</a></li>
+          <li class="footer__list-item ls-h fs-7 fs-md-6"><a href="./about_b-hub.html">隱私權政策</a></li>
+        </ul>
+      </li>
+      <li class="footer__content-item footer__contact-us mb-6 mb-md-0">
+        <p class="h6 fs-md-5 text-Gray-01 mb-4 mb-md-7 fw-normal fw-md-medium ls-h ls-md-p lh-base lh-md-sm">聯絡我們</p>
+        <ul class="list-unstyled text-Gray-02">
+          <li class="footer__list-item mb-2 mb-md-3"><a href="mailto:service@teamBeautyHub.com.tw" class="text-wrap text-break ls-h">service@teamBeautyHub.com.tw</a></li>
+          <li class="footer__list-item ls-h">星期ㄧ - 星期五  9:30 - 18:00</li>
+        </ul>
+      </li>
+      <li class="footer__content-item footer__follow-us">
+        <p class="h6 fs-md-5 text-Gray-01 mb-4 mb-md-7 fw-normal fw-md-medium ls-h ls-md-p lh-base lh-md-sm">追蹤我們</p>
+        <ul class="list-unstyled d-flex justify-content-center justify-content-md-between text-Gray-02">
+          <li class="footer__list-item me-4 me-md-0"><a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEaSURBVHgB7ZXRDYIwEIYPcAAGgaQjOIIbWEdwAkfQDdQJXAE36AsJj4zgMwTwr1GCBEM5IMbYLyFNr0fvz/V6JbL8Ow6NIAiCJYad4ziiqiq/uYb5KY7jTd8eC2IghPCLojgiyOoZjLi4xADB96/gYxksIAxDieCSJmLwESD4+sOSwndrzCOaQwAQbQNEHVBwW2LAqQG/w6aICasIp+TrAnprAFWvr1ud9q4777ruEn5vTc3zvEgpldJYAQh4MfCRGGTTlue5nqd9/852BGhWVxO/WQQgI2mSJKmJ71wZiEwde2sAL90KX12EZVme2j765dNF95pnWWaU/sf+NBA8wVWHAIlOeCYGthFZAVbA7wnQbbbDdiOLhckdWHJqPCTh8tcAAAAASUVORK5CYII=" alt="Facebook連結" class="footer__list-icon"></a></li>
+          <li class="footer__list-item"><a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALqSURBVHgB7VdLbhpBEK0BvHcky9vM0gtbhhMYbsANDDeITxDmBPYuygo4QcwJGE5gwk8sx1tWSICE+OY90407MEADs0ueNJqmu6fqVXV9GpF/Hc6hDclk8nI+n6cxvJQjsFwug0QiEdTr9UBOIXB7e5vG6zuetJwHPxaLlRqNRjlsMS7hyl/w+oHHlfPhwhvZ6+trp9fr+ZuLTojygqwsJ/r4uBSPx+tyAnh0juPk1soc56XZbD7tJHB3d5eDwiLHPEMIyHS73UDOwM3NjQsDqlDuqqlMq9Xy9XrC3Aylj/LJ/mTlKnA/vAjl3ng8ziAg32QVyJz39d6Y8ZErKuDo9nMsp3LI+MaHY8qCB0pqOU2Ceu/aA7PZzDVk+LIHzBBE9j2EJ/kbwply5QMp91sPJpPJA16VvwjwjMBY9kG5tsioXiwW/EYMAwqIIQash5/edDr9mB8Oh96mHHy37YFD4BFBeRXK3V17sJZj5INEqt1uP9nIjYkl1Lm6ShHPNA3rviCiMXSynFNrLrxRtJVrRYDW0zqtfDQapZDPtSAI+pzDuHJxcZHSJICsqqTREIBF6/RkZGvFJhCAfXgib0zdS1QEjCIinU6nsmsfMqFuEE1KVARMmDm8CXpBjoQVAViztgzHsdMypGFWj1kbJCoCYhQRCC6GeUHNPcsn0bJERUA1j1eOmWZIyTdtLRUz4jlnpKl1KbcuRAiwPKpbUlVMF1O/oJiWilKq3+yinq1c6yBkgLFD0ro9215ZI45pZKYHDkawEpxHj/fgkUftcnilzofFSSyARhZsEUD99rU7sYGRXj5AxNrNCg96gKN8X5PRA5XDPscsu+p+EAnMUk4d5hFtxoC2im23GgUJ3UX1780Y2rqUIr2eWe/XG1Y3GauzDQH7Ae+Zum4UkNLeXgIE0ov3toJEiLAbMRH6vwD399rV1dW7urm4ch58Xs2h/GfY4sG/ZrxWo9d/NTuiDeD2/mAwqIW17v8w8QdWI6gOHvz5jAAAAABJRU5ErkJggg==" alt="Instagram連結" class="footer__list-icon"></a></li>
+        </ul>
+      </li>
+    </ul>
+    </div>
+  </div>
+  <div class="footer__copyright container-md text-center text-Gray-03 fs-7">
+    <p class="mb-1 mb-md-3 ls-md-h fs-8 fs-md-7">Copyright © 2023 BeautyHub LTD. All Rights Reserved.</p>
+    <p class="mb-0 ls-md-h fs-8 fs-md-7">本網站僅供學習使用不作為商業用途</p>
+  </div>
+</footer>            <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+<script>
+    $(".click__nav-icon").click(function () {
+        $(".result__nav-icon").slideToggle();
+    });
+    $(".icon__search").click(function () {
+        $(".search__input").removeClass('d-none');
+    });
+</script>                <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+                
+                <script>
+    const swiperOpenCareProducts = new Swiper('.swiperOpenCareProducts', {
+        // slide 間距
+        spaceBetween: 24,
+        slidesPerView: 1,
+        // mousewheel: true,
+        navigation: {
+            nextEl: '.swiper-button-next-CareProducts-Open',
+            prevEl: '.swiper-button-prev-CareProducts-Open',
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            375: {
+                slidesPerView: 1.2,
+            }
+        },
+    });
+    $('.open-open__swiperOpenCareProducts').click(function () {
+        $('.open-open__swiperOpenCareProducts').addClass('d-none');
+        $('.close-open__swiperOpenCareProducts').removeClass('d-none');
+    });
+    $('.open__swiperOpenCareProducts').on('click', function () {
+        swiperOpenCareProducts.params.grid.rows = 2;
+        swiperOpenCareProducts.params.grid.fill = 'row';
+        swiperOpenCareProducts.update();
+        $('.swiperOpenCareProducts').addClass('swiper-grid');
+    })
+    $('.close-open__swiperOpenCareProducts').click(function () {
+        $('.open-open__swiperOpenCareProducts').removeClass('d-none');
+        $('.close-open__swiperOpenCareProducts').addClass('d-none');
+    });
+    $('.close__swiperOpenCareProducts').on('click', function () {
+        swiperOpenCareProducts.params.grid.rows = 1;
+        swiperOpenCareProducts.params.grid.fill = 'cloum';
+        swiperOpenCareProducts.update();
+        $('.swiperOpenCareProducts').removeClass('swiper-grid');
+    })
+    // 
+    const swiperOpenCosmetic = new Swiper('.swiperOpenCosmetic', {
+        // slide 間距
+        spaceBetween: 24,
+        slidesPerView: 1,
+        // mousewheel: true,
+        navigation: {
+            nextEl: '.swiper-button-next-Cosmetic-Open',
+            prevEl: '.swiper-button-prev-Cosmetic-Open',
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            375: {
+                slidesPerView: 1.2,
+            }
+        },
+    });
+    $('.open-open__swiperOpenCosmetic').click(function () {
+        $('.open-open__swiperOpenCosmetic').addClass('d-none');
+        $('.close-open__swiperOpenCosmetic').removeClass('d-none');
+    });
+    $('.open__swiperOpenCosmetic').on('click', function () {
+        swiperOpenCosmetic.params.grid.rows = 2;
+        swiperOpenCosmetic.params.grid.fill = 'row';
+        swiperOpenCosmetic.update();
+        $('.swiperOpenCosmetic').addClass('swiper-grid');
+    });
+    $('.close-open__swiperOpenCosmetic').click(function () {
+        $('.open-open__swiperOpenCosmetic').removeClass('d-none');
+        $('.close-open__swiperOpenCosmetic').addClass('d-none');
+    });
+    $('.close__swiperOpenCosmetic').on('click', function () {
+        swiperOpenCosmetic.params.grid.rows = 1;
+        swiperOpenCosmetic.params.grid.fill = 'cloum';
+        swiperOpenCosmetic.update();
+        $('.swiperOpenCosmetic').removeClass('swiper-grid');
+    })
+    const swiperCollectproducts = new Swiper('.swiperCollectproducts', {
+        // slide 間距
+        spaceBetween: 24,
+        slidesPerView: 1,
+        // mousewheel: true,
+        navigation: {
+            nextEl: '.swiper-button-next-Collectproducts',
+            prevEl: '.swiper-button-prev-Collectproducts',
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+                grid: {
+                    rows: 1,
+                    fill: 'row'
+                },
+            },
+            375: {
+                slidesPerView: 1,
+                grid: {
+                    rows: 1,
+                    fill: 'row'
+                },
+            }
+        },
+        grid: {
+            rows: 2,
+            fill: 'row'
+        },
+    });
+
+    const swiperOpenCommentCollect = new Swiper('.swiperOpenCommentCollect', {
+        // slide 間距
+        spaceBetween: 24,
+        slidesPerView: 1,
+        // mousewheel: true,
+        navigation: {
+            nextEl: '.swiper-button-next-OpenCommentCollect',
+            prevEl: '.swiper-button-prev-OpenCommentCollect',
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+                grid: {
+                    rows: 2,
+                    fill: 'row'
+                },
+            },
+            768: {
+                slidesPerView: 2,
+                grid: {
+                    rows: 1,
+                    fill: 'row'
+                },
+            },
+            375: {
+                slidesPerView: 1,
+                grid: {
+                    rows: 1,
+                    fill: 'row'
+                },
+            }
+        },
+    });
+</script></body>
+
+</html>
