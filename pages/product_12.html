@@ -38,6 +38,7 @@
               <li class="prodcut-intro__tag-list-item"><span class="badge prodcut-intro__tag bg-Background-S2 rounded-pill ls-h fs-7">不掉色口紅</span></li>
               <li class="prodcut-intro__tag-list-item"><span class="badge prodcut-intro__tag bg-Background-S2 rounded-pill ls-h fs-7">停產</span></li>
             </ul>
+            <button class="product-intro__bookmark-btn btn btn-outline-primary d-block m-auto ms-lg-0 mt-5">收藏此產品</button>
           </div>
         </div>
       </div>
@@ -442,6 +443,20 @@
     $(".review-card__collapse").on( "click", function() {
       $(this).toggleClass("bi-caret-down-fill");
       $(this).toggleClass("bi-caret-up-fill");
+    });
+
+    // toggle state of product bookmark btn
+    $(".product-intro__bookmark-btn.btn-outline-primary").on( "click", function() {
+      if ($(".product-intro__bookmark-btn").hasClass("btn-outline-primary")) {
+        $(this).text("已收藏");
+        $(this).removeClass("btn-outline-primary");
+        $(this).addClass("btn-primary");
+      }
+      else {
+        $(this).text("收藏此產品");
+        $(this).removeClass("btn-primary");
+        $(this).addClass("btn-outline-primary");
+      }
     });
   </script>
 </body>
