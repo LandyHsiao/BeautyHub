@@ -6,6 +6,15 @@ $editor-min-height: 40vh;
   max-width: 100%;
 }
 
+.prodcut-intro__logo-img {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.prodcut-intro__tag-list {
+  gap: 8px 4px;
+}
+
 .product_detail .nav-item .active {
   border-color: $Secondary-dark !important;
 }
@@ -73,6 +82,10 @@ $editor-min-height: 40vh;
   @include media-breakpoint-up(md){
     max-width: 100px;
   }
+}
+
+.review-card__header-wrap {
+  flex-wrap: wrap;
 }
 
 .review-card__body-content {
@@ -167,6 +180,10 @@ $editor-min-height: 40vh;
     vertical-align: middle;
     line-height: 1.5;
   }
+}
+
+.review__pagination.hidden {
+  display: none;
 }
 
 /* new review */

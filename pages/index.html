@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BeautyHub</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <%- include('./layout/seo-favicon.ejs'); -%>
 </head>
 
 <body>
@@ -40,10 +42,10 @@
                         class="home-banner__search-input form-control d-none d-md-block py-4 px-3 position-relative border-0"
                         id="home-search-input-s1" name="home-search-input-s1" type="search" placeholder="輸入關鍵字查詢"
                         aria-label="Search">
-                      <span class="input-group-text py-4 px-3 bg-Gray-06 border-0">
-                        <img class="home-banner__search-icon " src="../assets/image/search-icon.png"
-                          id="home-search-submit-s1" name="home-search-submit-s1" alt="搜尋框按鈕" role="button">
-                      </span>
+                      <a class="input-group-text py-4 px-3 bg-Gray-06 border-0" href="./search.html" 
+                        id="home-search-submit-s1" name="home-search-submit-s1" alt="搜尋框按鈕" role="button">
+                        <img class="home-banner__search-icon " src="../assets/image/search-icon.png">
+                      </a>
                     </div>
                   </form>
                 </div>
@@ -68,10 +70,10 @@
                         class="home-banner__search-input form-control d-none d-md-block py-4 px-3 position-relative border-0"
                         id="home-search-input-s2" name="home-search-input-s2" type="search" placeholder="輸入關鍵字查詢"
                         aria-label="Search">
-                      <span class="input-group-text py-4 px-3 bg-Gray-06 border-0">
-                        <img class="home-banner__search-icon " src="../assets/image/search-icon.png"
-                          id="home-search-submit-s2" name="home-search-submit-s2" alt="搜尋框按鈕" role="button">
-                      </span>
+                      <a class="input-group-text py-4 px-3 bg-Gray-06 border-0" href="./search.html" 
+                        id="home-search-submit-s2" name="home-search-submit-s2" alt="搜尋框按鈕" role="button">
+                        <img class="home-banner__search-icon " src="../assets/image/search-icon.png">
+                      </a>
                     </div>
                   </form>
                 </div>
@@ -96,10 +98,10 @@
                         class="home-banner__search-input form-control d-none d-md-block py-4 px-3 position-relative border-0"
                         id="home-search-input-s3" name="home-search-input-s3" type="search" placeholder="輸入關鍵字查詢"
                         aria-label="Search">
-                      <span class="input-group-text py-4 px-3 bg-Gray-06 border-0">
-                        <img class="home-banner__search-icon " src="../assets/image/search-icon.png"
-                          id="home-search-submit-s3" name="home-search-submit-s3" alt="搜尋框按鈕" role="button">
-                      </span>
+                      <a class="input-group-text py-4 px-3 bg-Gray-06 border-0" href="./search.html" 
+                        id="home-search-submit-s3" name="home-search-submit-s3" alt="搜尋框按鈕" role="button">
+                        <img class="home-banner__search-icon " src="../assets/image/search-icon.png">
+                      </a>
                     </div>
                   </form>
                 </div>
@@ -117,15 +119,15 @@
               class="home-banner__sm-search-input form-control d-md-none py-4 px-3 position-relative border-0 bg-Gray-07"
               id="home-search-input-sm" name="home-search-input-sm" type="search" placeholder="輸入關鍵字查詢"
               aria-label="Search">
-            <span class="input-group-text py-4 px-3 bg-Gray-07 border-0">
-              <img class="home-banner__sm-search-icon " src="../assets/image/search-icon.png" alt="搜尋框按鈕" role="button"
-                id="home-search-submit-sm" name="home-search-submit-sm">
-            </span>
+            <a class="input-group-text py-4 px-3 bg-Gray-07 border-0" role="button" href="./search.html" 
+              id="home-search-submit-sm" name="home-search-submit-sm">
+              <img class="home-banner__sm-search-icon " src="../assets/image/search-icon.png" alt="搜尋框按鈕">
+            </a>
           </div>
         </form>
       </div>
     </section>
-    <section class="home-best-ranking">
+    <section class="home-best-ranking" data-aos="fade-up">
       <div class="container-sm py-15 pt-lg-16 pb-lg-30">
         <h2 class="h5 fs-sm-4 fs-md-3 mb-6 mb-md-12 ls-md-h text-md-center lh-sm fw-semibold fw-md-bold">熱門排行</h2>
         <ul class="home-ranking-tab nav nav-tabs text-center m-auto mb-3 mb-lg-12 text-Gray-02" id="home-ranking-tab"
@@ -162,10 +164,10 @@
               <div class="home-best-ranking__card-area">
                 <div
                   class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y"
-                  id="home-ranking-swiper-prev"></div>
+                  id="home-ranking-swiper-prev-1"></div>
                 <div
                   class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y"
-                  id="home-ranking-swiper-next"></div>
+                  id="home-ranking-swiper-next-1"></div>
                 <div class="swiper mx-0 pb-md-15" id="home-ranking-swiper-1">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -190,7 +192,7 @@
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_02.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
                           <img
                             src="https://github.com/LandyHsiao/beauty-hub/blob/main/assets/image/hot-img-02.jpg?raw=true"
@@ -210,7 +212,7 @@
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_03.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
                           <img
                             src="https://github.com/LandyHsiao/beauty-hub/blob/main/assets/image/hot-img-03.jpg?raw=true"
@@ -265,17 +267,17 @@
               <div class="home-best-ranking__card-area">
                 <div
                   class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y"
-                  id="home-ranking-swiper-prev"></div>
+                  id="home-ranking-swiper-prev-2"></div>
                 <div
                   class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y"
-                  id="home-ranking-swiper-next"></div>
+                  id="home-ranking-swiper-next-2"></div>
                 <div class="swiper mx-0 pb-md-15" id="home-ranking-swiper-2">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_04.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/foundation-01.png" class="product-card__img rounded-0"
+                          <img src="../assets/image/home-ranking/foundation-01.jpg" class="product-card__img rounded-0"
                             alt="...">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
@@ -291,9 +293,9 @@
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_05.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
-                          <img src="../assets/image/home-ranking/foundation-02.png" class="product-card__img rounded-0"
+                          <img src="../assets/image/home-ranking/foundation-02.webp" class="product-card__img rounded-0"
                             alt="...">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
@@ -310,7 +312,7 @@
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_06.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
                           <img src="../assets/image/home-ranking/foundation-03.webp" class="product-card__img rounded-0"
                             alt="...">
@@ -360,15 +362,15 @@
               <div class="home-best-ranking__card-area">
                 <div
                   class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y"
-                  id="home-ranking-swiper-prev"></div>
+                  id="home-ranking-swiper-prev-3"></div>
                 <div
                   class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y"
-                  id="home-ranking-swiper-next"></div>
+                  id="home-ranking-swiper-next-3"></div>
                 <div class="swiper mx-0 pb-md-15" id="home-ranking-swiper-3">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_07.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
                           <img src="../assets/image/home-ranking/sun-protect-01.webp"
                             class="product-card__img rounded-0" alt="柔光乳 敏感肌特效防曬露圖片">
@@ -386,7 +388,7 @@
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_08.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
                           <img src="../assets/image/home-ranking/sun-protect-02.png" class="product-card__img rounded-0"
                             alt="逆齡光采防曬霜圖片">
@@ -405,7 +407,7 @@
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_09.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
                           <img src="../assets/image/home-ranking/sun-protect-03.webp"
                             class="product-card__img rounded-0" alt="全效海洋友善防曬乳圖片">
@@ -456,15 +458,15 @@
               <div class="home-best-ranking__card-area">
                 <div
                   class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y"
-                  id="home-ranking-swiper-prev"></div>
+                  id="home-ranking-swiper-prev-4"></div>
                 <div
                   class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y"
-                  id="home-ranking-swiper-next"></div>
+                  id="home-ranking-swiper-next-4"></div>
                 <div class="swiper mx-0 pb-md-15" id="home-ranking-swiper-4">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_10.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
                           <img src="../assets/image/home-ranking/lip-01.webp" class="product-card__img rounded-0"
                             alt="絲柔粉霧唇膏圖片">
@@ -482,7 +484,7 @@
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_11.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
                           <img src="../assets/image/home-ranking/lip-02.png" class="product-card__img rounded-0"
                             alt="奢華緞面漆光唇釉圖片">
@@ -500,7 +502,7 @@
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_12.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
                           <img src="../assets/image/home-ranking/lip-03.jpg" class="product-card__img rounded-0"
                             alt="絲絨雙色唇膏圖片">
@@ -530,7 +532,7 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a class="card bg-white text-center product-card__card rounded-0 p-5" href="./product_01.html">
+                      <a class="card bg-white text-center product-card__card rounded-0 p-5" href="./product_16.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
                           <img src="../assets/image/home-ranking/lip-05.webp" class="product-card__img rounded-0"
                             alt="水花瓣輕盈保濕豐潤唇膏圖片">
@@ -550,15 +552,15 @@
               <div class="home-best-ranking__card-area">
                 <div
                   class="swiper-button-prev btn-swiper-navigate btn-swiper-navigate-prev position-absolute top-50 translate-middle-y"
-                  id="home-ranking-swiper-prev"></div>
+                  id="home-ranking-swiper-prev-5"></div>
                 <div
                   class="swiper-button-next btn-swiper-navigate btn-swiper-navigate-next position-absolute top-50 translate-middle-y"
-                  id="home-ranking-swiper-next"></div>
+                  id="home-ranking-swiper-next-5"></div>
                 <div class="swiper mx-0 pb-md-15" id="home-ranking-swiper-5">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_13.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
                           <img src="../assets/image/home-ranking/eye-shadow-01.webp" class="product-card__img rounded-0"
                             alt="裸色深邃眼影圖片">
@@ -576,13 +578,13 @@
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_14.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
                           <img src="../assets/image/home-ranking/eye-shadow-02.webp" class="product-card__img rounded-0"
-                            alt="六色眼影盤 - 暖楓圖片">
+                            alt="六色眼影盤圖片">
                         </div>
                         <div class="card-body product-card__body p-0 d-flex flex-column align-items-center">
-                          <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">六色眼影盤 - 暖楓</h5>
+                          <h5 class="card-title product-card__name h6 fs-md-5 mb-4 ">六色眼影盤</h5>
                           <span
                             class="card-text product-card__brand rounded-pill mb0 d-inline-block text-primary fs-8 fs-md-7 bg-Background-S2 py-2 px-6 ls-ms-h">heme</span>
                         </div>
@@ -594,7 +596,7 @@
                     </div>
                     <div class="swiper-slide">
                       <a class="card bg-white text-center product-card__card rounded-0 p-5 position-relative"
-                        href="./product_01.html">
+                        href="./product_15.html">
                         <div class="product-card__img-wrap card-img-top mb-4">
                           <img src="../assets/image/home-ranking/eye-shadow-03.webp" class="product-card__img rounded-0"
                             alt="that's taupe眼影盤圖片">
@@ -646,7 +648,7 @@
             class="btn btn-outline-primary fw-medium">看更多</a></div>
       </div>
     </section>
-    <section class="home-invite-area py-10 py-md-25">
+    <section class="home-invite-area py-10 py-md-25" data-aos="fade-up">
       <div class="container-sm">
         <div class="row">
           <div class="col-12 col-md-6 ms-md-auto">
@@ -662,7 +664,7 @@
         </div>
       </div>
     </section>
-    <section class="home-recommend py-15 py-md-30">
+    <section class="home-recommend py-15 py-md-30" data-aos="fade-up">
       <div class="container-sm">
         <h2 class="h5 fs-sm-4 fs-md-3 mb-6 mb-md-12 text-md-center fw-semibold fw-md-bold lh-sm">好評推推</h2>
         <div class="home-recommend__card-area row position-relative mb-9 mb-md-7">
@@ -675,14 +677,14 @@
           <div class="swiper mx-0" id="home-recommend-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="./product_01.html">
+                <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="./product_16.html">
                   <div class="review-card__img-wrap card-img-top mb-4">
                     <img src="../assets/image/home-recommend/woman-profile-1.png" class="review-card__img rounded-0"
                       alt="Bbia水花瓣唇膏圖片">
                   </div>
                   <div
                     class="card-body review-card__body p-0 d-flex flex-column justify-content-between align-items-center w-100">
-                    <h5 class="card-title review-card__name h6 fs-lg-5 mb-3 mb-md-4 ">Bbia水花瓣唇膏</h5>
+                    <h5 class="card-title review-card__name h6 fs-lg-5 mb-3 mb-md-4 ">Bbia 水花瓣唇膏</h5>
                     <div
                       class="card-text review-card__content text-start fs-7 fs-md-6 text-Gray-02 bg-white py-4 py-md-1 px-3 align-middle flex-grow-1 w-100 overflow-hidden d-flex flex-column justify-content-center">
                       <p class="mb-0 review-card__content-inner ls-h">顯色度高又滑順好塗抹，持久度還不錯！最推薦的是色號的是#04水花瓣杏粉橘，非常適合亞洲人的偏黃膚色
@@ -692,7 +694,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="./product_01.html">
+                <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="./product_17.html">
                   <div class="review-card__img-wrap card-img-top mb-4">
                     <img src="../assets/image/home-recommend/woman-profile-2.png" class="review-card__img rounded-0"
                       alt="tsuvimi 雙色閃亮眼影蜜圖片">
@@ -709,7 +711,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="./product_01.html">
+                <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="./product_18.html">
                   <div class="review-card__img-wrap card-img-top mb-4">
                     <img src="../assets/image/home-recommend/woman-profile-3.png" class="review-card__img rounded-0"
                       alt="仙人掌小姐保濕精華40mL圖片">
@@ -743,7 +745,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="./product_01.html">
+                <a class="card review-card__card align-items-center text-center rounded-0 p-6" href="./product_04.html">
                   <div class="review-card__img-wrap card-img-top mb-4">
                     <img src="../assets/image/home-recommend/woman-profile-5.png" class="review-card__img rounded-0"
                       alt="&be UV Primer 妝前隔離乳圖片">
@@ -762,10 +764,10 @@
             </div>
           </div>
         </div>
-        <div class="text-center"><a href="" class="btn btn-outline-primary fw-medium">看更多</a></div>
+        <div class="text-center"><a href="./category_top_ranking.html" class="btn btn-outline-primary fw-medium">看更多</a></div>
       </div>
     </section>
-    <section class="home-award-area">
+    <section class="home-award-area" data-aos="fade-up">
       <div class="container-sm h-100">
         <div class="row h-100">
           <div
@@ -775,34 +777,34 @@
               <div class="home-award-area__title h3 fw-bold mb-3 mb-sm-9 ls-md-h">AWARDS</div>
               <div class="home-award-area__title h3 fw-bold mb-0 ls-md-h">2023</div>
             </div>
-            <a href="" class="btn btn-primary align-self-center mt-auto mt-sm-0 btn-short px-md-18 fw-medium">查看全部</a>
+            <a href="./beauty_awards.html" class="btn btn-primary align-self-center mt-auto mt-sm-0 btn-short px-md-18 fw-medium">查看全部</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="home-hot-issue py-15 py-md-30">
+    <section class="home-hot-issue py-15 py-md-30" data-aos="fade-up">
       <div class="container-sm">
         <h2 class="h6 fs-sm-4 fs-md-3 mb-6 mb-md-12 text-md-center  fw-medium fw-md-bold">HOT ISSUE</h2>
         <div class="row gy-5 gy-md-0 mb-9 mb-md-10">
           <div class="col-12 col-md-4">
-            <a class="card d-flex flex-column h-100" href="">
-              <img src="../assets/image/hot-issue-3.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5">
+            <a class="card d-flex flex-column h-100 home-hot-issue__card" href="./hot_issue_01.html">
+              <img src="../assets/image/hot-issue/hot-issue-1.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5 home-hot-issue__card-img object-fit-cover">
               <div class="card-body py-2 px-1 d-flex flex-column justify-content-center fs-md-5 fw-md-medium">
                 <p class="mb-0 ls-h ls-md-p lh-sm">清透感光澤底妝技巧！8招打造「無粉感媽生好皮」，底妝無粉感卻光滑通透、還膨潤減齡</p>
               </div>
             </a>
           </div>
           <div class="col-12 col-md-4">
-            <a class="card d-flex flex-column h-100" href="">
-              <img src="../assets/image/hot-issue-2.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5">
+            <a class="card d-flex flex-column h-100 home-hot-issue__card" href="./hot_issue_02.html">
+              <img src="../assets/image/hot-issue/hot-issue-2.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5 home-hot-issue__card-img object-fit-cover">
               <div class="card-body py-2 px-1 d-flex flex-column justify-content-center fs-md-5 fw-md-medium">
                 <p class="mb-0 ls-h ls-md-p lh-sm">2023春夏彩妝趨勢｜光透感底妝、水光暈染唇、清冷淡顏妝容正夯！</p>
               </div>
             </a>
           </div>
           <div class="col-12 col-md-4">
-            <a class="card d-flex flex-column h-100" href="">
-              <img src="../assets/image/hot-issue-1.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5">
+            <a class="card d-flex flex-column h-100 home-hot-issue__card" href="./hot_issue_01.html">
+              <img src="../assets/image/hot-issue/hot-issue-3.png" alt="文章縮圖" class="card-img-top mb-2 mb-md-5 home-hot-issue__card-img object-fit-cover">
               <div class="card-body py-2 px-1 d-flex flex-column justify-content-center fs-md-5 fw-md-medium ">
                 <p class="mb-0 ls-h ls-md-p lh-sm">韓星都在畫！韓系微笑唇畫法教學，嘴角微笑線超自然，唇妝絕美乾淨、更減齡顯嫩</p>
               </div>
@@ -810,180 +812,198 @@
           </div>
         </div>
         <div class="text-center">
-          <a href="" class="btn btn-outline-primary fw-medium">看更多</a>
+          <a href="./hot_issue.html" class="btn btn-outline-primary fw-medium">看更多</a>
         </div>
       </div>
     </section>
     <%- include('./layout/footer.ejs'); -%>
-      <script type="module" src="../main.js"></script>
-      <%- include('./layout/header_search_jq.ejs'); -%>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
-        <script>
-          const homeRankingSwiper_1 = new Swiper('#home-ranking-swiper-1', {
-            slidesPerView: 1.5,
-            spaceBetween: "24px",
-            // rewind: true,
-            navigation: {
-              nextEl: '#home-ranking-swiper-next',
-              prevEl: '#home-ranking-swiper-prev',
-            },
-            breakpoints: {
-              767: {
-                slidesPerView: 3,
-                centeredSlides: false
-              }
-            }
-          });
-          const homeRankingSwiper_2 = new Swiper('#home-ranking-swiper-2', {
-            slidesPerView: 1.5,
-            spaceBetween: "24px",
-            // rewind: true,
-            navigation: {
-              nextEl: '#home-ranking-swiper-next',
-              prevEl: '#home-ranking-swiper-prev',
-            },
-            breakpoints: {
-              767: {
-                slidesPerView: 3,
-                centeredSlides: false
-              }
-            }
-          });
-          const homeRankingSwiper_3 = new Swiper('#home-ranking-swiper-3', {
-            slidesPerView: 1.5,
-            spaceBetween: "24px",
-            // rewind: true,
-            navigation: {
-              nextEl: '#home-ranking-swiper-next',
-              prevEl: '#home-ranking-swiper-prev',
-            },
-            breakpoints: {
-              767: {
-                slidesPerView: 3,
-                centeredSlides: false
-              }
-            }
-          });
-          const homeRankingSwiper_4 = new Swiper('#home-ranking-swiper-4', {
-            slidesPerView: 1.5,
-            spaceBetween: "24px",
-            // rewind: true,
-            navigation: {
-              nextEl: '#home-ranking-swiper-next',
-              prevEl: '#home-ranking-swiper-prev',
-            },
-            breakpoints: {
-              767: {
-                slidesPerView: 3,
-                centeredSlides: false
-              }
-            }
-          });
-          const homeRankingSwiper_5 = new Swiper('#home-ranking-swiper-5', {
-            slidesPerView: 1.5,
-            spaceBetween: "24px",
-            // rewind: true,
-            navigation: {
-              nextEl: '#home-ranking-swiper-next',
-              prevEl: '#home-ranking-swiper-prev',
-            },
-            breakpoints: {
-              767: {
-                slidesPerView: 3,
-                centeredSlides: false
-              }
-            }
-          });
-          const homeRecommendSwiper = new Swiper('#home-recommend-swiper', {
-            slidesPerView: 1.5,
-            spaceBetween: "24px",
-            // rewind: true,
-            navigation: {
-              nextEl: '#home-recommend-swiper-next',
-              prevEl: '#home-recommend-swiper-prev',
-            },
-            breakpoints: {
-              767: {
-                slidesPerView: 3,
-                centeredSlides: false
-              }
-            }
-          });
+    <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <%- include('./layout/header_search_jq.ejs'); -%>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script>
+      const homeRankingSwiper_1 = new Swiper('#home-ranking-swiper-1', {
+        slidesPerView: 1.5,
+        spaceBetween: "24px",
+        // rewind: true,
+        navigation: {
+          nextEl: '#home-ranking-swiper-next-1',
+          prevEl: '#home-ranking-swiper-prev-1',
+        },
+        breakpoints: {
+          767: {
+            slidesPerView: 3,
+            centeredSlides: false,
+            loop: false,
+          }
+        },
+        autoplay: {
+          delay: 3000,
+        },
+        loop: true,
+      });
+      const homeRankingSwiper_2 = new Swiper('#home-ranking-swiper-2', {
+        slidesPerView: 1.5,
+        spaceBetween: "24px",
+        // rewind: true,
+        navigation: {
+          nextEl: '#home-ranking-swiper-next-2',
+          prevEl: '#home-ranking-swiper-prev-2',
+        },
+        breakpoints: {
+          767: {
+            slidesPerView: 3,
+            centeredSlides: false
+          }
+        }
+      });
+      const homeRankingSwiper_3 = new Swiper('#home-ranking-swiper-3', {
+        slidesPerView: 1.5,
+        spaceBetween: "24px",
+        // rewind: true,
+        navigation: {
+          nextEl: '#home-ranking-swiper-next-3',
+          prevEl: '#home-ranking-swiper-prev-3',
+        },
+        breakpoints: {
+          767: {
+            slidesPerView: 3,
+            centeredSlides: false
+          }
+        }
+      });
+      const homeRankingSwiper_4 = new Swiper('#home-ranking-swiper-4', {
+        slidesPerView: 1.5,
+        spaceBetween: "24px",
+        // rewind: true,
+        navigation: {
+          nextEl: '#home-ranking-swiper-next-4',
+          prevEl: '#home-ranking-swiper-prev-4',
+        },
+        breakpoints: {
+          767: {
+            slidesPerView: 3,
+            centeredSlides: false
+          }
+        }
+      });
+      const homeRankingSwiper_5 = new Swiper('#home-ranking-swiper-5', {
+        slidesPerView: 1.5,
+        spaceBetween: "24px",
+        // rewind: true,
+        navigation: {
+          nextEl: '#home-ranking-swiper-next-5',
+          prevEl: '#home-ranking-swiper-prev-5',
+        },
+        breakpoints: {
+          767: {
+            slidesPerView: 3,
+            centeredSlides: false
+          }
+        }
+      });
+      const homeRecommendSwiper = new Swiper('#home-recommend-swiper', {
+        slidesPerView: 1.5,
+        spaceBetween: "24px",
+        // rewind: true,
+        navigation: {
+          nextEl: '#home-recommend-swiper-next',
+          prevEl: '#home-recommend-swiper-prev',
+        },
+        breakpoints: {
+          767: {
+            slidesPerView: 3,
+            centeredSlides: false,
+            loop: false
+          }
+        },
+        autoplay: {
+          delay: 3000,
+        },
+        loop: true,
+      });
 
-          /* deal with review card text-overflow*/
-          // store full text
-          $(".review-card__content-inner").each(function () {
-            $(this).attr("data-full-text", $(this).text().trim());
-          });
-          // cut at page first load
-          let w_xs = window.matchMedia("(max-width: 575px)");
-          let w_sm = window.matchMedia("(max-width: 767px)");
-          let w_md = window.matchMedia("(max-width: 991px)");
-          let w_lg = window.matchMedia("(max-width: 1199px)");
-          let w_xl = window.matchMedia("(max-width: 1399px)");
-          $(".review-card__content-inner").each(function () {
-            if (w_xs.matches) {
-              let text = $(this).attr("data-full-text").substring(0, 20) + "...";
-              $(this).text(text);
-            }
-            else if (w_sm.matches) {
-              let text = $(this).attr("data-full-text").substring(0, 47) + "...";
-              $(this).text(text);
-            }
-            else if (w_md.matches) {
-              let text = $(this).attr("data-full-text").substring(0, 23) + "...";
-              $(this).text(text);
-            }
-            else if (w_lg.matches) {
-              let text = $(this).attr("data-full-text").substring(0, 35) + "...";
-              $(this).text(text);
-            }
-            else if (w_xl.matches) {
-              let text = $(this).attr("data-full-text").substring(0, 40) + "...";
-              $(this).text(text);
-            }
-            else {
-              let text = $(this).attr("data-full-text").substring(0, 50) + "...";
-              $(this).text(text);
-            }
-          });
-          // cut at page resize
-          window.addEventListener("resize", () => {
-            let w_xs = window.matchMedia("(max-width: 575px)");
-            let w_sm = window.matchMedia("(max-width: 767px)");
-            let w_md = window.matchMedia("(max-width: 991px)");
-            let w_lg = window.matchMedia("(max-width: 1199px)");
-            let w_xl = window.matchMedia("(max-width: 1399px)");
-            let x = window.matchMedia("(min-width: 992px)");
-            $(".review-card__content-inner").each(function (i) {
-              if (w_xs.matches) {
-                let text = $(this).attr("data-full-text").substring(0, 20) + "...";
-                $(this).text(text);
-              }
-              else if (w_sm.matches) {
-                let text = $(this).attr("data-full-text").substring(0, 47) + "...";
-                $(this).text(text);
-              }
-              else if (w_md.matches) {
-                let text = $(this).attr("data-full-text").substring(0, 23) + "...";
-                $(this).text(text);
-              }
-              else if (w_lg.matches) {
-                let text = $(this).attr("data-full-text").substring(0, 35) + "...";
-                $(this).text(text);
-              }
-              else if (w_xl.matches) {
-                let text = $(this).attr("data-full-text").substring(0, 40) + "...";
-                $(this).text(text);
-              }
-              else {
-                let text = $(this).attr("data-full-text").substring(0, 50) + "...";
-                $(this).text(text);
-              }
-            });
-          });
-        </script>
+      /* deal with review card text-overflow*/
+      // store full text
+      $(".review-card__content-inner").each(function () {
+        $(this).attr("data-full-text", $(this).text().trim());
+      });
+      // cut at page first load
+      let w_xs = window.matchMedia("(max-width: 575px)");
+      let w_sm = window.matchMedia("(max-width: 767px)");
+      let w_md = window.matchMedia("(max-width: 991px)");
+      let w_lg = window.matchMedia("(max-width: 1199px)");
+      let w_xl = window.matchMedia("(max-width: 1399px)");
+      $(".review-card__content-inner").each(function () {
+        if (w_xs.matches) {
+          let text = $(this).attr("data-full-text").substring(0, 20) + "...";
+          $(this).text(text);
+        }
+        else if (w_sm.matches) {
+          let text = $(this).attr("data-full-text").substring(0, 47) + "...";
+          $(this).text(text);
+        }
+        else if (w_md.matches) {
+          let text = $(this).attr("data-full-text").substring(0, 23) + "...";
+          $(this).text(text);
+        }
+        else if (w_lg.matches) {
+          let text = $(this).attr("data-full-text").substring(0, 35) + "...";
+          $(this).text(text);
+        }
+        else if (w_xl.matches) {
+          let text = $(this).attr("data-full-text").substring(0, 40) + "...";
+          $(this).text(text);
+        }
+        else {
+          let text = $(this).attr("data-full-text").substring(0, 50) + "...";
+          $(this).text(text);
+        }
+      });
+      // cut at page resize
+      window.addEventListener("resize", () => {
+        let w_xs = window.matchMedia("(max-width: 575px)");
+        let w_sm = window.matchMedia("(max-width: 767px)");
+        let w_md = window.matchMedia("(max-width: 991px)");
+        let w_lg = window.matchMedia("(max-width: 1199px)");
+        let w_xl = window.matchMedia("(max-width: 1399px)");
+        let x = window.matchMedia("(min-width: 992px)");
+        $(".review-card__content-inner").each(function (i) {
+          if (w_xs.matches) {
+            let text = $(this).attr("data-full-text").substring(0, 20) + "...";
+            $(this).text(text);
+          }
+          else if (w_sm.matches) {
+            let text = $(this).attr("data-full-text").substring(0, 47) + "...";
+            $(this).text(text);
+          }
+          else if (w_md.matches) {
+            let text = $(this).attr("data-full-text").substring(0, 23) + "...";
+            $(this).text(text);
+          }
+          else if (w_lg.matches) {
+            let text = $(this).attr("data-full-text").substring(0, 35) + "...";
+            $(this).text(text);
+          }
+          else if (w_xl.matches) {
+            let text = $(this).attr("data-full-text").substring(0, 40) + "...";
+            $(this).text(text);
+          }
+          else {
+            let text = $(this).attr("data-full-text").substring(0, 50) + "...";
+            $(this).text(text);
+          }
+        });
+      });
+    </script>
+    <script>
+      AOS.init({
+        once: false,
+        duration: 300,
+        easing: 'ease-in'
+      });
+    </script>
 </body>
 
 </html>
